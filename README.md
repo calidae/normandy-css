@@ -6,7 +6,7 @@ Això és una primera proposta en versió alpha dels acords d'estil, nomenclatur
 
 ### Índex ###
 
-1. [Components i Objectes](#markdown-header-components-i-objectes)
+1. [Les 7 capes de CSS](src/master/LES%207%20CAPES%20DE%20CSS.md)
 
 2. [Single responsibility](#markdown-header-single-responsibility)
 

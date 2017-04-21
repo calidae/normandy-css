@@ -6,25 +6,25 @@ Això és una primera proposta en versió alpha dels acords d'estil, nomenclatur
 
 ### Índex ###
 
-1. [Components i Objectes](#components-i-objectes)
+1. [Components i Objectes](#markdown-header-components-i-objectes)
 
-2. [Single responsibility](#single-responsibility)
+2. [Single responsibility](#markdown-header-single-responsibility)
 
-3. [Nomenclatura de classes](#nomenclatura-de-classes)
+3. [Nomenclatura de classes](#markdown-header-nomenclatura-de-classes)
 
-4. [Namespaces](#namespaces)
+4. [Namespaces](#markdown-header-namespaces)
 
-5. [Nesting](#nesting)
+5. [Nesting](#markdown-header-nesting)
 
-6. [Encapsulament de frameworks](#encapsulament-de-frameworks)
+6. [Encapsulament de frameworks](#markdown-header-encapsulament-de-frameworks)
 
-7. [No ID's](#no-id)
+7. [No ID's](#markdown-header-no-id)
 
-8. [Media Queries](#media-queries)
+8. [Media Queries](#markdown-header-media-queries)
 
-9. [Grid](#grid)
+9. [Grid](#markdown-header-grid)
 
-10. [CSS Linting](#css-linting)
+10. [CSS Linting](#markdown-header-css-linting)
 
 ***
 

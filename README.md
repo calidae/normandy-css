@@ -160,6 +160,8 @@ Les classes de CSS definides utilitzen un prefix que indiquen en quin nivell de 
 
 Font: [More Transparent UI Code with Namespaces](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
 
+Excepte el prefix `.js`, noti's que els altres tres prefixos corresponen als tres últims nivells de la piràmide de CSS.
+
 
 ### Exemples
 

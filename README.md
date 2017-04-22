@@ -76,6 +76,51 @@ La forma de triangle mostra com els estils generats s'ordenen: d'estils genèric
 
 Font: [ITCSS: Scalable and Mantainable CSS Architecture](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
 
+L'estructura de fitxers Sass del projecte han de seguir una estructura que repliqui les 7 capes. Els arxius han de concatenar el nom de la capa i el nom del propi arxiu, per facilitar-ne la localització:
+
+    scss/
+        main.scss
+        settings/
+            _settings.colors.scss
+            ...
+        tools/
+            _tools.clearfix.scss
+            ...
+        generic/
+            _generic.normalize.scss
+            _generic.box-sizing.scss
+            ...
+        elements/
+            _elements.headings.scss
+            _elements.images.scss
+            _elements.page.scss
+            ...
+        objects/
+            _objects.media.scss
+            _objects.layout.scss
+            _objects.island.scss
+            _objects.flag.scss
+            ...
+        components/
+            _components.button.scss
+            ...
+        utilities/
+            _utilities.print.scss
+            _utilities.hide.scss
+            ...
+
+En cas d'utilitzar una estructura atòmica per components en tot el projecte, els arxius de Components i Objects es podrien estructura conjuntament amb la resta d'arxius del Component o Object en concret. La resta d'arxius Sass seguirien l'estructura original:
+
+    components/
+        button/
+            button.html
+            button.js
+            _button.scss
+    assets/
+        sass/
+            main.scss
+            settings/
+            ...
 
 
 ***

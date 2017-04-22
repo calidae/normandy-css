@@ -205,8 +205,80 @@ Font: [The single responsibility principle applied to CSS](https://csswizardry.c
 
 ***
 ## Nomenclatura de classes
-Fill me.
+L'estructura dels noms de les classes és la següent:
 
+`.[namespace]-[block]__[element]--[modificador]`
+
+Noti's els dos guionets baixos entre bloc i element, i els dos guionets entre element i modificador.
+
+Basat en la metodologia [BEM](http://bem.info/), aquesta estructura defineix tres ítems bàsics: **Blocs**, **Elements** i **Modificadors**.
+
+### Bloc ###
+Encapsula un element que té sentit per si sol. Es mapeja fàcilment amb Objects i Components. Els blocs es poden anidar i interactuar amb altres blocs, però no tenen precedències ni herències entre ells.
+
+```html
+<div class="c-form">...</div>
+```
+```css
+.c-form {} /* Good */
+
+div.c-form {} /* Bad */
+```
+
+
+***
+[*Back to top*](#markdown-header-objectius-de-la-guia)
+
+
+### Element ###
+Part d'un bloc que no té sentit per si sol. Qualsevol element està semànticament lligat al seu bloc.
+
+Dins d'un bloc, tots els elements són semànticament iguals.
+
+```html
+<div class="c-form">
+    <div class="c-form__input"></div>
+    ...
+</`iv>
+```
+```css
+.c-form__input {} /* Good */
+
+.c-form.c-form__input {} /* Bad */
+div.c-form__input {} /* Bad */
+```
+
+
+### Modificador ###
+Flag per blocs o per elements. Útils per canviar l'aspecte, el comportament o l'estat.
+
+Un modificador és una classe addicional que s'afegeix al bloc/element que modifica.
+
+```html
+<div class="c-form c-form--hidden">
+    <div class="c-form__input c-form__input--border-primary"></div>
+    ...
+</`iv>
+```
+```css
+.c-form--hidden {} /* Good */
+.c-form--hidden .c-form__input {} /* Good */
+.c-form__input--border-primary {} /* Good */
+
+.c-form__input .c-form__input--border-primary {} /* Bad */
+```
+
+
+La majoria de dubtes sobre BEM queden resolts a les [FAQs de la seva web](http://getbem.com/faq/).
+
+
+Un altre benefici afegit de BEM és que millora el rendiment de renderitzat del navegador. De fet, és la metodologia que recomana Google des d'aquest punt de vista:
+
+> If you’re looking for a good way to organize your CSS, BEM is a really good starting point, both from a structure point-of-view, but also because of the simplifications of style lookup. *(Font: [Google Web Developers](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)*)
+
+
+***
+[*Back to top*](#markdown-header-objectius-de-la-guia)
 
 
 ***

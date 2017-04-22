@@ -306,7 +306,19 @@ article > p:first-child {} /* still bad */
 
 ***
 ## Encapsulament de frameworks 
-Fill me.
+Separem mitjançant brackets (`[ ]`) les classes pròpies, definides per nosaltres, de les classes que proporcionin frameworks i eines de tercers.
+
+Definim primer les classes pròpies i posteriorment les classes de tercers.
+
+Exemple:
+
+```html
+<div class="c-block__element [ uk-clearfix uk-grid ]"></div>
+```
+
+
+***
+[*Back to top*](#markdown-header-objectius-de-la-guia)
 
 
 ***

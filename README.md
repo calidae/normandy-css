@@ -221,7 +221,15 @@ Fill me.
 
 ***
 ## No ID's 
-Fill me.
+La recomanació és **no** estilitzar mai elements a partir del seu ID. No aporta cap avantatge que no es pugui aconseguir de maneres reusables i amb menys especificitat.
+
+Font: [Don’t use IDs in CSS selectors?](http://oli.jp/2011/ids/)
+
+Font: [Don’t use ID selectors in CSS](http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/)
+
+
+***
+[*Back to top*](#markdown-header-objectius-de-la-guia)
 
 
 ***

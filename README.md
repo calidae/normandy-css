@@ -1,4 +1,4 @@
-# README #
+# CALIDAE CSS #
 
 Això és una primera proposta en versió alpha dels acords d'estil, nomenclatura i organització del CSS als projectes de Calidae.
 

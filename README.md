@@ -283,7 +283,25 @@ Un altre benefici afegit de BEM és que millora el rendiment de renderitzat del 
 
 ***
 ## Nesting 
-Fill me.
+Amb l'ús de preprocessadors (Sass/SCSS), el nesting de CSS s'ha convertit en una pràctica habitual que ofereix alguns beneficis però que té conseqüències si s'utilitza de forma exhaustiva.
+
+Necessitar sobreescriure estils a base de nesting indica un problema d'especificitat de base. Afegir més nestings per resoldre-ho només empitjora el problema i [empitjora el rendiment](https://speakerdeck.com/jonrohan/githubs-css-performance).
+
+Per això, la recomanació és seguir la [Inception Rule](http://thesassway.com/beginner/the-inception-rule): **mai definir més de 4 nivells de nesting**. En aquest 4 nivells no entren estils com pseudoatributs (`:hover`) o media queries.
+
+En general, una bona *thumb rule* és preguntar-se "aquest estil es pot aconseguir amb menys selectors?".
+
+```css
+body > div:nth-of-type(2) > article:first-child > p:first-child {} /* bad, really really bad */
+
+article > p:first-child {} /* still bad */
+
+.text-intro {} /* good */
+```
+
+
+***
+[*Back to top*](#markdown-header-objectius-de-la-guia)
 
 
 ***

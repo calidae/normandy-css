@@ -213,6 +213,7 @@ Noti's els dos guionets baixos entre bloc i element, i els dos guionets entre el
 
 Basat en la metodologia [BEM](http://bem.info/), aquesta estructura defineix tres ítems bàsics: **Blocs**, **Elements** i **Modificadors**.
 
+
 ### Bloc ###
 Encapsula un element que té sentit per si sol. Es mapeja fàcilment amb Objects i Components. Els blocs es poden anidar i interactuar amb altres blocs, però no tenen precedències ni herències entre ells.
 
@@ -224,10 +225,6 @@ Encapsula un element que té sentit per si sol. Es mapeja fàcilment amb Objects
 
 div.c-form {} /* Bad */
 ```
-
-
-***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
 
 
 ### Element ###

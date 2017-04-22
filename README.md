@@ -19,8 +19,11 @@ Això és una primera proposta en versió alpha dels acords d'estil, nomenclatur
 * Millorar, definir (i documentar) les bones pràctiques al desenvolupar CSS.
 
 
-### Warning ###
-En aquesta guia es parla de com s'escriu i s'organitza el CSS de forma genèrica i universal, amb frases com "El CSS s'organitza en 7 capes". Evidentment, la referència és únicament a la proposta d'organització de CSS a Calidae, i no a qualsevol implementació de CSS.
+### Warnings ###
+1. En aquesta guia es parla de com s'escriu i s'organitza el CSS de forma genèrica i universal, amb frases com "El CSS s'organitza en 7 capes". Evidentment, la referència és únicament a la proposta d'organització de CSS a Calidae, i no a qualsevol implementació de CSS.
+
+2. Les decisions d'aquesta guia estan basades en l'experiència d'altres desenvolupadors que s'han trobat amb problemes semblants als que volem solucionar. Per això és important consultar les fonts de cada punt de la guia, per entendre correctament els principis que els justifiquen.
+
 
 ## Índex ###
 

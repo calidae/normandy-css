@@ -178,11 +178,29 @@ Font: [More Transparent UI Code with Namespaces](https://csswizardry.com/2015/03
 ```
 
 
+***
+[*Back to top*](#markdown-header-objectius-de-la-guia)
 
 
 ***
-## Single responsibility 
-Fill me.
+## Single responsibility
+El principi de responsabilitat única, un dels cinc principis SOLID de desenvolupament de software, defineix que una classe només ha de tenir una raó per canviar, i no més.
+
+D'aquesta manera, el codi resultant és més robust i es pot reaprofitar molt més al combinar-lo amb altres blocs de codi semblants. A més són molt més senzills d'entendre.
+
+
+    <nav class="wrapper menu fixed branded">...</nav> <!-- Bad -->
+
+    <nav class="global-nav">...</nav> <!-- Good -->
+
+
+Noti's que en aquest exemple no s'utilitzen ni Namespaces ni cap tipus de nomenclatura específica. **L'exemple només sereix com a mostra de classes de responsabilitat única**.
+
+Font: [The single responsibility principle applied to CSS](https://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/).
+
+
+***
+[*Back to top*](#markdown-header-objectius-de-la-guia)
 
 
 ***

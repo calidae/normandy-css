@@ -123,6 +123,29 @@ En cas d'utilitzar una estructura atòmica per components en tot el projecte, el
             ...
 
 
+### Què són els Objects i com funcionen: Single Responsibility Principle i Open/Closed Principle
+Val la pena dedicar unes línies a què són els Objects i com es diferencien dels Components.
+
+Els Objects són *abstraccions* de disseny, és a dir, no estan lligats a una maquetació concreta i només responen a un patró de disseny reutilitzable.
+
+
+Dels 5 [principis SOLID](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design), els Objects en segueixen bàsicament dos:
+
+* **Single-responsibility Principle**. Un Object té una responsabilitat i cap altra, amb els beneficis que això comporta de facilitat de manteniment i extensibilitat.
+
+    Font: [The single responsibility principle applied to CSS](https://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/).
+
+* **Open-Closed Principle**. Un Object està obert a extensions i tancat a modificacions. Mai s'ha de modificar un Object: si un Object no encaixa a la implementació d'un element de la UI, simplement no s'ha de fer servir. 
+
+    Font: [The open/closed principle applied to CSS](https://csswizardry.com/2012/06/the-open-closed-principle-applied-to-css/).
+
+A diferència dels Objects, els Components no són abstraccions de patrons de disseny sinó implementacions concretes de la UI.
+
+
+***
+[*Back to top*](#markdown-header-objectius-de-la-guia)
+
+
 ***
 ## Namespaces 
 Les classes de CSS definides utilitzen un prefix que indiquen en quin nivell de la piràmide es troben.

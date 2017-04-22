@@ -29,9 +29,9 @@ Això és una primera proposta en versió alpha dels acords d'estil, nomenclatur
 
 1. [Les 7 capes de CSS](#markdown-header-les-7-capes-de-css)
 
-2. [Single responsibility](#markdown-header-single-responsibility)
+2. [Namespaces](#markdown-header-namespaces)
 
-3. [Namespaces](#markdown-header-namespaces)
+3. [Single responsibility](#markdown-header-single-responsibility)
 
 4. [Nomenclatura de classes](#markdown-header-nomenclatura-de-classes)
 
@@ -236,7 +236,7 @@ Dins d'un bloc, tots els elements són semànticament iguals.
 <div class="c-form">
     <div class="c-form__input"></div>
     ...
-</`iv>
+</div>
 ```
 ```css
 .c-form__input {} /* Good */

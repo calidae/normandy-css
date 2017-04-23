@@ -298,6 +298,19 @@ article > p:first-child {} /* still bad */
 .text-intro {} /* good */
 ```
 
+Així doncs, sempre farem servir el **nombre mínim de selectors necessaris** per estilitzar qualsevol element. Això aplica, per exemple, al definir estils per un Element o un Modificador, on no afegim la class del Bloc que el conté:
+
+```css
+.c-block .c-block__element {} /* Bad */
+.c-block .c-block--big {} /* Bad */
+.c-block.c-block--big {} /* Bad */
+
+.c-block__element {} /* Good */
+.c-block--big {} /* Good */
+```
+
+Anidar l'Element o el Modificador al Bloc no aporta res excepte que evita que algun desenvolupador utilitzi un Element fora del seu Bloc. A part d'això (que és fàcilment evitable en *code reviews*) simplement augmenta l'especificitat dels selectors d'Elements sense cap necessitat.
+
 
 ***
 [*Back to top*](#markdown-header-objectius-de-la-guia)

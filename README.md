@@ -257,7 +257,7 @@ Un modificador és una classe addicional que s'afegeix al bloc/element que modif
 <div class="c-form c-form--hidden">
     <div class="c-form__input c-form__input--border-primary"></div>
     ...
-</`iv>
+</div>
 ```
 ```css
 .c-form--hidden {} /* Good */

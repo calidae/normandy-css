@@ -39,13 +39,15 @@ Això és una primera proposta en versió alpha dels acords d'estil, nomenclatur
 
 6. [Encapsulament de frameworks](#markdown-header-encapsulament-de-frameworks)
 
-7. [No ID's](#markdown-header-no-id)
+7. [Estructura de fitxers](#markdown-header-estructura-de-fitxers)
 
-8. [Media Queries](#markdown-header-media-queries)
+8. [No ID's](#markdown-header-no-id)
 
-9. [Grid](#markdown-header-grid)
+9. [Media Queries](#markdown-header-media-queries)
 
-10. [CSS Linting](#markdown-header-css-linting)
+10. [Grid](#markdown-header-grid)
+
+111. [CSS Linting](#markdown-header-css-linting)
 
 ***
 
@@ -66,9 +68,9 @@ Les capes són les següents:
 
 * **Objects**: Selectors basats en classes que defineixen patrons de disseny sense estil, abstractes, com per exemple el [Media Object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) o el [Nav](https://csswizardry.com/2011/09/the-nav-abstraction/). Aquests objects estan basats en [OOCSS, Object Oriented CSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/). Modificar alguna propietat CSS d'un Object és una acció delicada que probablement tingui conseqüències més enllà de la modificació d'una instància concreta.
 
-* **Components**: components específics de la UI. Aquí és on es desenvolupa la gran majoria de la feina en cada projecte. Els components d'una interfície acostumen a estar compostos d'Objectes i Components. Modificar un component no ha de tenir conseqüències fora del context que estiguis desenvolupant.
+* **Components**: components específics de la UI. Aquí és on es desenvolupa la gran majoria de la feina en cada projecte. Els components d'una interfície acostumen a estar compostos d'Objectes i Components. Modificar un component no ha de tenir conseqüències fora del context que estiguem desenvolupant.
 
-* **Trumps/Utilities**: classes d'utilitat i helpers amb la capacitat de sobreescriure qualsevol regla definida prèviament en el triangle, e.g. classes per amagar contingut.
+* **Trumps/Utilities**: classes d'utilitat i helpers amb la capacitat de sobreescriure qualsevol regla definida prèviament en el triangle, e.g. classes per amagar contingut. Probablement utilitzin `!important` en les seves definicions.
 
 La forma de triangle mostra com els estils generats s'ordenen: d'estils genèrics a explícits, de poc específics a més específics, i des de globals a atòmics.
 
@@ -78,49 +80,13 @@ Tot el CSS queda ordenat, doncs, segons aquestes tres mètriques:
 
 1. **De genèric a explícit**. Comencem definint els atributs més genèrics, amb un abast més ampli, de baix nivell, i anem movent-nos cap a selectors més concrets i a mesura que anem baixant de nivell.
 
-    scss/
-        main.scss
-        settings/
-            _settings.colors.scss
-            ...
-        tools/
-            _tools.clearfix.scss
-            ...
-        generic/
-            _generic.normalize.scss
-            _generic.box-sizing.scss
-            ...
-        elements/
-            _elements.headings.scss
-            _elements.images.scss
-            _elements.page.scss
-            ...
-        objects/
-            _objects.media.scss
-            _objects.layout.scss
-            _objects.island.scss
-            _objects.flag.scss
-            ...
-        components/
-            _components.button.scss
-            ...
-        utilities/
-            _utilities.print.scss
-            _utilities.hide.scss
-            ...
+2. **De baixa a alta especificitat**. Els selectors amb menys especificitat apareixen més a prop de l'inici del CSS, i l'especificitat va augmentant progressivament a mida que avancem en el codi. D'aquesta manera evitem "guerres d'especificitat" tan com sigui possible. L'especificitat sempre creix cap avall.
 
-En cas d'utilitzar una estructura atòmica per components en tot el projecte, els arxius de Components i Objects es podrien estructura conjuntament amb la resta d'arxius del Component o Object en concret. La resta d'arxius Sass seguirien l'estructura original:
+3. **D'ampli espectre a localitzat**. Selectors del principi del CSS afecten àmpliament al DOM, i cada vegada els selectors afectaran a elements més concrets. 
 
-    components/
-        button/
-            button.html
-            button.js
-            _button.scss
-    assets/
-        sass/
-            main.scss
-            settings/
-            ...
+Font: [Manage large CSS projects with ITCSS](http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528)
+
+Font: [ITCSS: Scalable and Mantainable CSS Architecture](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
 
 
 ### Què són els Objects i com funcionen: Single Responsibility Principle i Open/Closed Principle
@@ -328,6 +294,60 @@ Exemple:
 ```html
 <div class="c-block__element [ uk-clearfix uk-grid ]"></div>
 ```
+
+
+***
+[*Back to top*](#markdown-header-objectius-de-la-guia)
+
+***
+## Estructura de fitxers 
+L'estructura de fitxers Sass del projecte han de seguir una estructura que repliqui les 7 capes. Els arxius han de concatenar el nom de la capa i el nom del propi arxiu, per facilitar-ne la localització:
+
+```css
+scss/
+main.scss
+settings/
+    _settings.colors.scss /* variables de colors */
+    ...
+tools/
+    _tools.clearfix.scss /* mixins per clearfix */
+    ...
+generic/
+    _generic.normalize.scss /* NormalizeCSS */
+    _generic.box-sizing.scss /* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    ...
+elements/
+    _elements.headings.scss /* h1{}, h2{}, h3{}... */
+    _elements.images.scss /* img{} */
+    _elements.page.scss /* html{} */
+    ...
+objects/
+    _objects.media.scss /* .o-media{}, .o-media__img{}... */
+    _objects.layout.scss /* .o-layout{}, .o-layout__item{}... */
+    _objects.island.scss
+    _objects.flag.scss
+    ...
+components/
+    _components.button.scss /* .c-btn{}, .c-btn--large{}... */
+    ...
+utilities/
+    _utilities.print.scss /* @media print {}... */
+    _utilities.hide.scss /* .u-hidden{}... */
+    ...
+```
+
+En cas d'utilitzar una estructura atòmica per components en tot el projecte, els arxius de Components i Objects es podrien estructura conjuntament amb la resta d'arxius del Component o Object en concret. La resta d'arxius Sass seguirien l'estructura original:
+
+    components/
+        button/
+            button.html
+            button.js
+            _button.scss
+    assets/
+        sass/
+            main.scss
+            settings/
+            ...
 
 
 ***

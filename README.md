@@ -390,7 +390,7 @@ Fill me.
 ## CSS Linting 
 No hi ha unes guies d'estil més encertades que unes altres; l'important és mantenir una consistència entre projectes i en el temps.
 
-[Sass Guidelines](https://sass-guidelin.es/) ofereix la base d'estil de CSS que utilitzem. Aquesta guia [ofereix un paquet](https://github.com/bjankord/stylelint-config-sass-guidelines) per configurar l'arxiu `.stylelint` amb aquestes regles.
+[Sass Guidelines](https://sass-guidelin.es/) ofereix la base d'estil de CSS que utilitzem. Aquesta guia [ofereix un paquet](https://github.com/bjankord/stylelint-config-sass-guidelines) per configurar l'arxiu `.stylelintrc` ([Font](https://stylelint.io/user-guide/configuration/)) amb aquestes regles.
 
 A Calidae apliquem les següents modificacions:
 

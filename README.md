@@ -74,9 +74,9 @@ La forma de triangle mostra com els estils generats s'ordenen: d'estils genèric
 
 ![Reach, Specificity, Explicitness](images/itcss-2.png)
 
-Font: [ITCSS: Scalable and Mantainable CSS Architecture](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+Tot el CSS queda ordenat, doncs, segons aquestes tres mètriques:
 
-L'estructura de fitxers Sass del projecte han de seguir una estructura que repliqui les 7 capes. Els arxius han de concatenar el nom de la capa i el nom del propi arxiu, per facilitar-ne la localització:
+1. **De genèric a explícit**. Comencem definint els atributs més genèrics, amb un abast més ampli, de baix nivell, i anem movent-nos cap a selectors més concrets i a mesura que anem baixant de nivell.
 
     scss/
         main.scss

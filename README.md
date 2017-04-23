@@ -228,6 +228,7 @@ Encapsula un element que té sentit per si sol. Es mapeja fàcilment amb Objects
 div.c-form {} /* Bad */
 ```
 
+*Rule of thumb*: Un Bloc no hauria de tenir mai atributs com `width`, `float` o `margin`, perquè un bloc ha de ser suficientment desacoplat de la UI com per poder-lo reaprofitar en altres contextos (i fins i tot altres projectes/webs/apps).
 
 ### Element ###
 Part d'un bloc que no té sentit per si sol. Qualsevol element està semànticament lligat al seu bloc.
@@ -249,7 +250,7 @@ div.c-form__input {} /* Bad */
 
 
 ### Modificador ###
-Flag per blocs o per elements. Útils per canviar l'aspecte, el comportament o l'estat.
+Flag per blocs o per elements. Útils per canviar l'aspecte, el comportament o l'estat. Serveix per proposar versions alternatives d'un Block o un Element.
 
 Un modificador és una classe addicional que s'afegeix al bloc/element que modifica.
 

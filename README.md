@@ -157,10 +157,11 @@ El principi de responsabilitat única, un dels cinc principis SOLID de desenvolu
 D'aquesta manera, el codi resultant és més robust i es pot reaprofitar molt més al combinar-lo amb altres blocs de codi semblants. A més són molt més senzills d'entendre.
 
 
-    <nav class="global-nav">...</nav> <!-- Bad -->
+```html
+<nav class="global-nav">...</nav> <!-- Bad -->
 
-    <nav class="wrapper menu fixed branded">...</nav> <!-- Good -->
-
+<nav class="wrapper menu fixed branded">...</nav> <!-- Good -->
+```
 
 Noti's que en aquest exemple no s'utilitzen ni Namespaces ni cap tipus de nomenclatura específica. **L'exemple només sereix com a mostra de classes de responsabilitat única**.
 
@@ -292,7 +293,10 @@ Definim primer les classes pròpies i posteriorment les classes de tercers.
 Exemple:
 
 ```html
-<div class="c-block__element [ uk-clearfix uk-grid ]"></div>
+<div class="uk-clearfix c-block__element uk-grid"></div> <!-- Bad -->
+<div class="uk-clearfix uk-grid c-block__element"></div> <!-- Bad -->
+
+<div class="c-block__element [ uk-clearfix uk-grid ]"></div> <!-- Good -->
 ```
 
 
@@ -303,7 +307,7 @@ Exemple:
 ## Estructura de fitxers 
 L'estructura de fitxers Sass del projecte han de seguir una estructura que repliqui les 7 capes. Els arxius han de concatenar el nom de la capa i el nom del propi arxiu, per facilitar-ne la localització:
 
-```css
+```javascript
 scss/
 main.scss
 settings/

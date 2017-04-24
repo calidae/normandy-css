@@ -427,9 +427,9 @@ Per la resta de regles, davant de qualsevol dubte la referència a seguir és la
 ***
 ### Contribution guidelines ###
 
-* Per afegir/modificar continguts, fes un fork de master i crea un Pull Request. Automàticament es notificarà al canal #css de l'Slack.
+* Per afegir/modificar continguts, fes un fork de master i crea un Pull Request. 
 
-* Per resoldre dubtes es poden utilitzar els Issues del projecte. En cas d'afegir una Issue automàticament es notificarà al canal #css de l'Slack.
+* Per resoldre dubtes es poden utilitzar els Issues del projecte.
 
 * El contingut s'escriu en present i en primera persona del plural ("Utilitzem una classe addicional" enlloc de "s'utilitza una classe addicional").
 

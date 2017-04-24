@@ -223,8 +223,8 @@ Dins d'un bloc, tots els elements són semànticament iguals.
 .c-form__input {} /* Good */
 .c-form__icon {} /* Good */
 
-.c-form.c-form__input {} /* Bad */
 div.c-form__input {} /* Bad */
+.c-form .c-form__input .c-form__icon {} /* Bad */
 .c-form__input .c-form__icon {} /* Bad */
 .c-form__input > .c-form__icon {} /* Bad */
 ```
@@ -243,10 +243,9 @@ Un modificador és una classe addicional que s'afegeix al bloc/element que modif
 ```
 ```css
 .c-form--hidden {} /* Good */
-.c-form--hidden .c-form__input {} /* Good */
 .c-form__input--border-primary {} /* Good */
 
-.c-form__input .c-form__input--border-primary {} /* Bad */
+.c-form__input.c-form__input--border-primary {} /* Bad */
 ```
 
 
@@ -284,14 +283,15 @@ Així doncs, sempre farem servir el **nombre mínim de selectors necessaris** pe
 
 ```css
 .c-block .c-block__element {} /* Bad */
-.c-block .c-block--big {} /* Bad */
 .c-block.c-block--big {} /* Bad */
+.c-block__element.c-block__element--modifier {} /* Bad */
 
 .c-block__element {} /* Good */
 .c-block--big {} /* Good */
+.c-block--big .c-block__element {} /* Good. Un dels pocs casos on el nesting té una raó de ser: en cas que un Modificador d'un Bloc afecti un Element. */
 ```
 
-Anidar l'Element o el Modificador al Bloc no aporta res excepte que evita que algun desenvolupador utilitzi un Element fora del seu Bloc. A part d'això (que és fàcilment evitable en *code reviews*) simplement augmenta l'especificitat dels selectors d'Elements sense cap necessitat i en complica l'escriptura, introduïnt més punts d'error (_Keep it short and simple_).
+Anidar l'Element o el Modificador al Bloc no aporta res. Només evita que algun desenvolupador utilitzi un Element fora del seu Bloc. A part d'això (que és fàcilment detectable en *code reviews*) simplement augmenta l'especificitat dels selectors d'Elements sense cap necessitat i en complica l'escriptura, introduïnt més punts d'error (_Keep it short and simple_).
 
 
 ***

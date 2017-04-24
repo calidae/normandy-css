@@ -182,7 +182,7 @@ Font: [The single responsibility principle applied to CSS](https://csswizardry.c
 ## Nomenclatura de classes
 L'estructura dels noms de les classes és la següent:
 
-`.[namespace]-[block]__[element]--[modificador]`
+`.[namespace]-[bloc]__[element]--[modificador]`
 
 Noti's els dos guionets baixos entre bloc i element, i els dos guionets entre element i modificador.
 
@@ -231,7 +231,7 @@ div.c-form__input {} /* Bad */
 
 
 ### Modificador ###
-Flag per blocs o per elements. Útils per canviar l'aspecte, el comportament o l'estat. Serveix per proposar versions alternatives d'un Block o un Element.
+Flag per blocs o per elements. Útils per canviar l'aspecte, el comportament o l'estat. Serveix per proposar versions alternatives d'un Bloc o un Element.
 
 Un modificador és una classe addicional que s'afegeix al bloc/element que modifica.
 

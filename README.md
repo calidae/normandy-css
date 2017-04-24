@@ -163,7 +163,7 @@ D'aquesta manera, el codi resultant és més robust i es pot reaprofitar molt m�
 <nav class="wrapper menu fixed branded">...</nav> <!-- Good -->
 ```
 
-Noti's que en aquest exemple no s'utilitzen ni Namespaces ni cap tipus de nomenclatura específica. **L'exemple només sereix com a mostra de classes de responsabilitat única**.
+Noti's que en aquest exemple no s'utilitzen ni Namespaces ni cap tipus de nomenclatura específica. **L'exemple només serveix com a mostra de classes de responsabilitat única**.
 
 Font: [The single responsibility principle applied to CSS](https://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/).
 
@@ -197,6 +197,8 @@ div.c-form {} /* Bad */
 
 *Rule of thumb*: Un Bloc no hauria de tenir mai atributs com `width`, `float` o `margin`, perquè un bloc ha de ser suficientment desacoplat de la UI com per poder-lo reaprofitar en altres contextos (i fins i tot altres projectes/webs/apps).
 
+Un bloc pot anidar-se dins d'altres blocs a nivell semàntic (HTML), però no a nivell de CSS.
+
 ### Element ###
 Part d'un bloc que no té sentit per si sol. Qualsevol element està semànticament lligat al seu bloc.
 
@@ -204,15 +206,21 @@ Dins d'un bloc, tots els elements són semànticament iguals.
 
 ```html
 <div class="c-form">
-    <div class="c-form__input"></div>
+    <div class="c-form__input">
+        <div class="c-form__icon">
+        </div>
+    </div>
     ...
 </div>
 ```
 ```css
 .c-form__input {} /* Good */
+.c-form__icon {} /* Good */
 
 .c-form.c-form__input {} /* Bad */
 div.c-form__input {} /* Bad */
+.c-form__input .c-form__icon {} /* Bad */
+.c-form__input > .c-form__icon {} /* Bad */
 ```
 
 

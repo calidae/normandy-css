@@ -1,6 +1,6 @@
 # CALIDAE CSS #
 
-Això és una primera proposta en versió alpha dels acords d'estil, nomenclatura i organització del CSS als projectes de Calidae.
+Això és una primera proposta dels acords d'estil, nomenclatura i organització del CSS als projectes de Calidae.
 
 ***
 
@@ -195,7 +195,7 @@ Encapsula un element que té sentit per si sol. Es mapeja fàcilment amb Objects
 div.c-form {} /* Bad */
 ```
 
-*Rule of thumb*: Un Bloc no hauria de tenir mai atributs com `width`, `float` o `margin`, perquè un bloc ha de ser suficientment desacoplat de la UI com per poder-lo reaprofitar en altres contextos (i fins i tot altres projectes/webs/apps).
+*Rule of thumb*: Un Bloc no hauria de tenir atributs com `width`, `float` o `margin`, perquè un bloc ha de ser suficientment desacoplat de la UI com per poder-lo reaprofitar en altres contextos (i fins i tot altres projectes/webs/apps).
 
 Un bloc pot anidar-se dins d'altres blocs a nivell semàntic (HTML), però no a nivell de CSS.
 
@@ -262,7 +262,7 @@ Amb l'ús de preprocessadors (Sass/SCSS), el nesting de CSS s'ha convertit en un
 
 Necessitar sobreescriure estils a base de nesting indica un problema d'especificitat de base. Afegir més nestings per resoldre-ho només empitjora el problema i [empitjora el rendiment](https://speakerdeck.com/jonrohan/githubs-css-performance).
 
-Per això, la recomanació és seguir la [Inception Rule](http://thesassway.com/beginner/the-inception-rule): **mai definir més de 4 nivells de nesting**. En aquest 4 nivells no entren estils com pseudoatributs (`:hover`) o media queries.
+Per això, la recomanació és seguir la [Inception Rule](http://thesassway.com/beginner/the-inception-rule): **mai definir més de 4 nivells de nesting**. En aquest 4 nivells no entren estils com pseudoatributs (`:hover`) o media queries. I si en són menys, millor.
 
 En general, una bona *thumb rule* és preguntar-se "aquest estil es pot aconseguir amb menys selectors?".
 
@@ -285,7 +285,7 @@ Així doncs, sempre farem servir el **nombre mínim de selectors necessaris** pe
 .c-block--big {} /* Good */
 ```
 
-Anidar l'Element o el Modificador al Bloc no aporta res excepte que evita que algun desenvolupador utilitzi un Element fora del seu Bloc. A part d'això (que és fàcilment evitable en *code reviews*) simplement augmenta l'especificitat dels selectors d'Elements sense cap necessitat.
+Anidar l'Element o el Modificador al Bloc no aporta res excepte que evita que algun desenvolupador utilitzi un Element fora del seu Bloc. A part d'això (que és fàcilment evitable en *code reviews*) simplement augmenta l'especificitat dels selectors d'Elements sense cap necessitat i en complica l'escriptura, introduïnt més punts d'error (_Keep it short and simple_).
 
 
 ***
@@ -294,7 +294,7 @@ Anidar l'Element o el Modificador al Bloc no aporta res excepte que evita que al
 
 ***
 ## Encapsulament de frameworks 
-Separem mitjançant brackets (`[ ]`) les classes pròpies, definides per nosaltres, de les classes que proporcionin frameworks i eines de tercers.
+Separarem mitjançant brackets (`[ ]`) les classes pròpies, definides per nosaltres, de les classes que proporcionin frameworks i eines de tercers.
 
 Definim primer les classes pròpies i posteriorment les classes de tercers.
 
@@ -313,7 +313,7 @@ Exemple:
 
 ***
 ## Estructura de fitxers 
-L'estructura de fitxers Sass del projecte han de seguir una estructura que repliqui les 7 capes. Els arxius han de concatenar el nom de la capa i el nom del propi arxiu, per facilitar-ne la localització:
+L'estructura de fitxers Sass del projecte seguiran una estructura que repliqui les 7 capes. Els arxius concatenaran el nom de la capa i el nom del propi arxiu, per facilitar-ne la localització:
 
 ```javascript
 scss/
@@ -348,7 +348,7 @@ utilities/
     ...
 ```
 
-En cas d'utilitzar una estructura atòmica per components en tot el projecte, els arxius de Components i Objects es podrien estructura conjuntament amb la resta d'arxius del Component o Object en concret. La resta d'arxius Sass seguirien l'estructura original:
+En cas d'utilitzar una estructura atòmica per components en tot el projecte, els arxius de Components i Objects s'estructuraran conjuntament amb la resta d'arxius del Component o Object en concret. La resta d'arxius Sass seguiran l'estructura original:
 
     components/
         button/
@@ -368,13 +368,13 @@ En cas d'utilitzar una estructura atòmica per components en tot el projecte, el
 
 ***
 ## No ID's 
-La recomanació és **no** estilitzar mai elements a partir del seu ID. No aporta cap avantatge que no es pugui aconseguir de maneres reusables i amb menys especificitat.
+La recomanació és que **no** estilitzarem mai elements a partir del seu ID. No aporta cap avantatge que no es pugui aconseguir de maneres reusables i amb menys especificitat.
 
 Font: [Don’t use IDs in CSS selectors?](http://oli.jp/2011/ids/)
 
 Font: [Don’t use ID selectors in CSS](http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/)
 
-Tot i no definir-ho explícitament, els atributs per Objects, Components i Utilities es defineixen sempre a nivell de classe i mai a nivell d'ID o d'element HTML.
+Tot i no definir-ho explícitament, els atributs per Objects, Components i Utilities els definirem sempre a nivell de classe i mai a nivell d'ID o d'element HTML.
 
 ***
 [*Back to top*](#markdown-header-objectius-de-la-guia)
@@ -428,6 +428,8 @@ Per la resta de regles, davant de qualsevol dubte la referència a seguir és la
 ### Contribution guidelines ###
 
 * Per afegir/modificar continguts, fes un fork de master i crea un Pull Request. Automàticament es notificarà al canal #css de l'Slack.
+
+* Per resoldre dubtes es poden utilitzar els Issues del projecte. En cas d'afegir una Issue automàticament es notificarà al canal #css de l'Slack.
 
 * El contingut s'escriu en present i en primera persona del plural ("Utilitzem una classe addicional" enlloc de "s'utilitza una classe addicional").
 

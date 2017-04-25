@@ -52,6 +52,10 @@ Això és una primera proposta dels acords d'estil, nomenclatura i organització
 ***
 
 ## Les 7 capes de CSS
+Cada projecte necessita alguna organització. Escriure qualsevol nou estil al final del fitxer converteix les coses en ingestionables i confuses per qualsevol altra persona que treballi en el projecte.
+
+La base d'aquesta guia és la categorització. Categoritzant les regles de CSS es comencen a definir patrons i podem marcar unes bones pràctiques a seguir.
+
 El CSS s'organitza en 7 capes en forma de triangle invertit:
 
 ![7 capes de CSS](images/itcss.png)

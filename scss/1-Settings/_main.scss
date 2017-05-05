@@ -12,3 +12,8 @@
  * Place component or object specific settings within its own file so they are
  * more modular and we achieve a higher separation of concerns.
  */
+
+@import "settings.global";
+@import "settings.responsive";
+@import "settings.sizes";
+@import "settings.colors";

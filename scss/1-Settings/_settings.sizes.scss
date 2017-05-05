@@ -1,0 +1,33 @@
+/* ==========================================================================
+   SIZE SETTINGS
+   ========================================================================== */
+
+/**
+ * Font-size and spacing settings. These values should be defined soon and
+ * be modified with caution.
+ */
+
+
+// Base typographical styles and baseline grid. Make sure you define these
+// values in pixels: they will converted to more appropriate units.
+$global-font-size: 16px !default;
+$global-line-height: 24px !default;
+
+
+
+
+
+// How many times larger/smaller than the default should the spacing unit
+// variants be? Make them unitless.
+$factor-tiny: 0.25 !default;
+$factor-small: 0.5 !default;
+$factor-large: 2 !default;
+$factor-huge: 4 !default;
+
+
+// This will give us variables to create spacing values such as padding and
+// margin utilities.
+$global-spacing-unit-tiny: round($global-line-height * $factor-tiny);
+$global-spacing-unit-small: round($global-line-height * $factor-small);
+$global-spacing-unit-large: round($global-line-height * $factor-large);
+$global-spacing-unit-huge: round($global-line-height * $factor-huge);

@@ -1,0 +1,18 @@
+/**
+ * OBJECTS
+ * Namespace: .o-classname
+ *
+ * Contains the implementation of various design patterns such as de famous
+ * media object. Objects are abstract, so they have no specific UI 
+ * implementation. They help us abstract out the repetitive, shared and
+ * purely structural aspects of the UI into reusable objects.
+ *
+ * The idea is to keep these cosmetic-free in order to keep them reusable
+ * across component instances and, ultimately, across projects.
+ * That's why you would want to chose agnostic names that aren't specific to
+ * the type of object. For example, choose .o-box over .o-profile-box.
+ * 
+ * Please be really careful if you need to modify any attribut of an Object.
+ * You probably shouldn't.
+ */
+ 

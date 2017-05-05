@@ -13,6 +13,7 @@
     "stylelint-disable-reason": null,
     "selector-class-pattern": null,
     "max-line-length": 80,
-    "no-missing-end-of-source-newline": null
+    "no-missing-end-of-source-newline": null,
+    "order/properties-alphabetical-order": null
   }
 }

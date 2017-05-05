@@ -1,0 +1,29 @@
+{
+  "name": "calidae-css",
+  "version": "1.0.0",
+  "description": "Calidae CSS Boilerplate",
+  "main": "scss/main.scss",
+  "scripts": {
+    "test": "stylelint scss/main.scss"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "bem",
+    "itcss",
+    "oocss",
+    "smacss",
+    "bemit",
+    "frontend",
+    "minimal",
+    "boilerplate"
+  ],
+  "author": "Calidae.com",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/calidae/calidae-css#readme",
+  "devDependencies": {
+    "stylelint": "^7.10.1",
+    "stylelint-config-sass-guidelines": "^2.1.0"
+  }
+}

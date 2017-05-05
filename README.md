@@ -437,7 +437,9 @@ Per la resta de regles, davant de qualsevol dubte la referència a seguir és la
 ***
 ### Contribution guidelines ###
 
-* Per afegir/modificar continguts, fes un fork de master i crea un Pull Request. 
+* Per afegir/modificar continguts, fes un fork de master i crea un Pull Request.
+
+* En cas de modificar els arxius del boilerplate de `scss/`, assegura't de fer córrer l'stylelint amb `npm run test` per validar la correctesa del codi.
 
 * Per resoldre dubtes es poden utilitzar els Issues del projecte.
 

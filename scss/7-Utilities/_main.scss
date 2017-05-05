@@ -1,5 +1,8 @@
+/* ==========================================================================
+   UTILITIES
+   ========================================================================== */
+
 /**
- * UTILITIES
  * Namespace: .u-classname
  *
  * The helpers, or “override” layer, should contain high-specificity selectors.
@@ -9,12 +12,11 @@
  * VERY IMPORTANT: Please keep in mind the Single Responsibility Principle
  * when defining utility classes. Every class should do only one thing.
  * Utilities should be defined once, and never need changing.
- * 
+ *
  * They are to be used as a last resort when no other CSS hooks are available,
  * or to tackle completely unique circumstances.
- * 
+ *
  * They are only one step away from inline styles, so should be used sparingly.
  * If you are using a lot of utility classes you might be able to abstract them
  * out into a reusable Component or Object.
  */
- 

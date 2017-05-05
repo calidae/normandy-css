@@ -1,0 +1,48 @@
+/* ==========================================================================
+   MATH TOOLS
+   ========================================================================== */
+
+
+/**
+ * Simple math functions.
+ *
+ * .foo {
+ *   padding: halve(20px);
+ *   margin: double($space);
+ * }
+ */
+
+
+@function quarter($value) {
+    @return $value / 4;
+}
+
+
+@function third($value) {
+    @return $value / 3;
+}
+
+
+@function halve($value) {
+    @return $value / 2;
+}
+
+
+@function double($value) {
+    @return $value * 2;
+}
+
+
+@function triple($value) {
+    @return $value * 3;
+}
+
+
+@function quadruple($value) {
+    @return $value * 4;
+}
+
+
+@function rem2px($value) {
+    @return $value / 1rem * 10px;
+}

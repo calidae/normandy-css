@@ -17,6 +17,7 @@
     "selector-class-pattern": null,
     "max-line-length": 80,
     "no-missing-end-of-source-newline": null,
-    "order/properties-alphabetical-order": null
+    "order/properties-alphabetical-order": null,
+    "rule-empty-line-before": "always-multi-line"
   }
 }

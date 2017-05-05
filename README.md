@@ -425,7 +425,11 @@ A Calidae apliquem les següents modificacions:
     "stylelint-disable-reason": null,
     "selector-class-pattern": null,
     "max-line-length": 80,
-    "no-missing-end-of-source-newline": null
+    "no-missing-end-of-source-newline": null,
+    "order/properties-alphabetical-order": null,
+    "rule-empty-line-before": "always-multi-line"
+
+En aquest mateix repositori existeix un arxiu `.stylelintrc` que pot servir com a punt de partida per a altres projectes on no es faci servir l'arquitectura CSS proporcionada.
 
 Per la resta de regles, davant de qualsevol dubte la referència a seguir és la de Sass Guidelines.
 

@@ -4,7 +4,7 @@
   "description": "Calidae CSS Boilerplate",
   "main": "scss/main.scss",
   "scripts": {
-    "test": "stylelint scss/main.scss"
+    "test": "stylelint scss/**/*.scss --syntax scss"
   },
   "keywords": [
     "css",

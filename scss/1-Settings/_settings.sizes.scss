@@ -13,7 +13,7 @@
 $global-font-size: 16px !default;
 $global-line-height: 24px !default;
 
-
+$global-spacing-unit: round($global-line-height) !default;
 
 
 
@@ -27,7 +27,7 @@ $factor-huge: 4 !default;
 
 // This will give us variables to create spacing values such as padding and
 // margin utilities.
-$global-spacing-unit-tiny: round($global-line-height * $factor-tiny);
-$global-spacing-unit-small: round($global-line-height * $factor-small);
-$global-spacing-unit-large: round($global-line-height * $factor-large);
-$global-spacing-unit-huge: round($global-line-height * $factor-huge);
+$global-spacing-unit-tiny: round($global-spacing-unit * $factor-tiny);
+$global-spacing-unit-small: round($global-spacing-unit * $factor-small);
+$global-spacing-unit-large: round($global-spacing-unit * $factor-large);
+$global-spacing-unit-huge: round($global-spacing-unit * $factor-huge);

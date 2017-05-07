@@ -1,0 +1,26 @@
+/* ==========================================================================
+   FONT-SIZE TOOLS
+   ========================================================================== */
+
+/**
+ * Mixin to add font-size to an element.
+ * It automatically converts `px` units into `rem` values and also `px` values
+ * for old IEs not supporting `rem` values.
+ *
+ * Rule of thumb: Use rem units unless you’re sure you need em units, including
+ * on font sizes. More info: https://goo.gl/BGG47K.
+ *
+ *
+ * .foo {
+ *   @include font-size();
+ * }
+ *
+ * .bar {
+ *   @include font-size(32px);
+ * }
+ */
+
+@mixin font-size($font-size: $global-font-size) {
+    font-size: $font-size;
+    font-size: ($font-size / $global-font-size) * 1rem;
+}

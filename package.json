@@ -4,7 +4,7 @@
   "description": "Calidae CSS Boilerplate",
   "main": "scss/main.scss",
   "scripts": {
-    "compile": "sass scss/main.scss",
+    "compile": "sass scss/main.scss output.css",
     "stylelint": "stylelint scss/**/*.scss --syntax scss",
     "test": "npm run stylelint && npm run compile"
   },

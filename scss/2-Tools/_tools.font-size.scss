@@ -20,7 +20,16 @@
  * }
  */
 
-@mixin font-size($font-size: $global-font-size) {
-    font-size: $font-size;
-    font-size: ($font-size / $global-font-size) * 1rem;
+@mixin font-size($font-size: $global-font-size, $important: false) {
+
+    @if ($important == true) {
+        $important: !important;
+    } @elseif ($important == false) {
+        $important: null;
+    } @else {
+        @error "`#{$important}` needs to be `true` or `false`.";
+    }
+
+    font-size: $font-size $important;
+    font-size: ($font-size / $global-font-size) * 1rem $important;
 }

@@ -15,12 +15,11 @@
  * That's why you would want to chose agnostic names that aren't specific to
  * the type of object. For example, choose .o-box over .o-profile-box.
  *
- * Please be really careful if you need to modify any attribut of an Object.
+ * Please be really careful if you need to modify any attribute of an Object.
  * You probably shouldn't.
  */
 
 @import "objects.media";
-@import "objects.flag";
 @import "objects.block";
 @import "objects.wrapper";
 @import "objects.pack";

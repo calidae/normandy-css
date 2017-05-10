@@ -5,16 +5,20 @@
 /**
  * Place any image- and text-like content side-by-side, as per:
  * https://goo.gl/MDV4HS
+ *
+ * The Flexbox version of the Media Objects allows it to behave as a flag,
+ * placing the image both at the bottom or the center of the whole element.
+ *
+ * 1. Image vertically aligned at top by default.
  */
 
 .o-media {
-    @include clearfix();
-    display: block;
+    display: flex;
+    align-items: flex-start; /* [1] */
 }
 
 
 .o-media__img {
-    float: left;
     margin-right: $global-spacing-unit;
 
     > img {
@@ -25,8 +29,7 @@
 
 
 .o-media__body {
-    overflow: hidden;
-    display: block;
+    flex: 1;
 
     &,
     > :last-child {
@@ -35,6 +38,34 @@
 
 }
 
+
+
+
+
+/* Alignment variants.
+========================================================================== */
+
+/**
+* Vertically align the image- and body-content differently.
+*/
+
+.o-media--center {
+    align-items: center;
+}
+
+
+.o-media--bottom {
+    align-items: flex-end;
+}
+
+
+/**
+* Allows media img to stretch to fit the container.
+*/
+
+.o-media--stretch {
+    align-items: stretch;
+}
 
 
 
@@ -138,9 +169,9 @@
    ========================================================================== */
 
 .o-media--reverse {
+    flex-direction: row-reverse;
 
     > .o-media__img {
-        float: right;
         margin-right: 0;
         margin-left: $global-spacing-unit;
     }

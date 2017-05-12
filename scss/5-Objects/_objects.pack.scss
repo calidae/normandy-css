@@ -1,43 +1,116 @@
 /* ==========================================================================
-   PACK OBJECT
+   PACK VERSION
    ========================================================================== */
 
 /**
-* The pack object simply causes any number of elements pack up horizontally to
-* automatically fill an equal, fluid width of their parent.
-*
-* 1. Fill all available space.
-* 2. Remove any leftover styling from lists.
-* 3. Cause children to be automatically equally sized.
-*/
+ * The pack object in a Flexbox way.
+ *
+ * 1. Fill all available space.
+ * 2. Remove any leftover styling from lists.
+ * 3. IE9 fallback.
+ */
 
 .o-pack {
     width: 100%; /* [1] */
     margin-left: 0; /* [2] */
-    display: table;
-    table-layout: fixed; /* [3] */
+    display: block; /* [3] */
+    display: flex;
 }
 
 
 /**
-* 1. Cause children to adopt table-like structure.
-* 2. Default item alignment is with the tops of each other.
+* 1. Cause children to adopt flex-like structure. Same as `1 1 0`
+* 2. Sets default spacing between flexed elements.
+* 3. Cleans the space for the last one.
 */
 
 .o-pack__item {
-    display: table-cell; /* [1] */
-    vertical-align: top; /* [2] */
+    flex: 1; /* [1] */
+    margin-right: $global-spacing-unit; /* [2] */
+
+    &:last-child {
+        margin-right: 0; /* [3] */
+    }
+}
 
 
-    /* Vertical alignment variants.
-        ===================================================================== */
 
-    .o-pack--middle > & {
-        vertical-align: middle;
+
+
+/* Vertical alignment variants.
+    ========================================================================= */
+
+.o-pack--middle {
+    align-items: center;
+}
+
+
+.o-pack--bottom {
+    align-items: flex-end;
+}
+
+
+
+
+
+/* Space variations.
+   ========================================================================== */
+
+.o-pack--flush {
+
+    > .o-pack__item {
+        margin-right: 0;
     }
 
-    .o-pack--bottom > & {
-        vertical-align: bottom;
+}
+
+.o-pack--tiny {
+
+    > .o-pack__item {
+        margin-right: $global-spacing-unit-tiny;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+}
+
+
+.o-pack--small {
+
+    > .o-pack__item {
+        margin-right: $global-spacing-unit-small;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+}
+
+
+.o-pack--large {
+
+    > .o-pack__item {
+        margin-right: $global-spacing-unit-large;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+}
+
+
+.o-pack--huge {
+
+    > .o-pack__item {
+        margin-right: $global-spacing-unit-huge;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
 }
@@ -47,37 +120,18 @@
 
 
 /* Unequal-width items.
-========================================================================== */
+   ========================================================================== */
+
+/**
+ * 1. Flex-grow to zero.
+ */
 
 .o-pack--auto {
-    table-layout: auto;
-}
 
+    > .o-pack__item {
+        flex: 0 1 auto; /* [1] */
+    }
 
-
-
-
-/* Size variants.
-========================================================================== */
-
-.o-pack--tiny {
-    border-spacing: $global-spacing-unit-tiny;
-}
-
-.o-pack--small {
-    border-spacing: $global-spacing-unit-small;
-}
-
-.o-pack--default {
-    border-spacing: $global-spacing-unit;
-}
-
-.o-pack--large {
-    border-spacing: $global-spacing-unit-large;
-}
-
-.o-pack--huge {
-    border-spacing: $global-spacing-unit-huge;
 }
 
 
@@ -85,13 +139,50 @@
 
 
 /* Reversed order packs
-========================================================================== */
+   ========================================================================== */
 
 .o-pack--reverse {
-    direction: rtl;
+    flex-direction: row-reverse;
 
     > .o-pack__item {
-        direction: ltr;
+        margin-right: 0;
+        margin-left: $global-spacing-unit;
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+
+    &.o-pack--tiny {
+
+        > .o-pack__item {
+            margin-left: $global-spacing-unit-tiny;
+        }
+
+    }
+
+    &.o-pack--small {
+
+        > .o-pack__item {
+            margin-left: $global-spacing-unit-small;
+        }
+
+    }
+
+    &.o-pack--large {
+
+        > .o-pack__item {
+            margin-left: $global-spacing-unit-large;
+        }
+
+    }
+
+    &.o-pack--huge {
+
+        > .o-pack__item {
+            margin-left: $global-spacing-unit-huge;
+        }
+
     }
 
 }

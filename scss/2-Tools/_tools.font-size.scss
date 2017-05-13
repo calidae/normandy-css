@@ -20,15 +20,7 @@
  * }
  */
 
-@mixin font-size($font-size, $line-height: auto, $baseline-modifier: 1, $important: false) {
-
-    @if (type-of($font-size) == number) {
-        @if (unit($font-size) != "px") {
-            @error "`#{$font-size}` needs to be a pixel value.";
-        }
-    } @else {
-        @error "`#{$font-size}` needs to be a number.";
-    }
+@mixin font-size($font-size: $global-font-size, $important: false) {
 
     @if ($important == true) {
         $important: !important;
@@ -38,32 +30,6 @@
         @error "`#{$important}` needs to be `true` or `false`.";
     }
 
-    // We provide a `px` fallback for old IEs not supporting `rem` values.
     font-size: $font-size $important;
-    font-size: ($font-size / $inuit-global-font-size) * 1rem $important;
-
-    @if ($line-height == "auto") {
-
-        $line-height: (ceil($font-size / $inuit-global-baseline-factor) + $baseline-modifier) * $inuit-global-baseline-factor;
-
-        @if ($line-height == $font-size) {
-            $baseline-modifier: $baseline-modifier + 1;
-            $line-height: (ceil($font-size / $inuit-global-baseline-factor) + $baseline-modifier) * $inuit-global-baseline-factor;
-        }
-
-        line-height: ceil(($line-height / $font-size) * 1000) / 1000;
-
-    }
-
-    @else {
-
-        @if (type-of($line-height) == number or $line-height == "inherit" or $line-height == "normal") {
-            line-height: $line-height $important;
-        }
-
-        @elseif ($line-height != "none" and $line-height != false) {
-            @error "D’oh! `#{$line-height}` is not a valid value for `$line-height`.";
-        }
-
-    }
+    font-size: ($font-size / $global-font-size) * 1rem $important;
 }

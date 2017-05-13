@@ -1,0 +1,226 @@
+/* ==========================================================================
+   TEST MATH TOOLS
+   ========================================================================== */
+
+@import "../scss/1-Settings/main";
+@import "../scss/2-Tools/tools.math";
+
+
+@include test-module("Math Tools") {
+
+
+    /**
+    * Halves
+    */
+
+    @include test-module("@function halve") {
+
+        @include test("returns halve when positive value is provided") {
+            $actual: halve(12);
+            $expected: 6;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns 0 when 0 provided") {
+            $actual: halve(0);
+            $expected: 0;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns halve when negative value is provided") {
+            $actual: halve(-4);
+            $expected: -2;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns decimals when result is not a natural value") {
+            $actual: halve(3);
+            $expected: 1.5;
+
+            @include assert-equal($actual, $expected);
+        }
+    }
+
+
+    /**
+    * Thirds
+    */
+
+    @include test-module("@function third") {
+
+        @include test("returns third when positive value is provided") {
+            $actual: third(12);
+            $expected: 4;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns 0 when 0 provided") {
+            $actual: third(0);
+            $expected: 0;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns third when negative value is provided") {
+            $actual: third(-3);
+            $expected: -1;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns decimals when result is not a natural value") {
+            $actual: third(1);
+            $expected: 0.33333;
+
+            @include assert-equal($actual, $expected);
+        }
+    }
+
+
+    /**
+    * Quarter
+    */
+
+    @include test-module("@function quarter") {
+
+        @include test("returns quarter when positive value is provided") {
+            $actual: quarter(12);
+            $expected: 3;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns 0 when 0 provided") {
+            $actual: quarter(0);
+            $expected: 0;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns quarter when negative value is provided") {
+            $actual: quarter(-4);
+            $expected: -1;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns decimals when result is not a natural value") {
+            $actual: quarter(1);
+            $expected: 0.25;
+
+            @include assert-equal($actual, $expected);
+        }
+    }
+
+
+    /**
+    * Double
+    */
+
+    @include test-module("@function double") {
+
+        @include test("returns double when positive value is provided") {
+            $actual: double(12);
+            $expected: 24;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns 0 when 0 provided") {
+            $actual: double(0);
+            $expected: 0;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns double when negative value is provided") {
+            $actual: double(-4);
+            $expected: -8;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns decimals when result is not a natural value") {
+            $actual: double(1.3);
+            $expected: 2.6;
+
+            @include assert-equal($actual, $expected);
+        }
+    }
+
+
+    /**
+    * Triple
+    */
+
+    @include test-module("@function triple") {
+
+        @include test("returns triple when positive value is provided") {
+            $actual: triple(12);
+            $expected: 36;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns 0 when 0 provided") {
+            $actual: triple(0);
+            $expected: 0;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns triple when negative value is provided") {
+            $actual: triple(-4);
+            $expected: -12;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns decimals when result is not a natural value") {
+            $actual: triple(1.3);
+            $expected: 3.9;
+
+            @include assert-equal($actual, $expected);
+        }
+    }
+
+
+    /**
+    * Quadruple
+    */
+
+    @include test-module("@function quadruple") {
+
+        @include test("returns quadruple when positive value is provided") {
+            $actual: quadruple(12);
+            $expected: 48;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns 0 when 0 provided") {
+            $actual: quadruple(0);
+            $expected: 0;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns quadruple when negative value is provided") {
+            $actual: quadruple(-4);
+            $expected: -16;
+
+            @include assert-equal($actual, $expected);
+        }
+
+        @include test("returns decimals when result is not a natural value") {
+            $actual: quadruple(1.3);
+            $expected: 5.2;
+
+            @include assert-equal($actual, $expected);
+        }
+    }
+}

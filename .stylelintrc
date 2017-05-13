@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "extends": "stylelint-config-sass-guidelines",
+  "ignoreFiles": [
+    "scss/3-Generic/_generic.normalize.scss"
+  ],
+  "rules": {
+    "string-quotes": "double",
+    "max-nesting-depth": 3,
+    "indentation": 4,
+    "declaration-block-properties-order": null,
+    "rule-nested-empty-line-before": null,
+    "rule-non-nested-empty-line-before": null,
+    "stylelint-disable-reason": null,
+    "selector-class-pattern": null,
+    "max-line-length": 80,
+    "no-missing-end-of-source-newline": null,
+    "order/properties-alphabetical-order": null,
+    "rule-empty-line-before": "always-multi-line"
+  }
+}

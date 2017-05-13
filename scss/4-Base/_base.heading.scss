@@ -1,0 +1,40 @@
+/* ==========================================================================
+   PAGE ELEMENT
+   ========================================================================== */
+
+/**
+ * Anything else than defining a font-size would be too much opinion for a
+ * boilerplate.
+ */
+
+$font-size-h1: 32px !default;
+$font-size-h2: 28px !default;
+$font-size-h3: 24px !default;
+$font-size-h4: 20px !default;
+$font-size-h5: 18px !default;
+$font-size-h6: 16px !default;
+
+
+h1 {
+    @include font-size($font-size-h1);
+}
+
+h2 {
+    @include font-size($font-size-h2);
+}
+
+h3 {
+    @include font-size($font-size-h3);
+}
+
+h4 {
+    @include font-size($font-size-h4);
+}
+
+h5 {
+    @include font-size($font-size-h5);
+}
+
+h6 {
+    @include font-size($font-size-h6);
+}

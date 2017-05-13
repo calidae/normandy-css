@@ -1,0 +1,90 @@
+/* ==========================================================================
+   COVER OBJECT
+   ========================================================================== */
+
+/**
+ * Place any text as a cover from an image.
+ *
+ * 1. IE9 fallback.
+ * 2. We set a relative position to create a new context for.
+ * 3. Vertically-center on the Cross-axis.
+ * 4. Horizontally-center on the Main-axis.
+ */
+
+.o-cover {
+    display: block; /* [1] */
+    display: flex;
+    position: relative; /* [2] */
+    align-items: center; /* [3] */
+    justify-content: center; /* [4] */
+}
+
+
+.o-cover__img {
+    max-width: 100%;
+}
+
+
+/**
+ * 1. Removes the body from the flow and places it inside of the image element.
+ */
+
+.o-cover__body {
+    position: absolute; /* [1] */
+    padding: $global-spacing-unit;
+
+
+    /* Size variants.
+        ===================================================================== */
+
+    .o-cover--flush > & {
+        padding: 0;
+    }
+
+    .o-cover--tiny > & {
+        padding: $global-spacing-unit-tiny;
+    }
+
+    .o-cover--small > & {
+        padding: $global-spacing-unit-small;
+    }
+
+    .o-cover--large > & {
+        padding: $global-spacing-unit-large;
+    }
+
+    .o-cover--huge > & {
+        padding: $global-spacing-unit-huge;
+    }
+
+}
+
+
+
+
+
+/* Alignment variants.
+========================================================================== */
+
+/**
+* Vertically align the image- and body-content differently.
+*/
+
+.o-cover--top {
+    align-items: flex-start;
+}
+
+
+.o-cover--bottom {
+    align-items: flex-end;
+}
+
+
+.o-cover--left {
+    justify-content: flex-start;
+}
+
+
+.o-cover--right {
+    justify-content: flex-end;
+}

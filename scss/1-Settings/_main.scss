@@ -1,0 +1,18 @@
+/* ==========================================================================
+   SETTINGS
+   ========================================================================== */
+
+/**
+ * This layer defines all the global variables and configuration settings.
+ * Please notice that these are global scoped variables, such as font sizes,
+ * colors, responsive breakpoints.
+ *
+ * Try to keep every file short and clean.
+ *
+ * Place component or object specific settings within its own file so they are
+ * more modular and we achieve a higher separation of concerns.
+ */
+
+@import "settings.global";
+@import "settings.sizes";
+@import "settings.colors";

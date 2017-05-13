@@ -68,7 +68,7 @@ Les capes són les següents:
 
 * **Generic**: reset/normalització d'estils, box-sizing, etc. És la primera capa que genera CSS compilat.
 
-* **Elements**: definicions d'estils per elements HTML purs (H1, A, TABLE, etc). Aquests elements tenen estils per defecte del navegador, així que es poden redefinir aquí.
+* **Base**: estils base, o sigui, els estils per elements HTML purs (H1, A, TABLE, etc). Aquests elements tenen estils per defecte del navegador, així que es poden redefinir aquí. Habitualment serà la primera capa que genera CSS que personalitzarem en un projecte.
 
 * **Objects**: Selectors basats en classes que defineixen patrons de disseny sense estil, abstractes, com per exemple el [Media Object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) o el [Nav](https://csswizardry.com/2011/09/the-nav-abstraction/). Aquests objects estan basats en [OOCSS, Object Oriented CSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/). Modificar alguna propietat CSS d'un Object és una acció delicada que probablement tingui conseqüències més enllà de la modificació d'una instància concreta.
 
@@ -186,15 +186,15 @@ Font: [The single responsibility principle applied to CSS](https://csswizardry.c
 ## Nomenclatura de classes
 L'estructura dels noms de les classes és la següent:
 
-`.[namespace]-[bloc]__[element]--[modificador]`
+`.[namespace]-[block]__[element]--[modifier]`
 
-Noti's els dos guionets baixos entre bloc i element, i els dos guionets entre element i modificador.
+Noti's els dos guionets baixos entre Block i Element, i els dos guionets entre Element i Modifier.
 
-Basat en la metodologia [BEM](http://bem.info/), aquesta estructura defineix tres ítems bàsics: **Blocs**, **Elements** i **Modificadors**.
+Basat en la metodologia [BEM](http://bem.info/), aquesta estructura defineix tres ítems bàsics: **Blocks**, **Elements** i **Modifier**.
 
 
-### Bloc ###
-Encapsula un element que té sentit per si sol. Es mapeja fàcilment amb Objects i Components. Els blocs es poden anidar i interactuar amb altres blocs, però no tenen precedències ni herències entre ells.
+### Block ###
+Encapsula un component de la UI que té sentit per si sol. Es mapeja fàcilment amb Objects i Components. Els Blocks es poden anidar i interactuar amb altres Blocks, però no tenen precedències ni herències entre ells (o sigui, un Block no hauria de dependre d'un altre per aparèixer a la UI).
 
 ```html
 <div class="c-form">...</div>
@@ -205,14 +205,12 @@ Encapsula un element que té sentit per si sol. Es mapeja fàcilment amb Objects
 div.c-form {} /* Bad */
 ```
 
-*Rule of thumb*: Un Bloc no hauria de tenir atributs com `width`, `float` o `margin`, perquè un bloc ha de ser suficientment desacoplat de la UI com per poder-lo reaprofitar en altres contextos (i fins i tot altres projectes/webs/apps).
-
-Un bloc pot anidar-se dins d'altres blocs a nivell semàntic (HTML), però no a nivell de CSS.
+Un Block pot anidar-se dins d'altres Blocks a nivell semàntic (HTML), però no a nivell de CSS.
 
 ### Element ###
-Part d'un bloc que no té sentit per si sol. Qualsevol element està semànticament lligat al seu bloc.
+Part d'un Block que no té sentit per si sol. Qualsevol element està semànticament lligat al seu Block.
 
-Dins d'un bloc, tots els elements són semànticament iguals.
+Dins d'un Block, tots els elements són semànticament iguals.
 
 ```html
 <div class="c-form">
@@ -234,10 +232,10 @@ div.c-form__input {} /* Bad */
 ```
 
 
-### Modificador ###
-Flag per blocs o per elements. Útils per canviar l'aspecte, el comportament o l'estat. Serveix per proposar versions alternatives d'un Bloc o un Element.
+### Modifier ###
+Flag per Blocks o per Elements. Útils per canviar l'aspecte, el comportament o l'estat. Serveix per proposar versions alternatives d'un Block o un Elements.
 
-Un modificador és una classe addicional que s'afegeix al bloc/element que modifica.
+Un Modifier és una classe addicional.
 
 ```html
 <div class="c-form c-form--hidden">
@@ -283,19 +281,19 @@ article > p:first-child {} /* still bad */
 .text-intro {} /* good */
 ```
 
-Així doncs, sempre farem servir el **nombre mínim de selectors necessaris** per estilitzar qualsevol element. Això aplica, per exemple, al definir estils per un Element o un Modificador, on no afegim la class del Bloc que el conté:
+Així doncs, sempre farem servir el **nombre mínim de selectors necessaris** per estilitzar qualsevol element. Això aplica, per exemple, al definir estils per un Element o un Modifier, on no afegim la class del Block que el conté:
 
 ```css
 .c-block .c-block__element {} /* Bad */
-.c-block.c-block--big {} /* Bad */
+.c-block.c-block--modifier {} /* Bad */
 .c-block__element.c-block__element--modifier {} /* Bad */
 
 .c-block__element {} /* Good */
-.c-block--big {} /* Good */
-.c-block--big .c-block__element {} /* Good. Un dels pocs casos on el nesting té una raó de ser: en cas que un Modificador d'un Bloc afecti un Element. */
+.c-block--modifier {} /* Good */
+.c-block--modifier .c-block__element {} /* Good. Un dels pocs casos on el nesting té una raó de ser: en cas que un Modifier d'un Bloc afecti un Element. */
 ```
 
-Anidar l'Element o el Modificador al Bloc no aporta res. Només evita que algun desenvolupador utilitzi un Element fora del seu Bloc. A part d'això (que és fàcilment detectable en *code reviews*) simplement augmenta l'especificitat dels selectors d'Elements sense cap necessitat i en complica l'escriptura, introduïnt més punts d'error (_Keep it short and simple_).
+Anidar l'Element o el Modifier al Block no aporta res. Només evita que algun desenvolupador utilitzi un Element fora del seu Block. A part d'això (que és fàcilment detectable en *code reviews*) simplement augmenta l'especificitat dels selectors d'Elements sense cap necessitat i en complica l'escriptura, introduïnt més punts d'error (_Keep it short and simple_).
 
 
 ***
@@ -338,10 +336,10 @@ generic/
     _generic.normalize.scss /* NormalizeCSS */
     _generic.box-sizing.scss /* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
     ...
-elements/
-    _elements.headings.scss /* h1{}, h2{}, h3{}... */
-    _elements.images.scss /* img{} */
-    _elements.page.scss /* html{} */
+base/
+    _base.headings.scss /* h1{}, h2{}, h3{}... */
+    _base.images.scss /* img{} */
+    _base.page.scss /* html{} */
     ...
 objects/
     _objects.media.scss /* .o-media{}, .o-media__img{}... */
@@ -425,7 +423,11 @@ A Calidae apliquem les següents modificacions:
     "stylelint-disable-reason": null,
     "selector-class-pattern": null,
     "max-line-length": 80,
-    "no-missing-end-of-source-newline": null
+    "no-missing-end-of-source-newline": null,
+    "order/properties-alphabetical-order": null,
+    "rule-empty-line-before": "always-multi-line"
+
+En aquest mateix repositori existeix un arxiu `.stylelintrc` que pot servir com a punt de partida per a altres projectes on no es faci servir l'arquitectura CSS proporcionada.
 
 Per la resta de regles, davant de qualsevol dubte la referència a seguir és la de Sass Guidelines.
 
@@ -437,7 +439,9 @@ Per la resta de regles, davant de qualsevol dubte la referència a seguir és la
 ***
 ### Contribution guidelines ###
 
-* Per afegir/modificar continguts, fes un fork de master i crea un Pull Request. 
+* Per afegir/modificar continguts, fes un fork de master i crea un Pull Request.
+
+* En cas de modificar els arxius del boilerplate de `scss/`, assegura't de fer córrer `npm run test` per validar la correctesa del codi tant a nivell d'estil (Stylelint) com per compilar-lo en un fitxer CSS i evitar errors.
 
 * Per resoldre dubtes es poden utilitzar els Issues del projecte.
 

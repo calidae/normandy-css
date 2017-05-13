@@ -1,0 +1,179 @@
+/* ==========================================================================
+   MEDIA OBJECT
+   ========================================================================== */
+
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * https://goo.gl/MDV4HS
+ *
+ * The Flexbox version of the Media Objects allows it to behave as a flag,
+ * placing the image both at the bottom or the center of the whole element.
+ *
+ * 1. Image vertically aligned at top by default.
+ */
+
+.o-media {
+    display: flex;
+    align-items: flex-start; /* [1] */
+}
+
+
+.o-media__img {
+    margin-right: $global-spacing-unit;
+
+    > img {
+        display: block;
+    }
+
+}
+
+
+.o-media__body {
+    flex: 1;
+
+    &,
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+
+
+/* Alignment variants.
+========================================================================== */
+
+/**
+* Vertically align the image- and body-content differently.
+*/
+
+.o-media--center {
+    align-items: center;
+}
+
+
+.o-media--bottom {
+    align-items: flex-end;
+}
+
+
+/**
+* Allows media img to stretch to fit the container.
+*/
+
+.o-media--stretch {
+    align-items: stretch;
+}
+
+
+
+
+/* Size variants.
+   ========================================================================== */
+
+/**
+ * Modify the amount of space between our image and our text. We also have
+ * reversible options for all available sizes.
+ */
+
+
+/* Gutterless media objects.
+  ========================================================================== */
+
+.o-media--flush {
+
+    > .o-media__img {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+}
+
+
+.o-media--tiny {
+
+    > .o-media__img {
+        margin-right: $global-spacing-unit-tiny;
+    }
+
+    &.o-media--reverse {
+
+        > .o-media__img {
+            margin-right: 0;
+            margin-left: $global-spacing-unit-tiny;
+        }
+
+    }
+
+}
+
+
+.o-media--small {
+
+    > .o-media__img {
+        margin-right: $global-spacing-unit-small;
+    }
+
+    &.o-media--reverse {
+
+        > .o-media__img {
+            margin-right: 0;
+            margin-left: $global-spacing-unit-small;
+        }
+
+    }
+
+}
+
+
+.o-media--large {
+
+    > .o-media__img {
+        margin-right: $global-spacing-unit-large;
+    }
+
+    &.o-media--reverse {
+
+        > .o-media__img {
+            margin-right: 0;
+            margin-left: $global-spacing-unit-large;
+        }
+
+    }
+
+}
+
+
+.o-media--huge {
+
+    > .o-media__img {
+        margin-right: $global-spacing-unit-huge;
+    }
+
+    &.o-media--reverse {
+
+        > .o-media__img {
+            margin-right: 0;
+            margin-left: $global-spacing-unit-huge;
+        }
+
+    }
+
+}
+
+
+
+/* Reversed media objects.
+   ========================================================================== */
+
+.o-media--reverse {
+    flex-direction: row-reverse;
+
+    > .o-media__img {
+        margin-right: 0;
+        margin-left: $global-spacing-unit;
+    }
+
+}

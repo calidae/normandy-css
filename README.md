@@ -2,6 +2,17 @@
 
 Això és una primera proposta dels acords d'estil, nomenclatura i organització del CSS als projectes de Calidae.
 
+Oberta a modificacions! Qualsevol aportació serà molt benvinguda.
+
+***
+
+## Què conté aquest repositori? ##
+
+* **Arxiu `README.md`** amb el contingut teòric de la guia.
+* **Arxiu `.stylelintrc`** amb la implementació dels lintings d'estil pel CSS.
+* **Carpeta `scss/`** amb el boilerplate de fitxers Sass per desenvolupar projectes seguint les directrius de la guia.
+* **Carpeta `demo/`** amb la implementació dels Objects inclosos en el projecte. Consultar la guia per entrendre què són i com s'utilitzen els Objects.
+
 ***
 
 ### Objectius de la guia ###
@@ -342,13 +353,12 @@ base/
     _base.page.scss /* html{} */
     ...
 objects/
-    _objects.media.scss /* .o-media{}, .o-media__img{}... */
-    _objects.layout.scss /* .o-layout{}, .o-layout__item{}... */
-    _objects.island.scss
-    _objects.flag.scss
+    _objects.media.scss /* .o-media{}... */
+    _objects.layout.scss /* .o-layout{}... */
+    _objects.pack.scss /* .o-pack{}... */
     ...
 components/
-    _components.button.scss /* .c-btn{}, .c-btn--large{}... */
+    _components.button.scss /* .c-button{}... */
     ...
 utilities/
     _utilities.print.scss /* @media print {}... */

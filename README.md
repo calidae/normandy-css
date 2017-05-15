@@ -1,8 +1,8 @@
-# CALIDAE CSS #
+# CSS Normandy #
 
-Això és una primera proposta dels acords d'estil, nomenclatura i organització del CSS als projectes de Calidae.
+CSS Normandy és una proposta d'acords d'arquitectura, nomenclatura i organització del CSS als projectes de Calidae.
 
-Oberta a modificacions! Qualsevol aportació serà molt benvinguda.
+Obert a modificacions! Qualsevol aportació serà molt benvinguda.
 
 ***
 

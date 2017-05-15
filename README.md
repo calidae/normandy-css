@@ -39,27 +39,27 @@ Obert a modificacions! Qualsevol aportació serà molt benvinguda.
 
 ## Índex ###
 
-1. [Les 7 capes de CSS](#markdown-header-les-7-capes-de-css)
+1. [Les 7 capes de CSS](#les-7-capes-de-css)
 
-2. [Namespaces](#markdown-header-namespaces)
+2. [Namespaces](#namespaces)
 
-3. [Single responsibility](#markdown-header-single-responsibility)
+3. [Single responsibility](#single-responsibility)
 
-4. [Nomenclatura de classes](#markdown-header-nomenclatura-de-classes)
+4. [Nomenclatura de classes](#nomenclatura-de-classes)
 
-5. [Nesting](#markdown-header-nesting)
+5. [Nesting](#nesting)
 
-6. [Encapsulament de frameworks](#markdown-header-encapsulament-de-frameworks)
+6. [Encapsulament de frameworks](#encapsulament-de-frameworks)
 
-7. [Estructura de fitxers](#markdown-header-estructura-de-fitxers)
+7. [Estructura de fitxers](#estructura-de-fitxers)
 
-8. [No ID's](#markdown-header-no-id)
+8. [No ID's](#no-id)
 
-9. [Media Queries](#markdown-header-media-queries)
+9. [Media Queries](#media-queries)
 
-10. [Grid](#markdown-header-grid)
+10. [Grid](#grid)
 
-111. [CSS Linting](#markdown-header-css-linting)
+111. [CSS Linting](#css-linting)
 
 ***
 
@@ -131,7 +131,7 @@ A diferència dels Objects, els Components no són abstraccions de patrons de di
 
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 
 ***
@@ -169,7 +169,7 @@ Excepte el prefix `.js`, noti's que els altres tres prefixos corresponen als tre
 
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 
 ***
@@ -191,7 +191,7 @@ Font: [The single responsibility principle applied to CSS](https://csswizardry.c
 
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 
 ***
@@ -272,7 +272,7 @@ Un altre benefici afegit de BEM és que millora el rendiment de renderitzat del 
 
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 
 ***
@@ -309,7 +309,7 @@ Anidar l'Element o el Modifier al Block no aporta res. Només evita que algun de
 
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 
 ***
@@ -329,7 +329,7 @@ Exemple:
 
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 ***
 ## Estructura de fitxers 
@@ -382,7 +382,7 @@ En cas d'utilitzar una estructura atòmica per components en tot el projecte, el
 
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 
 ***
@@ -396,7 +396,7 @@ Font: [Don’t use ID selectors in CSS](http://screwlewse.com/2010/07/dont-use-i
 Tot i no definir-ho explícitament, els atributs per Objects, Components i Utilities els definirem sempre a nivell de classe i mai a nivell d'ID o d'element HTML.
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 
 ***
@@ -405,7 +405,7 @@ Fill me.
 
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 
 ***
@@ -414,7 +414,7 @@ Fill me.
 
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 
 ***
@@ -444,7 +444,7 @@ Per la resta de regles, davant de qualsevol dubte la referència a seguir és la
 
 
 ***
-[*Back to top*](#markdown-header-objectius-de-la-guia)
+[*Back to top*](#objectius-de-la-guia)
 
 
 ***

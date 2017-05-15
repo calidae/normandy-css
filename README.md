@@ -11,6 +11,7 @@ Oberta a modificacions! Qualsevol aportació serà molt benvinguda.
 * **Arxiu `README.md`** amb el contingut teòric de la guia.
 * **Arxiu `.stylelintrc`** amb la implementació dels lintings d'estil pel CSS.
 * **Carpeta `scss/`** amb el boilerplate de fitxers Sass per desenvolupar projectes seguint les directrius de la guia.
+* **Carpeta `test/`** amb els testos unitaris del boilerplate.
 * **Carpeta `demo/`** amb la implementació dels Objects inclosos en el projecte. Consultar la guia per entrendre què són i com s'utilitzen els Objects.
 
 ***
@@ -451,10 +452,8 @@ Per la resta de regles, davant de qualsevol dubte la referència a seguir és la
 
 * Per afegir/modificar continguts, fes un fork de master i crea un Pull Request.
 
-* En cas de modificar els arxius del boilerplate de `scss/`, assegura't de fer córrer `npm run test` per validar la correctesa del codi tant a nivell d'estil (Stylelint) com per compilar-lo en un fitxer CSS i evitar errors.
+* En cas de modificar els arxius del boilerplate de `scss/`, assegura't de fer córrer `npm test` per validar la correctesa del codi tant a nivell d'estil (Stylelint) com per passar els testos unitaris. Utilitza `npm run sass` per compilar el CSS si necessites utilitzar l'output per comprovar modificacions.
 
 * Per resoldre dubtes es poden utilitzar els Issues del projecte.
-
-* El contingut s'escriu en present i en primera persona del plural ("Utilitzem una classe addicional" enlloc de "s'utilitza una classe addicional").
 
 * El contingut de la guia s'escriu en Markdown: [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo).

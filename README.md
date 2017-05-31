@@ -4,13 +4,10 @@ Normandy és un boilerplate de Sass i un acord per organitzar, desenvolupar i ma
 
 Està construït sobre els principis d'ITCSS, BEM i OOCSS.
 
----
-
 ## Documentació
 
 La documentació es pot consultar al [Gitbook de Normandy](https://afontcu.gitbooks.io/normandy/).
 
----
 
 ## Què conté aquest repositori?
 
@@ -18,8 +15,6 @@ La documentació es pot consultar al [Gitbook de Normandy](https://afontcu.gitbo
 * **Carpeta `test/`** amb els testos unitaris del boilerplate.
 * **Carpeta `demo/`** amb la implementació dels Objects inclosos en el projecte. Consultar la guia per entrendre què són i com s'utilitzen els Objects.
 * **Arxiu `.stylelintrc`** amb la implementació dels lintings d'estil pel CSS.
-
----
 
 ## Contributing
 

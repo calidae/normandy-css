@@ -40,3 +40,8 @@
 @function quadruple($value) {
     @return $value * 4;
 }
+
+
+@function rem2px($value) {
+    @return $value / 1rem * 10px;
+}

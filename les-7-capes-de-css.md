@@ -10,19 +10,19 @@ El CSS s'organitza en 7 capes en forma de triangle invertit:
 
 Les capes són les següents:
 
-* **Settings**: variables globals de configuració, definició de colors, etc.
+* **1-Settings**: variables globals de configuració, definició de colors, etc.
 
-* **Tools**: mixins i funcions globals. És important que no existeixi cap output de CSS en aquestes dues primeres capes \(_i.e._ un projecte amb només Settings i Tools hauria de generar un arxiu CSS buit\).
+* **2-Tools**: mixins i funcions globals. És important que no existeixi cap output de CSS en aquestes dues primeres capes \(_i.e._ un projecte amb només Settings i Tools hauria de generar un arxiu CSS buit\).
 
-* **Generic**: reset/normalització d'estils, box-sizing, etc. És la primera capa que genera CSS compilat.
+* **3-Generic**: reset/normalització d'estils, box-sizing, etc. És la primera capa que genera CSS compilat.
 
-* **Base**: estils base, o sigui, els estils per elements HTML purs \(H1, A, TABLE, etc\). Aquests elements tenen estils per defecte del navegador, així que es poden redefinir aquí. Habitualment serà la primera capa que genera CSS que personalitzarem en un projecte.
+* **4-Base**: estils base, o sigui, els estils per elements HTML purs \(H1, A, TABLE, etc\). Aquests elements tenen estils per defecte del navegador, així que es poden redefinir aquí. Habitualment serà la primera capa que genera CSS que personalitzarem en un projecte.
 
-* **Objects**: Selectors basats en classes que defineixen patrons de disseny sense estil, abstractes, com per exemple el [Media Object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) o el [Nav](https://csswizardry.com/2011/09/the-nav-abstraction/). Aquests objects estan basats en [OOCSS, Object Oriented CSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/). Modificar alguna propietat CSS d'un Object és una acció delicada que probablement tingui conseqüències més enllà de la modificació d'una instància concreta.
+* **5-Objects**: Selectors basats en classes que defineixen patrons de disseny sense estil, abstractes, com per exemple el [Media Object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) o el [Nav](https://csswizardry.com/2011/09/the-nav-abstraction/). Aquests objects estan basats en [OOCSS, Object Oriented CSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/). Modificar alguna propietat CSS d'un Object és una acció delicada que probablement tingui conseqüències més enllà de la modificació d'una instància concreta.
 
-* **Components**: components específics de la UI. Aquí és on es desenvolupa la gran majoria de la feina en cada projecte. Els components d'una interfície acostumen a estar compostos d'Objectes i Components. Modificar un component no ha de tenir conseqüències fora del context que estiguem desenvolupant.
+* **6-Components**: components específics de la UI. Aquí és on es desenvolupa la gran majoria de la feina en cada projecte. Els components d'una interfície acostumen a estar compostos d'Objectes i Components. Modificar un component no ha de tenir conseqüències fora del context que estiguem desenvolupant.
 
-* **Utilities**: classes d'utilitat i helpers amb la capacitat de sobreescriure qualsevol regla definida prèviament en el triangle, e.g. classes per amagar contingut. Probablement utilitzin `!important` en les seves definicions.
+* **7-Utilities**: classes d'utilitat i helpers amb la capacitat de sobreescriure qualsevol regla definida prèviament en el triangle, e.g. classes per amagar contingut. Probablement utilitzin `!important` en les seves definicions.
 
 La forma de triangle mostra com els estils generats s'ordenen: d'estils genèrics a explícits, de poc específics a més específics, i des de globals a atòmics.
 
@@ -40,29 +40,7 @@ Font: [Manage large CSS projects with ITCSS](http://www.creativebloq.com/web-des
 
 Font: [ITCSS: Scalable and Mantainable CSS Architecture](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
 
+## 
 
 
-## Què són els Objects i com funcionen: Single Responsibility Principle i Open/Closed Principle
-
-Val la pena dedicar unes línies a què són els Objects i com es diferencien dels Components.
-
-Els Objects són _abstraccions_ de disseny, és a dir, no estan lligats a una maquetació concreta i només responen a un patró de disseny reutilitzable.
-
-Els Objects serveixen principalment per dos objectius:
-
-1. **Separen l'estructura de la vista**. L'estructura i el posicionament són tasques dels Objects, mentre que les característiques visuals són responsabilitat dels Components.
-
-2. **Separen els contenidors dels continguts**. No cal imitar l'estructura de l'HTML al CSS. És molt més útil definir classes que descriuen l'ús d'un tag HTML.
-
-Dels 5 [principis SOLID](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design), els Objects en segueixen bàsicament dos:
-
-* **Single-responsibility Principle**. Un Object té una responsabilitat i cap altra, amb els beneficis que això comporta de facilitat de manteniment i extensibilitat.
-
-  Font: [The single responsibility principle applied to CSS](https://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/).
-
-* **Open-Closed Principle**. Un Object està obert a extensions i tancat a modificacions. Mai s'ha de modificar un Object: si un Object no encaixa a la implementació d'un element de la UI, simplement no s'ha de fer servir.
-
-  Font: [The open/closed principle applied to CSS](https://csswizardry.com/2012/06/the-open-closed-principle-applied-to-css/).
-
-A diferència dels Objects, els Components no són abstraccions de patrons de disseny sinó implementacions concretes de la UI.
 

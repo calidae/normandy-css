@@ -20,7 +20,7 @@ Les capes són les següents:
 
 * **5-Objects**: Selectors basats en classes que defineixen patrons de disseny sense estil, abstractes, com per exemple el [Media Object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) o el [Nav](https://csswizardry.com/2011/09/the-nav-abstraction/). Aquests objects estan basats en [OOCSS, Object Oriented CSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/). Modificar alguna propietat CSS d'un Object és una acció delicada que probablement tingui conseqüències més enllà de la modificació d'una instància concreta.
 
-* **6-Components**: components específics de la UI. Aquí és on es desenvolupa la gran majoria de la feina en cada projecte. Els components d'una interfície acostumen a estar compostos d'Objectes i Components. Modificar un component no ha de tenir conseqüències fora del context que estiguem desenvolupant.
+* **6-Components**: components específics de la UI. Aquí és on es desenvolupa la gran majoria de la feina en cada projecte. Els components d'una interfície acostumen a estar compostos d'Objectes i Components. Modificar un component no té conseqüències fora del context que estiguem desenvolupant.
 
 * **7-Utilities**: classes d'utilitat i helpers amb la capacitat de sobreescriure qualsevol regla definida prèviament en el triangle, e.g. classes per amagar contingut. Probablement utilitzin `!important` en les seves definicions.
 
@@ -34,7 +34,7 @@ Tot el CSS queda ordenat, doncs, segons aquestes tres mètriques:
 
 2. **De baixa a alta especificitat**. Els selectors amb menys especificitat apareixen més a prop de l'inici del CSS, i l'especificitat va augmentant progressivament a mida que avancem en el codi. D'aquesta manera evitem "guerres d'especificitat" tan com sigui possible. L'especificitat sempre creix cap avall.
 
-3. **D'ampli espectre a localitzat**. Selectors del principi del CSS afecten àmpliament al DOM, i cada vegada els selectors afectaran a elements més concrets.
+3. **D'ampli espectre a localitzat**. Selectors del principi del CSS afecten àmpliament al DOM, i a cada capa els selectors afectaran a elements més concrets.
 
 Font: [Manage large CSS projects with ITCSS](http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528)
 

@@ -4,87 +4,79 @@
 
 /**
  * Place any text as a cover from an image.
- *
- * 1. IE9 fallback.
- * 2. We set a relative position to create a new context for.
- * 3. Vertically-center on the Cross-axis.
- * 4. Horizontally-center on the Main-axis.
  */
 
 .o-cover {
-    display: block; /* [1] */
-    display: flex;
-    position: relative; /* [2] */
-    align-items: center; /* [3] */
-    justify-content: center; /* [4] */
+    display: block;
 }
 
 
 .o-cover__img {
     max-width: 100%;
+    display: flex;
 }
 
 
 /**
- * 1. Removes the body from the flow and places it inside of the image element.
+ * 1. Center the body into the parent element. More info about `margin: auto`
+ *    https://hackernoon.com/flexbox-s-best-kept-secret-bd3d892826b6
  */
 
 .o-cover__body {
-    position: absolute; /* [1] */
+    margin: auto; /* 1 */
     padding: $global-spacing-unit;
+
+
+
 
 
     /* Size variants.
         ===================================================================== */
 
-    .o-cover--flush > & {
+    .o-cover--flush & {
         padding: 0;
     }
 
-    .o-cover--tiny > & {
+    .o-cover--tiny & {
         padding: $global-spacing-unit-tiny;
     }
 
-    .o-cover--small > & {
+    .o-cover--small & {
         padding: $global-spacing-unit-small;
     }
 
-    .o-cover--large > & {
+    .o-cover--large & {
         padding: $global-spacing-unit-large;
     }
 
-    .o-cover--huge > & {
+    .o-cover--huge & {
         padding: $global-spacing-unit-huge;
     }
 
-}
 
 
 
 
+    /* Alignment variants.
+    ========================================================================= */
 
-/* Alignment variants.
-========================================================================== */
+    /**
+    * Vertically align the image- and body-content differently.
+    */
 
-/**
-* Vertically align the image- and body-content differently.
-*/
+    .o-cover--top & {
+        margin-top: 0;
+    }
 
-.o-cover--top {
-    align-items: flex-start;
-}
+    .o-cover--bottom & {
+        margin-bottom: 0;
+    }
 
+    .o-cover--left & {
+        margin-left: 0;
+    }
 
-.o-cover--bottom {
-    align-items: flex-end;
-}
-
-
-.o-cover--left {
-    justify-content: flex-start;
-}
-
-
-.o-cover--right {
-    justify-content: flex-end;
+    .o-cover--right & {
+        margin-right: 0;
+    }
 }

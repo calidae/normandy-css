@@ -2,14 +2,14 @@
 
 * [Introduction](README.md)
 * [Les 7 capes de CSS](les-7-capes-de-css.md)
+* [Sobre els Objects](sobre-els-objects.md)
 * [Namespaces](namespaces.md)
-* [Single Responsibility Principle](single-responsibility-principle.md)
 * [Nomenclatura BEM](nomenclatura-bem.md)
+* [Estructura de fitxers](estructura-de-fitxers.md)
 * [Nesting](nesting.md)
 * [Encapsulament de frameworks](encapsulament-de-frameworks.md)
-* [Estructura de fitxers](estructura-de-fitxers.md)
 * [No ID's](no-ids.md)
 * [Media Queries](media-queries.md)
 * [Grid](grid.md)
-* [CSS Linting](css-linting.md)
+* [Sobre els Objects](sobre-els-objects.md)
 

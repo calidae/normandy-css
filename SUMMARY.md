@@ -11,5 +11,4 @@
 * [No ID's](no-ids.md)
 * [Media Queries](media-queries.md)
 * [Grid](grid.md)
-* [Sobre els Objects](sobre-els-objects.md)
 

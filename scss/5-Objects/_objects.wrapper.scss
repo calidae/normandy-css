@@ -9,12 +9,12 @@
 $wrapper-width: 1200px !default;
 
 .o-wrapper {
-    @include clearfix();
-    padding-right: $global-spacing-unit;
-    padding-left: $global-spacing-unit;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: $wrapper-width;
+  @include clearfix();
+  padding-right: $global-spacing-unit;
+  padding-left: $global-spacing-unit;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $wrapper-width;
 }
 
 
@@ -25,21 +25,21 @@ $wrapper-width: 1200px !default;
    ========================================================================== */
 
 .o-wrapper--tiny {
-    padding-right: $global-spacing-unit-tiny;
-    padding-left: $global-spacing-unit-tiny;
+  padding-right: $global-spacing-unit-tiny;
+  padding-left: $global-spacing-unit-tiny;
 }
 
 .o-wrapper--small {
-    padding-right: $global-spacing-unit-small;
-    padding-left: $global-spacing-unit-small;
+  padding-right: $global-spacing-unit-small;
+  padding-left: $global-spacing-unit-small;
 }
 
 .o-wrapper--large {
-    padding-right: $global-spacing-unit-large;
-    padding-left: $global-spacing-unit-large;
+  padding-right: $global-spacing-unit-large;
+  padding-left: $global-spacing-unit-large;
 }
 
 .o-wrapper--huge {
-    padding-right: $global-spacing-unit-huge;
-    padding-left: $global-spacing-unit-huge;
+  padding-right: $global-spacing-unit-huge;
+  padding-left: $global-spacing-unit-huge;
 }

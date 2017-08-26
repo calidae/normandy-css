@@ -23,12 +23,12 @@
  */
 
 .o-grid {
-    display: flex;
-    list-style: none; /* [1] */
-    margin: 0; /* [2] */
-    padding: 0; /* [2] */
-    margin-left: -1 * $global-spacing-unit; /* [3] */
-    flex-flow: row wrap; /* [4] */
+  display: flex;
+  list-style: none; /* [1] */
+  margin: 0; /* [2] */
+  padding: 0; /* [2] */
+  margin-left: -1 * $global-spacing-unit; /* [3] */
+  flex-flow: row wrap; /* [4] */
 }
 
 
@@ -39,8 +39,8 @@
  */
 
 .o-grid__item {
-    flex: 0 0 auto; /* [1] */
-    padding-left: $global-spacing-unit; /* [2] */
+  flex: 0 0 auto; /* [1] */
+  padding-left: $global-spacing-unit; /* [2] */
 }
 
 
@@ -62,11 +62,11 @@
  */
 
 .o-grid--liquid {
-    flex-wrap: nowrap; /* [1] */
+  flex-wrap: nowrap; /* [1] */
 
-    > .o-grid__item {
-        flex: 1; /* [2] */
-    }
+  > .o-grid__item {
+    flex: 1; /* [2] */
+  }
 }
 
 
@@ -75,11 +75,11 @@
  */
 
 .o-grid--stretch {
-    align-items: stretch;
+  align-items: stretch;
 
-    > .o-grid__item {
-        display: flex;
-    }
+  > .o-grid__item {
+    display: flex;
+  }
 }
 
 
@@ -92,9 +92,9 @@
 
 .o-grid--auto {
 
-    > .o-grid__item {
-        flex: initial; /* [1] */
-    }
+  > .o-grid__item {
+    flex: initial; /* [1] */
+  }
 }
 
 
@@ -105,11 +105,11 @@
    ========================================================================== */
 
 .o-grid--bottom {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .o-grid--middle {
-    align-items: center;
+  align-items: center;
 }
 
 
@@ -120,47 +120,47 @@
    ========================================================================== */
 
 .o-grid--flush {
-    margin-left: 0;
+  margin-left: 0;
 
-    > .o-grid__item {
-        padding-left: 0;
-    }
+  > .o-grid__item {
+    padding-left: 0;
+  }
 }
 
 
 .o-grid--tiny {
-    margin-left: -1 * $global-spacing-unit-tiny;
+  margin-left: -1 * $global-spacing-unit-tiny;
 
-    > .o-grid__item {
-        padding-left: $global-spacing-unit-tiny;
-    }
+  > .o-grid__item {
+    padding-left: $global-spacing-unit-tiny;
+  }
 }
 
 
 .o-grid--small {
-    margin-left: -1 * $global-spacing-unit-small;
+  margin-left: -1 * $global-spacing-unit-small;
 
-    > .o-grid__item {
-        padding-left: $global-spacing-unit-small;
-    }
+  > .o-grid__item {
+    padding-left: $global-spacing-unit-small;
+  }
 }
 
 
 .o-grid--large {
-    margin-left: -1 * $global-spacing-unit-large;
+  margin-left: -1 * $global-spacing-unit-large;
 
-    > .o-grid__item {
-        padding-left: $global-spacing-unit-large;
-    }
+  > .o-grid__item {
+    padding-left: $global-spacing-unit-large;
+  }
 }
 
 
 .o-grid--huge {
-    margin-left: -1 * $global-spacing-unit-huge;
+  margin-left: -1 * $global-spacing-unit-huge;
 
-    > .o-grid__item {
-        padding-left: $global-spacing-unit-huge;
-    }
+  > .o-grid__item {
+    padding-left: $global-spacing-unit-huge;
+  }
 }
 
 
@@ -171,7 +171,7 @@
    ========================================================================== */
 
 .o-grid--reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 
@@ -182,19 +182,19 @@
    ========================================================================== */
 
 .o-grid--around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .o-grid--between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .o-grid--center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .o-grid--end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 
@@ -209,77 +209,77 @@
  */
 
 .o-grid--wrapped {
-    margin-left: 0;
+  margin-left: 0;
 
-    > .o-grid__item {
-        padding: $global-spacing-unit;
-        padding-left: 0;
+  > .o-grid__item {
+    padding: $global-spacing-unit;
+    padding-left: 0;
 
-        &:first-of-type {
-            padding-left: $global-spacing-unit;
-        }
+    &:first-of-type {
+      padding-left: $global-spacing-unit;
     }
+  }
 
 
-    /* Size variants. We need to update the values depending on size modifier.
+  /* Size variants. We need to update the values depending on size modifier.
     ========================================================================= */
 
-    &.o-grid--flush {
+  &.o-grid--flush {
 
-        > .o-grid__item {
-            padding: 0;
-        }
+    > .o-grid__item {
+      padding: 0;
     }
+  }
 
 
-    &.o-grid--tiny {
+  &.o-grid--tiny {
 
-        > .o-grid__item {
-            padding: $global-spacing-unit-tiny;
-            padding-left: 0;
+    > .o-grid__item {
+      padding: $global-spacing-unit-tiny;
+      padding-left: 0;
 
-            &:first-of-type {
-                padding-left: $global-spacing-unit-tiny;
-            }
-        }
+      &:first-of-type {
+        padding-left: $global-spacing-unit-tiny;
+      }
     }
+  }
 
 
-    &.o-grid--small {
+  &.o-grid--small {
 
-        > .o-grid__item {
-            padding: $global-spacing-unit-small;
-            padding-left: 0;
+    > .o-grid__item {
+      padding: $global-spacing-unit-small;
+      padding-left: 0;
 
-            &:first-of-type {
-                padding-left: $global-spacing-unit-small;
-            }
-        }
+      &:first-of-type {
+        padding-left: $global-spacing-unit-small;
+      }
     }
+  }
 
 
-    &.o-grid--large {
+  &.o-grid--large {
 
-        > .o-grid__item {
-            padding: $global-spacing-unit-large;
-            padding-left: 0;
+    > .o-grid__item {
+      padding: $global-spacing-unit-large;
+      padding-left: 0;
 
-            &:first-of-type {
-                padding-left: $global-spacing-unit-large;
-            }
-        }
+      &:first-of-type {
+        padding-left: $global-spacing-unit-large;
+      }
     }
+  }
 
 
-    &.o-grid--huge {
+  &.o-grid--huge {
 
-        > .o-grid__item {
-            padding: $global-spacing-unit-huge;
-            padding-left: 0;
+    > .o-grid__item {
+      padding: $global-spacing-unit-huge;
+      padding-left: 0;
 
-            &:first-of-type {
-                padding-left: $global-spacing-unit-huge;
-            }
-        }
+      &:first-of-type {
+        padding-left: $global-spacing-unit-huge;
+      }
     }
+  }
 }

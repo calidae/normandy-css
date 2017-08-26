@@ -15,8 +15,8 @@ dl, dd, ol, ul,
 figure,
 hr,
 fieldset, legend {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -26,10 +26,10 @@ fieldset, legend {
 
 li > {
 
-    ol,
-    ul {
-        margin-bottom: 0;
-    }
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
 
 }
 
@@ -39,8 +39,8 @@ li > {
  */
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 
@@ -50,8 +50,8 @@ table {
  */
 
 fieldset {
-    min-width: 0; /* [1] */
-    border: 0;
+  min-width: 0; /* [1] */
+  border: 0;
 }
 
 /* stylelint-enable selector-list-comma-newline-after */

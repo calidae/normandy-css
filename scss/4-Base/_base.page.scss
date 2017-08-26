@@ -15,8 +15,8 @@
  */
 
 html {
-    font-size: ($global-font-size / 16px) * 1em; /* [1] */
-    line-height: $global-line-height / $global-font-size; /* [1] */
-    overflow-y: scroll; /* [2] */
-    min-height: 100%; /* [3] */
+  font-size: ($global-font-size / 16px) * 1em; /* [1] */
+  line-height: $global-line-height / $global-font-size; /* [1] */
+  overflow-y: scroll; /* [2] */
+  min-height: 100%; /* [3] */
 }

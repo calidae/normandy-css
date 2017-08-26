@@ -21,11 +21,11 @@ $fractions: 1 2 3 4 5 6 !default;
 */
 
 @each $denominator in $fractions {
-    @for $numerator from 1 through $denominator {
+  @for $numerator from 1 through $denominator {
 
-        .u-#{$numerator}\/#{$denominator} {
-            width: ($numerator / $denominator) * 100% !important;
-        }
-
+    .u-#{$numerator}\/#{$denominator} {
+      width: ($numerator / $denominator) * 100% !important;
     }
+
+  }
 }

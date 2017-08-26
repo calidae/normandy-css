@@ -7,13 +7,13 @@
  */
 
 .o-cover {
-    display: block;
+  display: block;
 }
 
 
 .o-cover__img {
-    max-width: 100%;
-    display: flex;
+  max-width: 100%;
+  display: flex;
 }
 
 
@@ -23,60 +23,60 @@
  */
 
 .o-cover__body {
-    margin: auto; /* 1 */
-    padding: $global-spacing-unit;
+  margin: auto; /* 1 */
+  padding: $global-spacing-unit;
 
 
 
 
 
-    /* Size variants.
+  /* Size variants.
         ===================================================================== */
 
-    .o-cover--flush & {
-        padding: 0;
-    }
+  .o-cover--flush & {
+    padding: 0;
+  }
 
-    .o-cover--tiny & {
-        padding: $global-spacing-unit-tiny;
-    }
+  .o-cover--tiny & {
+    padding: $global-spacing-unit-tiny;
+  }
 
-    .o-cover--small & {
-        padding: $global-spacing-unit-small;
-    }
+  .o-cover--small & {
+    padding: $global-spacing-unit-small;
+  }
 
-    .o-cover--large & {
-        padding: $global-spacing-unit-large;
-    }
+  .o-cover--large & {
+    padding: $global-spacing-unit-large;
+  }
 
-    .o-cover--huge & {
-        padding: $global-spacing-unit-huge;
-    }
-
-
+  .o-cover--huge & {
+    padding: $global-spacing-unit-huge;
+  }
 
 
 
-    /* Alignment variants.
+
+
+  /* Alignment variants.
     ========================================================================= */
 
-    /**
+  /**
     * Vertically align the image- and body-content differently.
     */
 
-    .o-cover--top & {
-        margin-top: 0;
-    }
+  .o-cover--top & {
+    margin-top: 0;
+  }
 
-    .o-cover--bottom & {
-        margin-bottom: 0;
-    }
+  .o-cover--bottom & {
+    margin-bottom: 0;
+  }
 
-    .o-cover--left & {
-        margin-left: 0;
-    }
+  .o-cover--left & {
+    margin-left: 0;
+  }
 
-    .o-cover--right & {
-        margin-right: 0;
-    }
+  .o-cover--right & {
+    margin-right: 0;
+  }
 }

@@ -7,21 +7,17 @@ No hi ha unes guies d'estil més encertades que unes altres; l'important és man
 A Calidae apliquem les següents modificacions:
 
 ```
-"string-quotes": "double",
-"max-nesting-depth": 3,
-"indentation": 4,
-"declaration-block-properties-order": null,
-"rule-nested-empty-line-before": null,
-"rule-non-nested-empty-line-before": null,
-"stylelint-disable-reason": null,
-"selector-class-pattern": null,
-"max-line-length": 80,
-"no-missing-end-of-source-newline": null,
-"order/properties-alphabetical-order": null,
-"rule-empty-line-before": "always-multi-line"
+  "string-quotes": "double",
+  "max-nesting-depth": 3,
+  "indentation": 2,
+  "rule-empty-line-before": null,
+  "selector-class-pattern": null,
+  "max-line-length": 80,
+  "no-missing-end-of-source-newline": null,
+  "order/properties-alphabetical-order": null
 ```
 
-En aquest mateix repositori existeix un arxiu `.stylelintrc` que pot servir com a punt de partida per a altres projectes on no es faci servir l'arquitectura CSS proporcionada.
+En aquest mateix repositori existeix un arxiu `.stylelintrc` base.
 
 Per la resta de regles, davant de qualsevol dubte la referència a seguir és la de Sass Guidelines.
 

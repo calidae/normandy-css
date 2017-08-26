@@ -9,15 +9,12 @@
   "rules": {
     "string-quotes": "double",
     "max-nesting-depth": 3,
-    "indentation": 4,
-    "declaration-block-properties-order": null,
-    "rule-nested-empty-line-before": null,
-    "rule-non-nested-empty-line-before": null,
-    "stylelint-disable-reason": null,
+    "indentation": 2,
+    "rule-empty-line-before": null,
     "selector-class-pattern": null,
     "max-line-length": 80,
     "no-missing-end-of-source-newline": null,
-    "order/properties-alphabetical-order": null,
-    "rule-empty-line-before": "always-multi-line"
+    "order/properties-alphabetical-order": null
   }
 }
+

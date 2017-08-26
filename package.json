@@ -1,7 +1,7 @@
 {
-  "name": "calidae-css",
+  "name": "normandy-css",
   "version": "1.0.0",
-  "description": "Calidae CSS guideline and boilerplate",
+  "description": "Normandy CSS boilerplate and guidelines",
   "main": "scss/main.scss",
   "scripts": {
     "sass": "sass scss/main.scss output.css --sourcemap=none",
@@ -19,7 +19,7 @@
   ],
   "author": "Adrià Fontcuberta <adria@calidae.com>",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/calidae/calidae-css#readme",
+  "homepage": "https://github.com/calidae/normandy-css",
   "devDependencies": {
     "mocha": "^3.3.0",
     "sass-true": "^2.2.2",

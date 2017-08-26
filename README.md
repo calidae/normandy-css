@@ -1,10 +1,15 @@
-# CSS Normandy
+# Normandy-css
 
-Normandy és un boilerplate de Sass i un acord per organitzar, desenvolupar i mantenir codi CSS als projectes de Calidae.
+Normandy CSS és una metodologia per organitzar i desenvolupar el CSS
+dels projectes de Calidae.
+
+També inclou un boilerplate en Sass de la implementació d'aquests acords.
 
 Està construït sobre els principis d'ITCSS, BEM i OOCSS.
 
-El repositori principal de Normandy és a [BitBucket](https://bitbucket.org/calidae/normandy).
+## Contributing
 
+`npm i`
 
+Consulta el `package.json` per veure els scripts disponibles.
 

@@ -1,0 +1,16 @@
+///* ========================================================================
+//   RESPONSIVE SETTINGS
+//   ======================================================================== */
+// The responsive settings file contains project-wide responsive variables.
+// 
+// Normandy-css uses SassMQ as a media queries utility so we customize their
+// own variables.
+// https://github.com/sass-mq/sass-mq
+
+$mq-breakpoints: (
+  mobile:   480px,
+  tablet:   768px,
+  desktop:  1024px,
+  wide:     1240px,
+  full:     1650px
+);

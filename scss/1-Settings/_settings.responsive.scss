@@ -13,4 +13,8 @@ $mq-breakpoints: (
   desktop:  1024px,
   wide:     1240px,
   full:     1650px
-);
+) !default;
+
+
+// Show breakpoints in the top right corner of your site during development
+$mq-show-breakpoints: (mobile, tablet, desktop, wide, full) !default;

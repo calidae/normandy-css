@@ -1102,20 +1102,6 @@ h6 {
  * current context. Modifying these styles should be safe and have no side
  * effects.
  */
-.colored-square {
-  width: 100%;
-  height: 250px;
-  background-color: #ff0000; }
-  @media (min-width: 30em) {
-    .colored-square {
-      background-color: lawngreen; } }
-  @media (max-width: 47.99em) {
-    .colored-square {
-      color: #fff; } }
-  @media (min-width: 48em) and (max-width: 63.99em) {
-    .colored-square {
-      font-size: 50px; } }
-
 /* ==========================================================================
    UTILITIES
    ========================================================================== */

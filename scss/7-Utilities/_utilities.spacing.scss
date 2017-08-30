@@ -57,10 +57,33 @@ $spacing-sizes: (
 
       }
 
+      /* Responsive spacing classes */
+      @if (variable-exists(mq-breakpoints)) {
+  
+        $breakpoint-separator: \@ !default;
+      
+        @each $breakpoint-name, $breakpoint-value in $mq-breakpoints {
+          
+          @include mq($from: $breakpoint-name) {
+    
+            .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace}#{$breakpoint-separator}#{$breakpoint-name} {
+    
+              @each $direction in $direction-rules {
+                #{$property}#{$direction}: $size !important;
+              }
+    
+            }
+    
+          }
+  
+        } 
+  
+      }
+
     }
+
 
   }
 
 }
 
-/* stylelint-enable string-quotes */

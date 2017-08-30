@@ -141,6 +141,12 @@ body:before {
     body:before {
       content: "full ≥ 1650px (103.125em)"; } }
 
+/**
+ * If we’re using Sass-MQ, automatically generate grid system(s) for each of our
+ * defined breakpoints, and give them a Responsive Suffix, e.g.:
+ *
+ * <div class="u-3/12@mobile">
+ */
 /* ==========================================================================
    GENERIC
    ========================================================================== */
@@ -1566,9 +1572,9 @@ h6 {
  * widths, so this utility classes are meant to be used with another elements
  * of the project.
  */
-/**
-* Loop through values and generate the classes.
-*/
+/*
+ * Loop through values and generate the classes.
+ */
 .u-1\/1 {
   width: 100% !important; }
 
@@ -1631,3 +1637,325 @@ h6 {
 
 .u-6\/6 {
   width: 100% !important; }
+
+/**
+ * If we’re using Sass-MQ, automatically generate grid system(s) for each of our
+ * defined breakpoints, and give them a Responsive Suffix, e.g.:
+ *
+ * <div class="u-3/12@mobile">
+ */
+@media (min-width: 30em) {
+  .u-1\/1\@mobile {
+    width: 100% !important; }
+
+  .u-1\/2\@mobile {
+    width: 50% !important; }
+
+  .u-2\/2\@mobile {
+    width: 100% !important; }
+
+  .u-1\/3\@mobile {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@mobile {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@mobile {
+    width: 100% !important; }
+
+  .u-1\/4\@mobile {
+    width: 25% !important; }
+
+  .u-2\/4\@mobile {
+    width: 50% !important; }
+
+  .u-3\/4\@mobile {
+    width: 75% !important; }
+
+  .u-4\/4\@mobile {
+    width: 100% !important; }
+
+  .u-1\/5\@mobile {
+    width: 20% !important; }
+
+  .u-2\/5\@mobile {
+    width: 40% !important; }
+
+  .u-3\/5\@mobile {
+    width: 60% !important; }
+
+  .u-4\/5\@mobile {
+    width: 80% !important; }
+
+  .u-5\/5\@mobile {
+    width: 100% !important; }
+
+  .u-1\/6\@mobile {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@mobile {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@mobile {
+    width: 50% !important; }
+
+  .u-4\/6\@mobile {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@mobile {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@mobile {
+    width: 100% !important; } }
+@media (min-width: 48em) {
+  .u-1\/1\@tablet {
+    width: 100% !important; }
+
+  .u-1\/2\@tablet {
+    width: 50% !important; }
+
+  .u-2\/2\@tablet {
+    width: 100% !important; }
+
+  .u-1\/3\@tablet {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@tablet {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@tablet {
+    width: 100% !important; }
+
+  .u-1\/4\@tablet {
+    width: 25% !important; }
+
+  .u-2\/4\@tablet {
+    width: 50% !important; }
+
+  .u-3\/4\@tablet {
+    width: 75% !important; }
+
+  .u-4\/4\@tablet {
+    width: 100% !important; }
+
+  .u-1\/5\@tablet {
+    width: 20% !important; }
+
+  .u-2\/5\@tablet {
+    width: 40% !important; }
+
+  .u-3\/5\@tablet {
+    width: 60% !important; }
+
+  .u-4\/5\@tablet {
+    width: 80% !important; }
+
+  .u-5\/5\@tablet {
+    width: 100% !important; }
+
+  .u-1\/6\@tablet {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@tablet {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@tablet {
+    width: 50% !important; }
+
+  .u-4\/6\@tablet {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@tablet {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@tablet {
+    width: 100% !important; } }
+@media (min-width: 64em) {
+  .u-1\/1\@desktop {
+    width: 100% !important; }
+
+  .u-1\/2\@desktop {
+    width: 50% !important; }
+
+  .u-2\/2\@desktop {
+    width: 100% !important; }
+
+  .u-1\/3\@desktop {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@desktop {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@desktop {
+    width: 100% !important; }
+
+  .u-1\/4\@desktop {
+    width: 25% !important; }
+
+  .u-2\/4\@desktop {
+    width: 50% !important; }
+
+  .u-3\/4\@desktop {
+    width: 75% !important; }
+
+  .u-4\/4\@desktop {
+    width: 100% !important; }
+
+  .u-1\/5\@desktop {
+    width: 20% !important; }
+
+  .u-2\/5\@desktop {
+    width: 40% !important; }
+
+  .u-3\/5\@desktop {
+    width: 60% !important; }
+
+  .u-4\/5\@desktop {
+    width: 80% !important; }
+
+  .u-5\/5\@desktop {
+    width: 100% !important; }
+
+  .u-1\/6\@desktop {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@desktop {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@desktop {
+    width: 50% !important; }
+
+  .u-4\/6\@desktop {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@desktop {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@desktop {
+    width: 100% !important; } }
+@media (min-width: 77.5em) {
+  .u-1\/1\@wide {
+    width: 100% !important; }
+
+  .u-1\/2\@wide {
+    width: 50% !important; }
+
+  .u-2\/2\@wide {
+    width: 100% !important; }
+
+  .u-1\/3\@wide {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@wide {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@wide {
+    width: 100% !important; }
+
+  .u-1\/4\@wide {
+    width: 25% !important; }
+
+  .u-2\/4\@wide {
+    width: 50% !important; }
+
+  .u-3\/4\@wide {
+    width: 75% !important; }
+
+  .u-4\/4\@wide {
+    width: 100% !important; }
+
+  .u-1\/5\@wide {
+    width: 20% !important; }
+
+  .u-2\/5\@wide {
+    width: 40% !important; }
+
+  .u-3\/5\@wide {
+    width: 60% !important; }
+
+  .u-4\/5\@wide {
+    width: 80% !important; }
+
+  .u-5\/5\@wide {
+    width: 100% !important; }
+
+  .u-1\/6\@wide {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@wide {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@wide {
+    width: 50% !important; }
+
+  .u-4\/6\@wide {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@wide {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@wide {
+    width: 100% !important; } }
+@media (min-width: 103.125em) {
+  .u-1\/1\@full {
+    width: 100% !important; }
+
+  .u-1\/2\@full {
+    width: 50% !important; }
+
+  .u-2\/2\@full {
+    width: 100% !important; }
+
+  .u-1\/3\@full {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@full {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@full {
+    width: 100% !important; }
+
+  .u-1\/4\@full {
+    width: 25% !important; }
+
+  .u-2\/4\@full {
+    width: 50% !important; }
+
+  .u-3\/4\@full {
+    width: 75% !important; }
+
+  .u-4\/4\@full {
+    width: 100% !important; }
+
+  .u-1\/5\@full {
+    width: 20% !important; }
+
+  .u-2\/5\@full {
+    width: 40% !important; }
+
+  .u-3\/5\@full {
+    width: 60% !important; }
+
+  .u-4\/5\@full {
+    width: 80% !important; }
+
+  .u-5\/5\@full {
+    width: 100% !important; }
+
+  .u-1\/6\@full {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@full {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@full {
+    width: 50% !important; }
+
+  .u-4\/6\@full {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@full {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@full {
+    width: 100% !important; } }

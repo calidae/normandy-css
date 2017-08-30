@@ -25,5 +25,8 @@
     "sass-true": "^2.2.2",
     "stylelint": "^7.10.1",
     "stylelint-config-sass-guidelines": "^2.1.0"
+  },
+  "dependencies": {
+    "sass-mq": "^3.3.2"
   }
 }

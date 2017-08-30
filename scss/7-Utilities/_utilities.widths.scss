@@ -13,14 +13,13 @@
  * of the project.
  */
 
-$fractions: 1 2 3 4 5 6 !default;
 
 
-/**
-* Loop through values and generate the classes.
-*/
+/*
+ * Loop through values and generate the classes.
+ */
 
-@each $denominator in $fractions {
+@each $denominator in $global-width-fractions {
   @for $numerator from 1 through $denominator {
 
     .u-#{$numerator}\/#{$denominator} {
@@ -28,4 +27,40 @@ $fractions: 1 2 3 4 5 6 !default;
     }
 
   }
+}
+
+
+
+
+
+/**
+ * If we’re using Sass-MQ, automatically generate grid system(s) for each of our
+ * defined breakpoints, and give them a Responsive Suffix, e.g.:
+ *
+ * <div class="u-3/12@mobile">
+ */
+ 
+@if (variable-exists(mq-breakpoints)) {
+  
+  $breakpoint-separator: \@ !default;
+  $widths-delimiter: \/ !default;
+  
+  @each $breakpoint-name, $breakpoint-value in $mq-breakpoints {
+    
+    @include mq($from: $breakpoint-name) {
+      
+      @each $denominator in $global-width-fractions {
+        @for $numerator from 1 through $denominator {
+
+          .u-#{$numerator}#{$widths-delimiter}#{$denominator}#{$breakpoint-separator}#{$breakpoint-name} {
+            width: ($numerator / $denominator) * 100% !important;
+          }
+          
+        }
+      }
+
+    }
+
+  }
+  
 }

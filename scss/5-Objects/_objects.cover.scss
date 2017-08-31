@@ -4,21 +4,22 @@
 
 /**
  * Place any text as a cover from an image.
+ *
+ * 1. Opinionated placement of background image.
  */
 
 .o-cover {
-  display: block;
-}
-
-
-.o-cover__img {
-  max-width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-position: center; /* [1] */
+  background-size: cover; /* [1] */
 }
 
 
 /**
- * 1. Center the body into the parent element. More info about `margin: auto`
+ * 1. Center the body into parent element.
  *    https://hackernoon.com/flexbox-s-best-kept-secret-bd3d892826b6
  */
 
@@ -31,7 +32,7 @@
 
 
   /* Size variants.
-        ===================================================================== */
+    ========================================================================= */
 
   .o-cover--flush & {
     padding: 0;
@@ -61,8 +62,8 @@
     ========================================================================= */
 
   /**
-    * Vertically align the image- and body-content differently.
-    */
+   * Vertically align the image- and body-content differently.
+   */
 
   .o-cover--top & {
     margin-top: 0;

@@ -1044,16 +1044,20 @@ h6 {
    ========================================================================== */
 /**
  * Place any text as a cover from an image.
+ *
+ * 1. Opinionated placement of background image.
  */
 .o-cover {
-  display: block; }
-
-.o-cover__img {
-  max-width: 100%;
-  display: flex; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  /* [1] */
+  background-size: cover;
+  /* [1] */ }
 
 /**
- * 1. Center the body into the parent element. More info about `margin: auto`
+ * 1. Center the body into parent element.
  *    https://hackernoon.com/flexbox-s-best-kept-secret-bd3d892826b6
  */
 .o-cover__body {
@@ -1061,12 +1065,12 @@ h6 {
   /* 1 */
   padding: 24px;
   /* Size variants.
-        ===================================================================== */
+    ========================================================================= */
   /* Alignment variants.
     ========================================================================= */
   /**
-    * Vertically align the image- and body-content differently.
-    */ }
+   * Vertically align the image- and body-content differently.
+   */ }
   .o-cover--flush .o-cover__body {
     padding: 0; }
   .o-cover--tiny .o-cover__body {

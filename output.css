@@ -1049,8 +1049,6 @@ h6 {
  */
 .o-cover {
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-position: center;
   /* [1] */
   background-size: cover;

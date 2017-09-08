@@ -850,6 +850,9 @@ h6 {
 
 /* Size variants.
    ========================================================================== */
+.o-wrapper--flush {
+  padding: 0; }
+
 .o-wrapper--tiny {
   padding-right: 6px;
   padding-left: 6px; }

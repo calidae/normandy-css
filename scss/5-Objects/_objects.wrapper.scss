@@ -23,6 +23,9 @@ $wrapper-width: 1200px !default;
 
 /* Size variants.
    ========================================================================== */
+.o-wrapper--flush {
+  padding: 0;
+}
 
 .o-wrapper--tiny {
   padding-right: $global-spacing-unit-tiny;

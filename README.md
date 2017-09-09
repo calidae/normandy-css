@@ -7,13 +7,12 @@ També inclou un boilerplate en Sass de la implementació d'aquests acords.
 
 Està construït sobre els principis d'ITCSS, BEM i OOCSS.
 
-## Documentació
+## Ús
 
-Consulta la metodologia i documentació a [Gitbook](https://afontcu.gitbooks.io/normandy).
+Normandy CSS és fàcilment instal·lable desde els repositoris de paquets NPM.
 
-## Contributing
+```
+$ npm install normandy-css
+```
 
-`npm i`
-
-Consulta el `package.json` per veure els scripts disponibles.
-
+Desprès només caldrà reproduir el funcionament del fitxer `/node_modules/normandy-css/scss/main.scss` dins el vostre projecte per tal de poder importar les 7 capes de css i afegir el vostre propi codi entre elles.

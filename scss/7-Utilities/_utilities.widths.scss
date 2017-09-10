@@ -39,28 +39,32 @@
  *
  * <div class="u-3/12@mobile">
  */
- 
+
+/* stylelint-disable max-nesting-depth */
+/* stylelint-disable max-line-length */
 @if (variable-exists(mq-breakpoints)) {
-  
+
   $breakpoint-separator: \@ !default;
   $widths-delimiter: \/ !default;
-  
+
   @each $breakpoint-name, $breakpoint-value in $mq-breakpoints {
-    
+
     @include mq($from: $breakpoint-name) {
-      
+
       @each $denominator in $global-width-fractions {
         @for $numerator from 1 through $denominator {
 
           .u-#{$numerator}#{$widths-delimiter}#{$denominator}#{$breakpoint-separator}#{$breakpoint-name} {
             width: ($numerator / $denominator) * 100% !important;
           }
-          
+
         }
       }
 
     }
 
   }
-  
+
 }
+/* stylelint-enable max-line-length */
+/* stylelint-enable max-nesting-depth */

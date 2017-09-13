@@ -1,0 +1,21 @@
+# Same as .gitignore
+
+*.sassc
+.sass-cache
+**.orig
+.DS_Store
+bower_components
+node_modules
+npm-debug.log
+
+# Only for NPM
+
+demo
+images
+test
+.editconfig
+.gitignore
+.stylelintrc
+*.log
+*.md
+!.README.md

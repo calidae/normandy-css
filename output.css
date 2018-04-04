@@ -59,8 +59,8 @@
    WIDTH SETTINGS
    ========================================================================== */
 /**
- * Which fractions will Normandy use to generate width modifiers for the
- * Grid Object and the width utility classes (.u-1/2).
+ * Which fractions will Normandy use to generate width modifiers for the width
+ * utility classes (.u-1/2).
  */
 /* ==========================================================================
    TOOLS
@@ -843,179 +843,6 @@ h6 {
   padding-left: 96px; }
 
 /* ==========================================================================
-   GRID OBJECT
-   ========================================================================== */
-/**
- * Grid-like layout system, the Flexbox way.
- *
- * Usually you'll want to combine the Grid Object with width modifiers such as:
- *
- *   <div class="o-grid">
- *     <div class="o-grid__item u-1/2">
- *     </div>
- *     <div class="o-grid__item u-1/2">
- *     </div>
- *   </div>
- *
- *
- * 1. Remove any leftover styling from lists.
- * 2. We need to defensively reset any box-model properties.
- * 3. Sets a basic gutter to place the items of the layout.
- * 4. Grid items can be flowed into multiple lines. Prevents overflow.
- */
-.o-grid {
-  display: flex;
-  list-style: none;
-  /* [1] */
-  margin: 0;
-  /* [2] */
-  padding: 0;
-  /* [2] */
-  margin-left: -24px;
-  /* [3] */
-  flex-flow: row wrap;
-  /* [4] */ }
-
-/**
- * 1. Items will be size according to its size property (which can itself
- *    be auto, which then sizes the element based on its content).
- * 2. Gutter provided by left padding.
- */
-.o-grid__item {
-  flex: 0 0 auto;
-  /* [1] */
-  padding-left: 24px;
-  /* [2] */ }
-
-/* Display modifiers.
-   ========================================================================== */
-/**
- * This modifier makes every grid item to naturally space themsevles equally
- * and expand to fit the entire row.
- * This is really useful when we don't know how many items a grid will have or
- * when all grid items should have the same width.
- *
- * 1. We don't want items to expand to another row, but to fit the actual.
- * 2. Items just naturally space themselves equally and expand to fit the
- *    entire row.
- */
-.o-grid--liquid {
-  flex-wrap: nowrap;
-  /* [1] */ }
-  .o-grid--liquid > .o-grid__item {
-    flex: 1;
-    /* [2] */ }
-
-/**
- * This modifier will equal height of siblings.
- */
-.o-grid--stretch {
-  align-items: stretch; }
-  .o-grid--stretch > .o-grid__item {
-    display: flex; }
-
-/**
- * This modifier will sizes the item based on its width/height properties
- * (or its content if not set).
- *
- * 1. Same as `flex: 0 1 auto`
- */
-.o-grid--auto > .o-grid__item {
-  flex: initial;
-  /* [1] */ }
-
-/* Vertical alignment modifiers.
-   ========================================================================== */
-.o-grid--bottom {
-  align-items: flex-end; }
-
-.o-grid--middle {
-  align-items: center; }
-
-/* Gutter size modifiers.
-   ========================================================================== */
-.o-grid--flush {
-  margin-left: 0; }
-  .o-grid--flush > .o-grid__item {
-    padding-left: 0; }
-
-.o-grid--tiny {
-  margin-left: -6px; }
-  .o-grid--tiny > .o-grid__item {
-    padding-left: 6px; }
-
-.o-grid--small {
-  margin-left: -12px; }
-  .o-grid--small > .o-grid__item {
-    padding-left: 12px; }
-
-.o-grid--large {
-  margin-left: -48px; }
-  .o-grid--large > .o-grid__item {
-    padding-left: 48px; }
-
-.o-grid--huge {
-  margin-left: -96px; }
-  .o-grid--huge > .o-grid__item {
-    padding-left: 96px; }
-
-/* Space modifiers.
-   ========================================================================== */
-.o-grid--reverse {
-  flex-direction: row-reverse; }
-
-/* Space modifiers.
-   ========================================================================== */
-.o-grid--around {
-  justify-content: space-around; }
-
-.o-grid--between {
-  justify-content: space-between; }
-
-.o-grid--center {
-  justify-content: center; }
-
-.o-grid--end {
-  justify-content: flex-end; }
-
-/* Wrapper modifiers.
-   ========================================================================== */
-/**
- * Wrap items with a padding instead of using the padding as a column gutter.
- */
-.o-grid--wrapped {
-  margin-left: 0;
-  /* Size variants. We need to update the values depending on size modifier.
-    ========================================================================= */ }
-  .o-grid--wrapped > .o-grid__item {
-    padding: 24px;
-    padding-left: 0; }
-    .o-grid--wrapped > .o-grid__item:first-of-type {
-      padding-left: 24px; }
-  .o-grid--wrapped.o-grid--flush > .o-grid__item {
-    padding: 0; }
-  .o-grid--wrapped.o-grid--tiny > .o-grid__item {
-    padding: 6px;
-    padding-left: 0; }
-    .o-grid--wrapped.o-grid--tiny > .o-grid__item:first-of-type {
-      padding-left: 6px; }
-  .o-grid--wrapped.o-grid--small > .o-grid__item {
-    padding: 12px;
-    padding-left: 0; }
-    .o-grid--wrapped.o-grid--small > .o-grid__item:first-of-type {
-      padding-left: 12px; }
-  .o-grid--wrapped.o-grid--large > .o-grid__item {
-    padding: 48px;
-    padding-left: 0; }
-    .o-grid--wrapped.o-grid--large > .o-grid__item:first-of-type {
-      padding-left: 48px; }
-  .o-grid--wrapped.o-grid--huge > .o-grid__item {
-    padding: 96px;
-    padding-left: 0; }
-    .o-grid--wrapped.o-grid--huge > .o-grid__item:first-of-type {
-      padding-left: 96px; }
-
-/* ==========================================================================
    COVER OBJECT
    ========================================================================== */
 /**
@@ -1684,10 +1511,6 @@ h6 {
  * whichever element they’re applied, e.g.:
  *
  *   <img src="" alt="" class="u-1/2" />
- *
- * Remember that the Grid Object is using another classes to set its item
- * widths, so this utility classes are meant to be used with another elements
- * of the project.
  */
 /*
  * Loop through values and generate the classes.
@@ -1754,3 +1577,655 @@ h6 {
 
 .u-6\/6 {
   width: 100% !important; }
+<<<<<<< 080ebc7c213eedda0a9797403354a6686d1369ae
+||||||| merged common ancestors
+
+/**
+ * If we’re using Sass-MQ, automatically generate grid system(s) for each of our
+ * defined breakpoints, and give them a Responsive Suffix, e.g.:
+ *
+ * <div class="u-3/12@mobile">
+ */
+@media (min-width: 30em) {
+  .u-1\/1\@mobile {
+    width: 100% !important; }
+
+  .u-1\/2\@mobile {
+    width: 50% !important; }
+
+  .u-2\/2\@mobile {
+    width: 100% !important; }
+
+  .u-1\/3\@mobile {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@mobile {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@mobile {
+    width: 100% !important; }
+
+  .u-1\/4\@mobile {
+    width: 25% !important; }
+
+  .u-2\/4\@mobile {
+    width: 50% !important; }
+
+  .u-3\/4\@mobile {
+    width: 75% !important; }
+
+  .u-4\/4\@mobile {
+    width: 100% !important; }
+
+  .u-1\/5\@mobile {
+    width: 20% !important; }
+
+  .u-2\/5\@mobile {
+    width: 40% !important; }
+
+  .u-3\/5\@mobile {
+    width: 60% !important; }
+
+  .u-4\/5\@mobile {
+    width: 80% !important; }
+
+  .u-5\/5\@mobile {
+    width: 100% !important; }
+
+  .u-1\/6\@mobile {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@mobile {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@mobile {
+    width: 50% !important; }
+
+  .u-4\/6\@mobile {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@mobile {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@mobile {
+    width: 100% !important; } }
+@media (min-width: 48em) {
+  .u-1\/1\@tablet {
+    width: 100% !important; }
+
+  .u-1\/2\@tablet {
+    width: 50% !important; }
+
+  .u-2\/2\@tablet {
+    width: 100% !important; }
+
+  .u-1\/3\@tablet {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@tablet {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@tablet {
+    width: 100% !important; }
+
+  .u-1\/4\@tablet {
+    width: 25% !important; }
+
+  .u-2\/4\@tablet {
+    width: 50% !important; }
+
+  .u-3\/4\@tablet {
+    width: 75% !important; }
+
+  .u-4\/4\@tablet {
+    width: 100% !important; }
+
+  .u-1\/5\@tablet {
+    width: 20% !important; }
+
+  .u-2\/5\@tablet {
+    width: 40% !important; }
+
+  .u-3\/5\@tablet {
+    width: 60% !important; }
+
+  .u-4\/5\@tablet {
+    width: 80% !important; }
+
+  .u-5\/5\@tablet {
+    width: 100% !important; }
+
+  .u-1\/6\@tablet {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@tablet {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@tablet {
+    width: 50% !important; }
+
+  .u-4\/6\@tablet {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@tablet {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@tablet {
+    width: 100% !important; } }
+@media (min-width: 64em) {
+  .u-1\/1\@desktop {
+    width: 100% !important; }
+
+  .u-1\/2\@desktop {
+    width: 50% !important; }
+
+  .u-2\/2\@desktop {
+    width: 100% !important; }
+
+  .u-1\/3\@desktop {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@desktop {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@desktop {
+    width: 100% !important; }
+
+  .u-1\/4\@desktop {
+    width: 25% !important; }
+
+  .u-2\/4\@desktop {
+    width: 50% !important; }
+
+  .u-3\/4\@desktop {
+    width: 75% !important; }
+
+  .u-4\/4\@desktop {
+    width: 100% !important; }
+
+  .u-1\/5\@desktop {
+    width: 20% !important; }
+
+  .u-2\/5\@desktop {
+    width: 40% !important; }
+
+  .u-3\/5\@desktop {
+    width: 60% !important; }
+
+  .u-4\/5\@desktop {
+    width: 80% !important; }
+
+  .u-5\/5\@desktop {
+    width: 100% !important; }
+
+  .u-1\/6\@desktop {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@desktop {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@desktop {
+    width: 50% !important; }
+
+  .u-4\/6\@desktop {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@desktop {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@desktop {
+    width: 100% !important; } }
+@media (min-width: 77.5em) {
+  .u-1\/1\@wide {
+    width: 100% !important; }
+
+  .u-1\/2\@wide {
+    width: 50% !important; }
+
+  .u-2\/2\@wide {
+    width: 100% !important; }
+
+  .u-1\/3\@wide {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@wide {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@wide {
+    width: 100% !important; }
+
+  .u-1\/4\@wide {
+    width: 25% !important; }
+
+  .u-2\/4\@wide {
+    width: 50% !important; }
+
+  .u-3\/4\@wide {
+    width: 75% !important; }
+
+  .u-4\/4\@wide {
+    width: 100% !important; }
+
+  .u-1\/5\@wide {
+    width: 20% !important; }
+
+  .u-2\/5\@wide {
+    width: 40% !important; }
+
+  .u-3\/5\@wide {
+    width: 60% !important; }
+
+  .u-4\/5\@wide {
+    width: 80% !important; }
+
+  .u-5\/5\@wide {
+    width: 100% !important; }
+
+  .u-1\/6\@wide {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@wide {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@wide {
+    width: 50% !important; }
+
+  .u-4\/6\@wide {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@wide {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@wide {
+    width: 100% !important; } }
+@media (min-width: 103.125em) {
+  .u-1\/1\@full {
+    width: 100% !important; }
+
+  .u-1\/2\@full {
+    width: 50% !important; }
+
+  .u-2\/2\@full {
+    width: 100% !important; }
+
+  .u-1\/3\@full {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@full {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@full {
+    width: 100% !important; }
+
+  .u-1\/4\@full {
+    width: 25% !important; }
+
+  .u-2\/4\@full {
+    width: 50% !important; }
+
+  .u-3\/4\@full {
+    width: 75% !important; }
+
+  .u-4\/4\@full {
+    width: 100% !important; }
+
+  .u-1\/5\@full {
+    width: 20% !important; }
+
+  .u-2\/5\@full {
+    width: 40% !important; }
+
+  .u-3\/5\@full {
+    width: 60% !important; }
+
+  .u-4\/5\@full {
+    width: 80% !important; }
+
+  .u-5\/5\@full {
+    width: 100% !important; }
+
+  .u-1\/6\@full {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@full {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@full {
+    width: 50% !important; }
+
+  .u-4\/6\@full {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@full {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@full {
+    width: 100% !important; } }
+=======
+
+/**
+ * If we’re using Sass-MQ, automatically generate grid system(s) for each of our
+ * defined breakpoints, and give them a Responsive Suffix, e.g.:
+ *
+ * <div class="u-3/12@mobile">
+ */
+/* stylelint-disable max-nesting-depth */
+/* stylelint-disable max-line-length */
+@media (min-width: 30em) {
+  .u-1\/1\@mobile {
+    width: 100% !important; }
+
+  .u-1\/2\@mobile {
+    width: 50% !important; }
+
+  .u-2\/2\@mobile {
+    width: 100% !important; }
+
+  .u-1\/3\@mobile {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@mobile {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@mobile {
+    width: 100% !important; }
+
+  .u-1\/4\@mobile {
+    width: 25% !important; }
+
+  .u-2\/4\@mobile {
+    width: 50% !important; }
+
+  .u-3\/4\@mobile {
+    width: 75% !important; }
+
+  .u-4\/4\@mobile {
+    width: 100% !important; }
+
+  .u-1\/5\@mobile {
+    width: 20% !important; }
+
+  .u-2\/5\@mobile {
+    width: 40% !important; }
+
+  .u-3\/5\@mobile {
+    width: 60% !important; }
+
+  .u-4\/5\@mobile {
+    width: 80% !important; }
+
+  .u-5\/5\@mobile {
+    width: 100% !important; }
+
+  .u-1\/6\@mobile {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@mobile {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@mobile {
+    width: 50% !important; }
+
+  .u-4\/6\@mobile {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@mobile {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@mobile {
+    width: 100% !important; } }
+@media (min-width: 48em) {
+  .u-1\/1\@tablet {
+    width: 100% !important; }
+
+  .u-1\/2\@tablet {
+    width: 50% !important; }
+
+  .u-2\/2\@tablet {
+    width: 100% !important; }
+
+  .u-1\/3\@tablet {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@tablet {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@tablet {
+    width: 100% !important; }
+
+  .u-1\/4\@tablet {
+    width: 25% !important; }
+
+  .u-2\/4\@tablet {
+    width: 50% !important; }
+
+  .u-3\/4\@tablet {
+    width: 75% !important; }
+
+  .u-4\/4\@tablet {
+    width: 100% !important; }
+
+  .u-1\/5\@tablet {
+    width: 20% !important; }
+
+  .u-2\/5\@tablet {
+    width: 40% !important; }
+
+  .u-3\/5\@tablet {
+    width: 60% !important; }
+
+  .u-4\/5\@tablet {
+    width: 80% !important; }
+
+  .u-5\/5\@tablet {
+    width: 100% !important; }
+
+  .u-1\/6\@tablet {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@tablet {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@tablet {
+    width: 50% !important; }
+
+  .u-4\/6\@tablet {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@tablet {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@tablet {
+    width: 100% !important; } }
+@media (min-width: 64em) {
+  .u-1\/1\@desktop {
+    width: 100% !important; }
+
+  .u-1\/2\@desktop {
+    width: 50% !important; }
+
+  .u-2\/2\@desktop {
+    width: 100% !important; }
+
+  .u-1\/3\@desktop {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@desktop {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@desktop {
+    width: 100% !important; }
+
+  .u-1\/4\@desktop {
+    width: 25% !important; }
+
+  .u-2\/4\@desktop {
+    width: 50% !important; }
+
+  .u-3\/4\@desktop {
+    width: 75% !important; }
+
+  .u-4\/4\@desktop {
+    width: 100% !important; }
+
+  .u-1\/5\@desktop {
+    width: 20% !important; }
+
+  .u-2\/5\@desktop {
+    width: 40% !important; }
+
+  .u-3\/5\@desktop {
+    width: 60% !important; }
+
+  .u-4\/5\@desktop {
+    width: 80% !important; }
+
+  .u-5\/5\@desktop {
+    width: 100% !important; }
+
+  .u-1\/6\@desktop {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@desktop {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@desktop {
+    width: 50% !important; }
+
+  .u-4\/6\@desktop {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@desktop {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@desktop {
+    width: 100% !important; } }
+@media (min-width: 77.5em) {
+  .u-1\/1\@wide {
+    width: 100% !important; }
+
+  .u-1\/2\@wide {
+    width: 50% !important; }
+
+  .u-2\/2\@wide {
+    width: 100% !important; }
+
+  .u-1\/3\@wide {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@wide {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@wide {
+    width: 100% !important; }
+
+  .u-1\/4\@wide {
+    width: 25% !important; }
+
+  .u-2\/4\@wide {
+    width: 50% !important; }
+
+  .u-3\/4\@wide {
+    width: 75% !important; }
+
+  .u-4\/4\@wide {
+    width: 100% !important; }
+
+  .u-1\/5\@wide {
+    width: 20% !important; }
+
+  .u-2\/5\@wide {
+    width: 40% !important; }
+
+  .u-3\/5\@wide {
+    width: 60% !important; }
+
+  .u-4\/5\@wide {
+    width: 80% !important; }
+
+  .u-5\/5\@wide {
+    width: 100% !important; }
+
+  .u-1\/6\@wide {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@wide {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@wide {
+    width: 50% !important; }
+
+  .u-4\/6\@wide {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@wide {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@wide {
+    width: 100% !important; } }
+@media (min-width: 103.125em) {
+  .u-1\/1\@full {
+    width: 100% !important; }
+
+  .u-1\/2\@full {
+    width: 50% !important; }
+
+  .u-2\/2\@full {
+    width: 100% !important; }
+
+  .u-1\/3\@full {
+    width: 33.33333% !important; }
+
+  .u-2\/3\@full {
+    width: 66.66667% !important; }
+
+  .u-3\/3\@full {
+    width: 100% !important; }
+
+  .u-1\/4\@full {
+    width: 25% !important; }
+
+  .u-2\/4\@full {
+    width: 50% !important; }
+
+  .u-3\/4\@full {
+    width: 75% !important; }
+
+  .u-4\/4\@full {
+    width: 100% !important; }
+
+  .u-1\/5\@full {
+    width: 20% !important; }
+
+  .u-2\/5\@full {
+    width: 40% !important; }
+
+  .u-3\/5\@full {
+    width: 60% !important; }
+
+  .u-4\/5\@full {
+    width: 80% !important; }
+
+  .u-5\/5\@full {
+    width: 100% !important; }
+
+  .u-1\/6\@full {
+    width: 16.66667% !important; }
+
+  .u-2\/6\@full {
+    width: 33.33333% !important; }
+
+  .u-3\/6\@full {
+    width: 50% !important; }
+
+  .u-4\/6\@full {
+    width: 66.66667% !important; }
+
+  .u-5\/6\@full {
+    width: 83.33333% !important; }
+
+  .u-6\/6\@full {
+    width: 100% !important; } }
+/* stylelint-enable max-line-length */
+/* stylelint-enable max-nesting-depth */
+>>>>>>> Remove grid object

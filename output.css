@@ -1497,6 +1497,108 @@ h6 {
 /* stylelint-enable max-nesting-depth */
 /* stylelint-enable max-line-length */
 /* ==========================================================================
+   #TEXT UTILITY
+   ========================================================================== */
+/**
+ * Usual text utility classes to overcome the common text management needs.
+ */
+/* Alignment.
+   ========================================================================== */
+.u-text-left {
+  text-align: left; }
+
+.u-text-center {
+  text-align: center; }
+
+.u-text-right {
+  text-align: right; }
+
+.u-text-justify {
+  text-align: justify; }
+
+/* Sizing.
+   ========================================================================== */
+.u-text-h1 {
+  font-size: 32px;
+  font-size: 2rem; }
+
+.u-text-h2 {
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+.u-text-h3 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+.u-text-h4 {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.u-text-h5 {
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.u-text-h6 {
+  font-size: 16px;
+  font-size: 1rem; }
+
+/* Weights.
+   ========================================================================== */
+.u-text-hairline {
+  font-weight: 100; }
+
+.u-text-thin {
+  font-weight: 200; }
+
+.u-text-light {
+  font-weight: 300; }
+
+.u-text-normal {
+  font-weight: 400; }
+
+.u-text-medium {
+  font-weight: 500; }
+
+.u-text-semibold {
+  font-weight: 600; }
+
+.u-text-bold {
+  font-weight: 700; }
+
+.u-text-extrabold {
+  font-weight: 800; }
+
+.u-text-black {
+  font-weight: 900; }
+
+/* Style.
+   ========================================================================== */
+.u-text-italic {
+  font-style: italic; }
+
+/* Transform.
+   ========================================================================== */
+.u-text-uppercase {
+  text-transform: uppercase; }
+
+.u-text-lowercase {
+  text-transform: lowercase; }
+
+.u-text-capitalize {
+  text-transform: capitalize; }
+
+/* Decoration.
+   ========================================================================== */
+.u-text-underline {
+  text-decoration: underline; }
+
+.u-text-line-through {
+  text-decoration: line-through; }
+
+.u-text-no-underline {
+  text-decoration: none; }
+
+/* ==========================================================================
    WIDTH UTILITY
    ========================================================================== */
 /*

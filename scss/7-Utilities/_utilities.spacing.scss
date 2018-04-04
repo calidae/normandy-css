@@ -17,7 +17,8 @@
  */
 
 /* stylelint-disable string-quotes */
-
+/* stylelint-disable max-nesting-depth */
+/* stylelint-disable max-line-length */
 $spacing-directions: (
   null: null,
   '-top': '-top',
@@ -49,10 +50,14 @@ $spacing-sizes: (
 
     @each $size-namespace, $size in $spacing-sizes {
 
-      .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace} {
+      @if not($size-namespace == '-auto' and $property-namespace == 'padding') {
 
-        @each $direction in $direction-rules {
-          #{$property}#{$direction}: $size !important;
+        .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace} {
+
+          @each $direction in $direction-rules {
+            #{$property}#{$direction}: $size !important;
+          }
+
         }
 
       }
@@ -62,4 +67,7 @@ $spacing-sizes: (
   }
 
 }
+/* stylelint-enable string-quotes */
+/* stylelint-enable max-nesting-depth */
+/* stylelint-enable max-line-length */
 

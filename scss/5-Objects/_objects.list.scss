@@ -1,0 +1,34 @@
+/* ==========================================================================
+   LIST OBJECT
+   ========================================================================== */
+
+
+/**
+ * Unstyled inline or blocked lists.
+ *
+ * 1. We need to defensively reset any box-model properties.
+ */
+
+.o-list {
+  margin: 0; /* [1] */
+  padding: 0; /* [1] */
+  list-style: none;
+}
+
+
+.o-list__item {
+  display: inline-block;
+}
+
+
+
+
+
+/* Display modifiers.
+   ========================================================================== */
+
+.o-list--block {
+  > .o-list__item {
+    display: block;
+  }
+}

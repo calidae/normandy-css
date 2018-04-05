@@ -6,12 +6,22 @@
  * This will generate a series of utility classes that give a fluid width to
  * whichever element they’re applied, e.g.:
  *
- *   <img src="" alt="" class="u-1/2" />
- *
- * Remember that the Grid Object is using another classes to set its item
- * widths, so this utility classes are meant to be used with another elements
- * of the project.
+ *   <div class="u-1/2"></div>
  */
+
+/*
+ * Which fractions would you like in your utilities?
+ *
+ *  .u-1/2
+ *  .u-2/5
+ *  .u-3/4
+ *  .u-2/3
+ *  .u-5/6
+ */
+
+$width-fractions: 1 2 3 4 5 6 !default;
+
+
 
 
 
@@ -19,7 +29,7 @@
  * Loop through values and generate the classes.
  */
 
-@each $denominator in $global-width-fractions {
+@each $denominator in $width-fractions {
   @for $numerator from 1 through $denominator {
 
     .u-#{$numerator}\/#{$denominator} {

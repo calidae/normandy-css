@@ -10,5 +10,3 @@
 * [Nesting](nesting.md)
 * [Encapsulament de frameworks](encapsulament-de-frameworks.md)
 * [No ID's](no-ids.md)
-* [Grid](grid.md)
-

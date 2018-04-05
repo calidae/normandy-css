@@ -1,30 +1,22 @@
 {
   "name": "normandy-css",
+  "description": "Normandy CSS boilerplate and guidelines",
   "license": "MIT",
   "version": "0.1.0",
-  "description": "Normandy CSS boilerplate and guidelines",
   "main": "scss/main.scss",
   "scripts": {
-    "prepublish": "npm run sass && npm run test",
+    "prepare": "npm run sass && npm run test",
     "sass": "sass scss/main.scss output.css --sourcemap=none",
     "lint": "stylelint scss/**/*.scss --syntax scss",
     "mocha": "mocha --reporter min",
     "test": "npm run lint && npm run mocha"
   },
-  "author": "Adrià Fontcuberta <adria@calidae.com>",
+  "author": "Adrià Fontcuberta <adria@calidae.com> (http://fontcuberta.cat)",
   "contributors": [
     "Xavier Pregona <xevops@gmail.com>",
-    "Oriol Ferràndez Grau<oriol@ferrandez.cat> (https://www.ferrandez.cat)"
+    "Oriol Ferràndez Grau <oriol@ferrandez.cat> (https://www.ferrandez.cat)"
   ],
-  "keywords": [
-    "css",
-    "sass",
-    "scss",
-    "bem",
-    "itcss",
-    "oocss",
-    "smacss"
-  ],
+  "keywords": ["css","sass","scss","bem","itcss","oocss","smacss"],
   "homepage": "https://github.com/calidae/normandy-css",
   "repository": {
     "type": "git",

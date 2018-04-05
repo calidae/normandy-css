@@ -2,16 +2,8 @@
    TEST FONT-SIZE TOOLS
    ========================================================================== */
 
+@import "../scss/1-Settings/settings.sizes";
 @import "../scss/2-Tools/tools.font-size";
-
-
-/**
- * Test configuration.
- */
-
-@mixin mock {
-    $global-font-size: 16px;
-}
 
 
 /**
@@ -19,110 +11,103 @@
  */
 
 /* stylelint-disable max-line-length */
-@include test-module("Font-size Tools") {
+@include describe("Font-size Tools") {
 
-    @include mock();
+  @include describe("@mixin font-size") {
 
-    @include test-module("@mixin font-size") {
+    @include it("should return font size is pixels and rems") {
 
-        @include test("should return font size is pixels and rems") {
-
-            @include assert("default pixels and rems should be compiled") {
-                @include output {
-                    @include font-size();
-                }
-
-                @include expect {
-                    font-size: 16px;
-                    font-size: 1rem;
-                }
-            }
-
-            @include assert("explicit default pixels and rems should be compiled") {
-                @include output {
-                    @include font-size(16px);
-                }
-
-                @include expect {
-                    font-size: 16px;
-                    font-size: 1rem;
-                }
-            }
-
-            @include assert("bigger pixels and rems should be compiled") {
-                @include output {
-                    @include font-size(32px);
-                }
-
-                @include expect {
-                    font-size: 32px;
-                    font-size: 2rem;
-                }
-            }
-
-            @include assert("bigger, decimal-valued pixels and rems should be compiled") {
-                @include output {
-                    @include font-size(21px);
-                }
-
-                @include expect {
-                    font-size: 21px;
-                    font-size: 1.3125rem;
-                }
-            }
-
-            @include assert("smaller pixels and rems should be compiled") {
-                @include output {
-                    @include font-size(8px);
-                }
-
-                @include expect {
-                    font-size: 8px;
-                    font-size: 0.5rem;
-                }
-            }
-
+      @include assert("default pixels and rems should be compiled") {
+        @include output {
+          @include font-size();
         }
-
-
-        @include test("should add !important keyword if specified") {
-
-            @include assert("!important keyword should be added") {
-                @include output {
-                    @include font-size(16px, true);
-                }
-
-                @include expect {
-                    font-size: 16px !important;
-                    font-size: 1rem !important;
-                }
-            }
-
-            @include assert("!important keyword should be added") {
-                @include output {
-                    @include font-size(16px, $important: true);
-                }
-
-                @include expect {
-                    font-size: 16px !important;
-                    font-size: 1rem !important;
-                }
-            }
-
-            @include assert("!important keyword should not be added") {
-                @include output {
-                    @include font-size(16px, false);
-                }
-
-                @include expect {
-                    font-size: 16px;
-                    font-size: 1rem;
-                }
-            }
-
+        @include expect {
+          font-size: 16px;
+          font-size: 1rem;
         }
+      }
+
+      @include assert("explicit default pixels and rems should be compiled") {
+        @include output {
+          @include font-size(16px);
+        }
+        @include expect {
+          font-size: 16px;
+          font-size: 1rem;
+        }
+      }
+
+      @include assert("bigger pixels and rems should be compiled") {
+        @include output {
+          @include font-size(32px);
+        }
+        @include expect {
+          font-size: 32px;
+          font-size: 2rem;
+        }
+      }
+
+      @include assert("bigger, decimal-valued pixels and rems should be compiled") {
+        @include output {
+          @include font-size(21px);
+        }
+        @include expect {
+          font-size: 21px;
+          font-size: 1.3125rem;
+        }
+      }
+
+      @include assert("smaller pixels and rems should be compiled") {
+        @include output {
+          @include font-size(8px);
+        }
+        @include expect {
+          font-size: 8px;
+          font-size: 0.5rem;
+        }
+      }
 
     }
+
+
+    @include it("should add !important keyword if specified") {
+
+      @include assert("!important keyword should be added") {
+        @include output {
+          @include font-size(16px, true);
+        }
+
+        @include expect {
+          font-size: 16px !important;
+          font-size: 1rem !important;
+        }
+      }
+
+      @include assert("!important keyword should be added") {
+        @include output {
+          @include font-size(16px, $important: true);
+        }
+
+        @include expect {
+          font-size: 16px !important;
+          font-size: 1rem !important;
+        }
+      }
+
+      @include assert("!important keyword should not be added") {
+        @include output {
+          @include font-size(16px, false);
+        }
+
+        @include expect {
+          font-size: 16px;
+          font-size: 1rem;
+        }
+      }
+
+    }
+
+  }
 
 }
 /* stylelint-enable max-line-length */

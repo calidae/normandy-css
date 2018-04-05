@@ -55,6 +55,14 @@
  * similar colors.
  *
  *
+ *
+ * To add or modify the $global-colors map you can use our custom map-add tool
+ * in your custom _settings.colors.scss file:
+ *
+ * $global-colors: map-add($global-colors, "branding-primary", #c0ffee);
+ *
+ *
+ *
  * Since we don't have color variables but color maps, you need to use the
  * `map-get` Sass function if you want to use a specific color:
  *

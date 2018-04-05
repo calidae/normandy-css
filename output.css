@@ -1231,6 +1231,8 @@ h6 {
  *   .u-margin-auto {}
  */
 /* stylelint-disable string-quotes */
+/* stylelint-disable max-nesting-depth */
+/* stylelint-disable max-line-length */
 .u-padding {
   padding: 24px !important; }
 
@@ -1248,9 +1250,6 @@ h6 {
 
 .u-padding-none {
   padding: 0 !important; }
-
-.u-padding-auto {
-  padding: auto !important; }
 
 .u-padding-top {
   padding-top: 24px !important; }
@@ -1270,9 +1269,6 @@ h6 {
 .u-padding-top-none {
   padding-top: 0 !important; }
 
-.u-padding-top-auto {
-  padding-top: auto !important; }
-
 .u-padding-right {
   padding-right: 24px !important; }
 
@@ -1290,9 +1286,6 @@ h6 {
 
 .u-padding-right-none {
   padding-right: 0 !important; }
-
-.u-padding-right-auto {
-  padding-right: auto !important; }
 
 .u-padding-bottom {
   padding-bottom: 24px !important; }
@@ -1312,9 +1305,6 @@ h6 {
 .u-padding-bottom-none {
   padding-bottom: 0 !important; }
 
-.u-padding-bottom-auto {
-  padding-bottom: auto !important; }
-
 .u-padding-left {
   padding-left: 24px !important; }
 
@@ -1332,9 +1322,6 @@ h6 {
 
 .u-padding-left-none {
   padding-left: 0 !important; }
-
-.u-padding-left-auto {
-  padding-left: auto !important; }
 
 .u-padding-horizontal {
   padding-left: 24px !important;
@@ -1360,10 +1347,6 @@ h6 {
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
-.u-padding-horizontal-auto {
-  padding-left: auto !important;
-  padding-right: auto !important; }
-
 .u-padding-vertical {
   padding-top: 24px !important;
   padding-bottom: 24px !important; }
@@ -1387,10 +1370,6 @@ h6 {
 .u-padding-vertical-none {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
-
-.u-padding-vertical-auto {
-  padding-top: auto !important;
-  padding-bottom: auto !important; }
 
 .u-margin {
   margin: 24px !important; }
@@ -1553,6 +1532,9 @@ h6 {
   margin-top: auto !important;
   margin-bottom: auto !important; }
 
+/* stylelint-enable string-quotes */
+/* stylelint-enable max-nesting-depth */
+/* stylelint-enable max-line-length */
 /* ==========================================================================
    WIDTH UTILITY
    ========================================================================== */

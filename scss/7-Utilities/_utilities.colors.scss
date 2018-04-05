@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #COLOR UTILITY
+   ========================================================================== */
+
+@each $name, $value in $global-colors {
+  .u-text-#{$name} {
+    color: $value;
+  }
+
+  .u-background-#{$name} {
+    background-color: $value;
+  }
+}

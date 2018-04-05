@@ -1,0 +1,137 @@
+/* ==========================================================================
+   #TEXT UTILITY
+   ========================================================================== */
+
+/**
+ * Usual text utility classes to overcome the common text management needs.
+ */
+
+
+
+
+
+/* Alignment.
+   ========================================================================== */
+
+
+$alignments: (
+  left: left,
+  center: center,
+  right: right,
+  justify: justify
+);
+
+@each $name, $value in $alignments {
+  .u-text-#{$name} {
+    text-align: $value;
+  }
+}
+
+
+
+
+/* Sizing.
+   ========================================================================== */
+
+
+.u-text-h1 {
+  @include font-size($font-size-h1);
+}
+
+.u-text-h2 {
+  @include font-size($font-size-h2);
+}
+
+.u-text-h3 {
+  @include font-size($font-size-h3);
+}
+
+.u-text-h4 {
+  @include font-size($font-size-h4);
+}
+
+.u-text-h5 {
+  @include font-size($font-size-h5);
+}
+
+.u-text-h6 {
+  @include font-size($font-size-h6);
+}
+
+
+
+
+
+/* Weights.
+   ========================================================================== */
+
+
+$weights: (
+  "hairline": 100,
+  "thin": 200,
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "extrabold": 800,
+  "black": 900
+);
+
+@each $name, $value in $weights {
+  .u-text-#{$name} {
+    font-weight: $value;
+  }
+}
+
+
+
+
+
+/* Style.
+   ========================================================================== */
+
+
+.u-text-italic {
+  font-style: italic;
+}
+
+
+
+
+
+/* Transform.
+   ========================================================================== */
+
+
+$weights: (
+  uppercase: uppercase,
+  lowercase: lowercase,
+  capitalize: capitalize
+);
+
+@each $name, $value in $weights {
+  .u-text-#{$name} {
+    text-transform: $value;
+  }
+}
+
+
+
+
+
+/* Decoration.
+   ========================================================================== */
+
+
+$weights: (
+  underline: underline,
+  line-through: line-through,
+  no-underline: none
+);
+
+@each $name, $value in $weights {
+  .u-text-#{$name} {
+    text-decoration: $value;
+  }
+}

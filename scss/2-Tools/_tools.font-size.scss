@@ -24,7 +24,7 @@
 
   @if ($important == true) {
     $important: !important;
-  } @elseif ($important == false) {
+  } @else if ($important == false) {
     $important: null;
   } @else {
     @error "`#{$important}` needs to be `true` or `false`.";

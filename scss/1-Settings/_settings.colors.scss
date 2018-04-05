@@ -3,17 +3,29 @@
    ========================================================================== */
 
 /**
- * Branding colors.
+ * The global colors file contains any project-wide color variables. Please
+ * maintain this file as short as possible, trying to avoid variables for
+ * similar colors.
+ *
+ *
+ * Since we don't have color variables but color maps, you need to use the
+ * `map-get` Sass function if you want to use a specific color:
+ *
+ * .c-some-component {
+ *   border-color: map-get($global-colors, "branding-primary");
+ * }
  */
 
-$color-branding-primary: #acc743;
+$global-branding-colors: (
+  "branding-primary": #acc743
+);
+
+$global-notify-colors: (
+  "notify-success": #4caf50,
+  "notify-info": #29b6f6,
+  "notify-warning": #ff9800,
+  "notify-danger": #f44336,
+);
 
 
-/**
- * Notification colors.
- */
-
-$color-notify-success: #4caf50;
-$color-notify-info: #29b6f6;
-$color-notify-warning: #ff9800;
-$color-notify-danger: #f44336;
+$global-colors: map-merge($global-branding-colors, $global-notify-colors);

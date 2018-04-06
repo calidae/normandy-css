@@ -23,7 +23,7 @@ $alignments: (
 
 @each $name, $value in $alignments {
   .u-text-#{$name} {
-    text-align: $value;
+    text-align: $value !important;
   }
 }
 
@@ -35,27 +35,27 @@ $alignments: (
 
 
 .u-text-h1 {
-  @include font-size($font-size-h1);
+  @include font-size($font-size-h1, true);
 }
 
 .u-text-h2 {
-  @include font-size($font-size-h2);
+  @include font-size($font-size-h2, true);
 }
 
 .u-text-h3 {
-  @include font-size($font-size-h3);
+  @include font-size($font-size-h3, true);
 }
 
 .u-text-h4 {
-  @include font-size($font-size-h4);
+  @include font-size($font-size-h4, true);
 }
 
 .u-text-h5 {
-  @include font-size($font-size-h5);
+  @include font-size($font-size-h5, true);
 }
 
 .u-text-h6 {
-  @include font-size($font-size-h6);
+  @include font-size($font-size-h6, true);
 }
 
 
@@ -80,7 +80,7 @@ $weights: (
 
 @each $name, $value in $weights {
   .u-text-#{$name} {
-    font-weight: $value;
+    font-weight: $value !important;
   }
 }
 
@@ -93,7 +93,7 @@ $weights: (
 
 
 .u-text-italic {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 
@@ -112,7 +112,7 @@ $weights: (
 
 @each $name, $value in $weights {
   .u-text-#{$name} {
-    text-transform: $value;
+    text-transform: $value !important;
   }
 }
 
@@ -132,6 +132,6 @@ $weights: (
 
 @each $name, $value in $weights {
   .u-text-#{$name} {
-    text-decoration: $value;
+    text-decoration: $value !important;
   }
 }

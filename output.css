@@ -1494,98 +1494,98 @@ h6 {
 /* Alignment.
    ========================================================================== */
 .u-text-left {
-  text-align: left; }
+  text-align: left !important; }
 
 .u-text-center {
-  text-align: center; }
+  text-align: center !important; }
 
 .u-text-right {
-  text-align: right; }
+  text-align: right !important; }
 
 .u-text-justify {
-  text-align: justify; }
+  text-align: justify !important; }
 
 /* Sizing.
    ========================================================================== */
 .u-text-h1 {
-  font-size: 32px;
-  font-size: 2rem; }
+  font-size: 32px !important;
+  font-size: 2rem !important; }
 
 .u-text-h2 {
-  font-size: 28px;
-  font-size: 1.75rem; }
+  font-size: 28px !important;
+  font-size: 1.75rem !important; }
 
 .u-text-h3 {
-  font-size: 24px;
-  font-size: 1.5rem; }
+  font-size: 24px !important;
+  font-size: 1.5rem !important; }
 
 .u-text-h4 {
-  font-size: 20px;
-  font-size: 1.25rem; }
+  font-size: 20px !important;
+  font-size: 1.25rem !important; }
 
 .u-text-h5 {
-  font-size: 18px;
-  font-size: 1.125rem; }
+  font-size: 18px !important;
+  font-size: 1.125rem !important; }
 
 .u-text-h6 {
-  font-size: 16px;
-  font-size: 1rem; }
+  font-size: 16px !important;
+  font-size: 1rem !important; }
 
 /* Weights.
    ========================================================================== */
 .u-text-hairline {
-  font-weight: 100; }
+  font-weight: 100 !important; }
 
 .u-text-thin {
-  font-weight: 200; }
+  font-weight: 200 !important; }
 
 .u-text-light {
-  font-weight: 300; }
+  font-weight: 300 !important; }
 
 .u-text-normal {
-  font-weight: 400; }
+  font-weight: 400 !important; }
 
 .u-text-medium {
-  font-weight: 500; }
+  font-weight: 500 !important; }
 
 .u-text-semibold {
-  font-weight: 600; }
+  font-weight: 600 !important; }
 
 .u-text-bold {
-  font-weight: 700; }
+  font-weight: 700 !important; }
 
 .u-text-extrabold {
-  font-weight: 800; }
+  font-weight: 800 !important; }
 
 .u-text-black {
-  font-weight: 900; }
+  font-weight: 900 !important; }
 
 /* Style.
    ========================================================================== */
 .u-text-italic {
-  font-style: italic; }
+  font-style: italic !important; }
 
 /* Transform.
    ========================================================================== */
 .u-text-uppercase {
-  text-transform: uppercase; }
+  text-transform: uppercase !important; }
 
 .u-text-lowercase {
-  text-transform: lowercase; }
+  text-transform: lowercase !important; }
 
 .u-text-capitalize {
-  text-transform: capitalize; }
+  text-transform: capitalize !important; }
 
 /* Decoration.
    ========================================================================== */
 .u-text-underline {
-  text-decoration: underline; }
+  text-decoration: underline !important; }
 
 .u-text-line-through {
-  text-decoration: line-through; }
+  text-decoration: line-through !important; }
 
 .u-text-no-underline {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 /* ==========================================================================
    WIDTH UTILITY

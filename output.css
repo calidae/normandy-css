@@ -24,10 +24,25 @@
    COLORS SETTINGS
    ========================================================================== */
 /**
- * Branding colors.
- */
-/**
- * Notification colors.
+ * The global colors file contains any project-wide color variables. Please
+ * maintain this file as short as possible, trying to avoid variables for
+ * similar colors.
+ *
+ *
+ *
+ * To add or modify the $global-colors map you can use our custom map-add tool
+ * in your custom _settings.colors.scss file:
+ *
+ * $global-colors: map-add($global-colors, "branding-primary", #c0ffee);
+ *
+ *
+ *
+ * Since we don't have color variables but color maps, you need to use the
+ * `map-get` Sass function if you want to use a specific color:
+ *
+ * .c-some-component {
+ *   border-color: map-get($global-colors, "branding-primary");
+ * }
  */
 /* ==========================================================================
    CORE SETTINGS
@@ -64,25 +79,16 @@
    GLOBAL FONT SIZES
    ========================================================================== */
 /**
- * The global colors file contains any project-wide color variables. Please
- * maintain this file as short as possible, trying to avoid variables for
- * similar colors.
- *
- *
- *
- * To add or modify the $global-colors map you can use our custom map-add tool
- * in your custom _settings.colors.scss file:
- *
- * $global-colors: map-add($global-colors, "branding-primary", #c0ffee);
- *
- *
- *
- * Since we don't have color variables but color maps, you need to use the
- * `map-get` Sass function if you want to use a specific color:
- *
- * .c-some-component {
- *   border-color: map-get($global-colors, "branding-primary");
- * }
+ * The global font sizes settings file contains any project-wide font-size
+ * variables. They are mostly used to give headings its size and to generate
+ * font-size utility classes.
+ */
+/* ==========================================================================
+   GLOBAL SETTINGS
+   ========================================================================== */
+/**
+ * The global settings file contains any project-wide variables; things that
+ * need to be made available to the entire codebase.
  */
 /* ==========================================================================
    TOOLS

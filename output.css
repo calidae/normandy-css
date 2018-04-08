@@ -21,33 +21,47 @@
  * more modular and we achieve a higher separation of concerns.
  */
 /* ==========================================================================
-   GLOBAL SETTINGS
+   COLORS SETTINGS
    ========================================================================== */
 /**
- * The global settings file contains any project-wide variables; things that
- * need to be made available to the entire codebase.
+ * Branding colors.
+ */
+/**
+ * Notification colors.
  */
 /* ==========================================================================
-   SIZE SETTINGS
+   CORE SETTINGS
    ========================================================================== */
 /**
- * Font-size and spacing settings. These values should be defined soon and
- * be modified with caution.
+ * This file sets up normandy-css most important variables.
+ * These values should be defined soon and be modified with caution.
+ */
+/* stylelint-disable scss/dollar-variable-colon-space-after */
+/**
+ * Baseline grid lines height.
+ * Every spacing metric should be based on this.
+ */
+/**
+ * How many grid lines should our spacing unit variants span?
+ * Each value should be an unitless integer.
+ */
+/**
+ * This will give us variables to create spacing values such as padding and
+ * margin utilities and mantain vertical rythm across the project.
+ *
+ * It is not recommended that you modify these following variables
+ * (it can break your vertical rhythm).
  */
 /**
  * Base typographical styles and baseline grid. Make sure you define these
  * values in pixels: they will converted to more appropriate units.
  */
-/**
- * How many times larger/smaller than the default should the spacing unit
- * variants be? Make them unitless.
- */
-/**
- * This will give us variables to create spacing values such as padding and
- * margin utilities and mantain vertical rythm across the project.
- */
+/* stylelint-enable scss/dollar-variable-colon-space-after */
 /* ==========================================================================
-   COLORS SETTINGS
+   DO NOT MODIFY ANYTHING BELOW THIS POINT
+   ========================================================================== */
+/* ==========================================================================
+   GLOBAL FONT SIZES
    ========================================================================== */
 /**
  * The global colors file contains any project-wide color variables. Please
@@ -94,22 +108,17 @@
    FONT-SIZE TOOLS
    ========================================================================== */
 /**
- * Mixin to add font-size to an element.
- * It automatically converts `px` units into `rem` values and also `px` values
- * for old IEs not supporting `rem` values.
+ * Generates a rem font-size (with pixel fallback) and a baseline-compatible
+ * unitless line-height from a pixel font-size value. Basic usage is simply:
  *
- * Rule of thumb: Use rem units unless you’re sure you need em units, including
- * on font sizes. More info: https://goo.gl/BGG47K.
+ *   @include font-size(18px);
  *
+ * You can force a specific line-height by passing it as the second argument:
  *
- * .foo {
- *   @include font-size();
- * }
- *
- * .bar {
- *   @include font-size(32px);
- * }
+ *   @include font-size(16px, 1);
  */
+/* stylelint-disable max-line-length */
+/* stylelint-enable max-line-length */
 /* ==========================================================================
    GENERIC
    ========================================================================== */
@@ -625,35 +634,45 @@ html {
   /* [3] */ }
 
 /* ==========================================================================
-   PAGE ELEMENT
+   HEADING ELEMENTS
    ========================================================================== */
 /**
- * Anything else than defining a font-size would be too much opinion for a
- * boilerplate.
+ * Simple default styles for headings 1 through 6.
+ *
+ * We have all of our heading font sizes defined here. Passing these pixel
+ * values into our `font-size()` mixin will generate a rem-based `font-size`
+ * with a pixel fallback, as well as generating a `line-height` that will
+ * sit on our baseline grid.
  */
 h1 {
   font-size: 32px;
-  font-size: 2rem; }
+  font-size: 2rem;
+  line-height: 1.3125; }
 
 h2 {
   font-size: 28px;
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  line-height: 1.28571; }
 
 h3 {
   font-size: 24px;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  line-height: 1.25; }
 
 h4 {
   font-size: 20px;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  line-height: 1.5; }
 
 h5 {
   font-size: 18px;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  line-height: 1.33333; }
 
 h6 {
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1.5; }
 
 /* ==========================================================================
    OBJECTS

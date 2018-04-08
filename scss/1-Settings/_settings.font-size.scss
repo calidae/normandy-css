@@ -1,0 +1,18 @@
+/* ==========================================================================
+   GLOBAL FONT SIZES
+   ========================================================================== */
+
+/**
+ * The global font sizes settings file contains any project-wide font-size
+ * variables. They are mostly used to give headings its size and to generate
+ * font-size utility classes.
+ */
+
+$global-font-sizes: (
+  h1: 32px,
+  h2: 28px,
+  h3: 24px,
+  h4: 20px,
+  h5: 18px,
+  h6: 16px
+) !default;

@@ -56,7 +56,8 @@ sobre les de Normandy CSS.
 Normandy CSS treballa sobre unes variables bàsiques que permeten la configuració
 de tot el boilerplate.
 
-A continuació es mostren les variables bàsiques, que es troben a `1-Settings/_settings.core.scss`:
+A continuació es mostren les variables bàsiques i els seus valors per defecte,
+que es troben a `1-Settings/_settings.core.scss`:
 
 ```scss
 $global-baseline: 6px;

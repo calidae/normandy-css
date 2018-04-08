@@ -13,6 +13,7 @@
  * more modular and we achieve a higher separation of concerns.
  */
 
-@import "settings.global";
-@import "settings.sizes";
 @import "settings.colors";
+@import "settings.core";
+@import "settings.font-size";
+@import "settings.global";

@@ -2,7 +2,7 @@
    TEST FONT-SIZE TOOLS
    ========================================================================== */
 
-@import "../scss/1-Settings/settings.sizes";
+@import "../scss/1-Settings/settings.core";
 @import "../scss/2-Tools/tools.font-size";
 
 
@@ -11,100 +11,135 @@
  */
 
 /* stylelint-disable max-line-length */
-@include describe("Font-size Tools") {
+@include describe("@mixin font-size") {
 
-  @include describe("@mixin font-size") {
+  @include it("should return font size is pixels and rems") {
 
-    @include it("should return font size is pixels and rems") {
+    @include assert("explicit default pixels and rems should be compiled") {
+      @include output {
+        @include font-size(16px);
+      }
+      @include expect {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
 
-      @include assert("default pixels and rems should be compiled") {
-        @include output {
-          @include font-size();
-        }
-        @include expect {
-          font-size: 16px;
-          font-size: 1rem;
-        }
+    @include assert("bigger pixels and rems should be compiled") {
+      @include output {
+        @include font-size(32px);
+      }
+      @include expect {
+        font-size: 32px;
+        font-size: 2rem;
+        line-height: 1.3125;
+      }
+    }
+
+    @include assert("bigger, decimal-valued pixels and rems should be compiled") {
+      @include output {
+        @include font-size(21px);
+      }
+      @include expect {
+        font-size: 21px;
+        font-size: 1.3125rem;
+        line-height: 1.42857;
+      }
+    }
+
+    @include assert("smaller pixels and rems should be compiled") {
+      @include output {
+        @include font-size(8px);
+      }
+      @include expect {
+        font-size: 8px;
+        font-size: 0.5rem;
+        line-height: 2.25;
+      }
+    }
+
+  }
+
+
+  @include it("should use line-height attribute") {
+
+    @include assert("a number when attriubte is numeric") {
+      @include output {
+        @include font-size(16px, $line-height: 2);
       }
 
-      @include assert("explicit default pixels and rems should be compiled") {
-        @include output {
-          @include font-size(16px);
-        }
-        @include expect {
-          font-size: 16px;
-          font-size: 1rem;
-        }
+      @include expect {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 2;
       }
-
-      @include assert("bigger pixels and rems should be compiled") {
-        @include output {
-          @include font-size(32px);
-        }
-        @include expect {
-          font-size: 32px;
-          font-size: 2rem;
-        }
-      }
-
-      @include assert("bigger, decimal-valued pixels and rems should be compiled") {
-        @include output {
-          @include font-size(21px);
-        }
-        @include expect {
-          font-size: 21px;
-          font-size: 1.3125rem;
-        }
-      }
-
-      @include assert("smaller pixels and rems should be compiled") {
-        @include output {
-          @include font-size(8px);
-        }
-        @include expect {
-          font-size: 8px;
-          font-size: 0.5rem;
-        }
-      }
-
     }
 
 
-    @include it("should add !important keyword if specified") {
-
-      @include assert("!important keyword should be added") {
-        @include output {
-          @include font-size(16px, true);
-        }
-
-        @include expect {
-          font-size: 16px !important;
-          font-size: 1rem !important;
-        }
+    @include assert("normal value when attribute is normal") {
+      @include output {
+        @include font-size(16px, $line-height: "normal");
       }
 
-      @include assert("!important keyword should be added") {
-        @include output {
-          @include font-size(16px, $important: true);
-        }
+      @include expect {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: "normal";
+      }
+    }
 
-        @include expect {
-          font-size: 16px !important;
-          font-size: 1rem !important;
-        }
+
+    @include assert("inherit value when attribute is inherit") {
+      @include output {
+        @include font-size(16px, $line-height: "inherit");
       }
 
-      @include assert("!important keyword should not be added") {
-        @include output {
-          @include font-size(16px, false);
-        }
+      @include expect {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: "inherit";
+      }
+    }
 
-        @include expect {
-          font-size: 16px;
-          font-size: 1rem;
-        }
+
+    @include assert("no value when attribute is none") {
+      @include output {
+        @include font-size(16px, $line-height: "none");
       }
 
+      @include expect {
+        font-size: 16px;
+        font-size: 1rem;
+      }
+    }
+
+  }
+
+  @include it("should add !important keyword if specified") {
+
+    @include assert("!important keyword should be added") {
+      @include output {
+        @include font-size(16px, $important: true);
+      }
+
+      @include expect {
+        font-size: 16px !important;
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+      }
+    }
+
+    @include assert("!important keyword should not be added") {
+      @include output {
+        @include font-size(16px, $important: false);
+      }
+
+      @include expect {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
     }
 
   }

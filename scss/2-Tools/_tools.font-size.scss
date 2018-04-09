@@ -3,24 +3,26 @@
    ========================================================================== */
 
 /**
- * Mixin to add font-size to an element.
- * It automatically converts `px` units into `rem` values and also `px` values
- * for old IEs not supporting `rem` values.
+ * Generates a rem font-size (with pixel fallback) and a baseline-compatible
+ * unitless line-height from a pixel font-size value. Basic usage is simply:
  *
- * Rule of thumb: Use rem units unless you’re sure you need em units, including
- * on font sizes. More info: https://goo.gl/BGG47K.
+ *   @include font-size(18px);
  *
+ * You can force a specific line-height by passing it as the second argument:
  *
- * .foo {
- *   @include font-size();
- * }
- *
- * .bar {
- *   @include font-size(32px);
- * }
+ *   @include font-size(16px, 1);
  */
 
-@mixin font-size($font-size: $global-font-size, $important: false) {
+/* stylelint-disable max-line-length */
+@mixin font-size($font-size, $line-height: auto, $important: false) {
+
+  @if (type-of($font-size) == number) {
+    @if (unit($font-size) != "px") {
+      @error "`#{$font-size}` needs to be a pixel value.";
+    }
+  } @else {
+    @error "`#{$font-size}` needs to be a number.";
+  }
 
   @if ($important == true) {
     $important: !important;
@@ -30,6 +32,32 @@
     @error "`#{$important}` needs to be `true` or `false`.";
   }
 
+  // We provide a `px` fallback for old IEs not supporting `rem` values.
   font-size: $font-size $important;
   font-size: ($font-size / $global-font-size) * 1rem $important;
+
+
+
+  @if ($line-height == "auto") {
+    // Define how many grid lines each text line should span.
+    // By default, we set it to the minimum number of lines necessary
+    // in order to contain the defined font-size, +1 for some breathing room.
+    $lines: ceil($font-size / $global-baseline) + 1;
+    $line-height: $lines * $global-baseline;
+
+    line-height: ($line-height / $font-size) $important;
+  }
+
+
+  @else {
+    @if (type-of($line-height) == number or $line-height == "inherit" or $line-height == "normal") {
+      line-height: $line-height $important;
+    }
+
+    @else if ($line-height != "none" and $line-height != false) {
+      @error "`#{$line-height}` is not a valid value for `$line-height`.";
+    }
+  }
+
 }
+/* stylelint-enable max-line-length */

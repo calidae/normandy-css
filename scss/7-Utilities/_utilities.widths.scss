@@ -2,7 +2,7 @@
    WIDTH UTILITY
    ========================================================================== */
 
-/*
+/**
  * This will generate a series of utility classes that give a fluid width to
  * whichever element they’re applied, e.g.:
  *
@@ -22,19 +22,24 @@
 $width-fractions: 1 2 3 4 5 6 !default;
 
 
-
-
-
-/*
- * Loop through values and generate the classes.
- */
-
 @each $denominator in $width-fractions {
   @for $numerator from 1 through $denominator {
 
-    .u-#{$numerator}\/#{$denominator} {
+    .u-width-#{$numerator}\/#{$denominator} {
       width: ($numerator / $denominator) * 100% !important;
     }
 
   }
+}
+
+.u-width-none {
+  width: 0 !important;
+}
+
+.u-width-full {
+  width: 100% !important;
+}
+
+.u-width-screen {
+  width: 100vh !important;
 }

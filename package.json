@@ -16,7 +16,15 @@
     "Xavier Pregona <xevops@gmail.com>",
     "Oriol Ferràndez Grau <oriol@ferrandez.cat> (https://www.ferrandez.cat)"
   ],
-  "keywords": ["css","sass","scss","bem","itcss","oocss","smacss"],
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "bem",
+    "itcss",
+    "oocss",
+    "smacss"
+  ],
   "homepage": "https://github.com/calidae/normandy-css",
   "repository": {
     "type": "git",
@@ -26,6 +34,7 @@
     "mocha": "^3.5.3",
     "sass-true": "^3.1.0",
     "stylelint": "^9.2.0",
-    "stylelint-config-sass-guidelines": "^5.0.0"
+    "stylelint-config-sass-guidelines": "^5.0.0",
+    "stylelint-scss": "^3.0.0"
   }
 }

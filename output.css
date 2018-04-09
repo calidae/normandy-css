@@ -21,32 +21,6 @@
  * more modular and we achieve a higher separation of concerns.
  */
 /* ==========================================================================
-   GLOBAL SETTINGS
-   ========================================================================== */
-/**
- * The global settings file contains any project-wide variables; things that
- * need to be made available to the entire codebase.
- */
-/* ==========================================================================
-   SIZE SETTINGS
-   ========================================================================== */
-/**
- * Font-size and spacing settings. These values should be defined soon and
- * be modified with caution.
- */
-/**
- * Base typographical styles and baseline grid. Make sure you define these
- * values in pixels: they will converted to more appropriate units.
- */
-/**
- * How many times larger/smaller than the default should the spacing unit
- * variants be? Make them unitless.
- */
-/**
- * This will give us variables to create spacing values such as padding and
- * margin utilities and mantain vertical rythm across the project.
- */
-/* ==========================================================================
    COLORS SETTINGS
    ========================================================================== */
 /**
@@ -69,6 +43,52 @@
  * .c-some-component {
  *   border-color: map-get($global-colors, "branding-primary");
  * }
+ */
+/* ==========================================================================
+   CORE SETTINGS
+   ========================================================================== */
+/**
+ * This file sets up normandy-css most important variables.
+ * These values should be defined soon and be modified with caution.
+ */
+/* stylelint-disable scss/dollar-variable-colon-space-after */
+/**
+ * Baseline grid lines height.
+ * Every spacing metric should be based on this.
+ */
+/**
+ * How many grid lines should our spacing unit variants span?
+ * Each value should be an unitless integer.
+ */
+/**
+ * This will give us variables to create spacing values such as padding and
+ * margin utilities and mantain vertical rythm across the project.
+ *
+ * It is not recommended that you modify these following variables
+ * (it can break your vertical rhythm).
+ */
+/**
+ * Base typographical styles and baseline grid. Make sure you define these
+ * values in pixels: they will converted to more appropriate units.
+ */
+/* stylelint-enable scss/dollar-variable-colon-space-after */
+/* ==========================================================================
+   DO NOT MODIFY ANYTHING BELOW THIS POINT
+   ========================================================================== */
+/* ==========================================================================
+   GLOBAL FONT SIZES
+   ========================================================================== */
+/**
+ * The global font sizes settings file contains any project-wide font-size
+ * variables. They are mostly used to give headings its size and to generate
+ * font-size utility classes.
+ */
+/* ==========================================================================
+   GLOBAL SETTINGS
+   ========================================================================== */
+/**
+ * The global settings file contains any project-wide variables; things that
+ * need to be made available to the entire codebase.
  */
 /* ==========================================================================
    TOOLS
@@ -94,22 +114,17 @@
    FONT-SIZE TOOLS
    ========================================================================== */
 /**
- * Mixin to add font-size to an element.
- * It automatically converts `px` units into `rem` values and also `px` values
- * for old IEs not supporting `rem` values.
+ * Generates a rem font-size (with pixel fallback) and a baseline-compatible
+ * unitless line-height from a pixel font-size value. Basic usage is simply:
  *
- * Rule of thumb: Use rem units unless you’re sure you need em units, including
- * on font sizes. More info: https://goo.gl/BGG47K.
+ *   @include font-size(18px);
  *
+ * You can force a specific line-height by passing it as the second argument:
  *
- * .foo {
- *   @include font-size();
- * }
- *
- * .bar {
- *   @include font-size(32px);
- * }
+ *   @include font-size(16px, 1);
  */
+/* stylelint-disable max-line-length */
+/* stylelint-enable max-line-length */
 /* ==========================================================================
    GENERIC
    ========================================================================== */
@@ -625,35 +640,45 @@ html {
   /* [3] */ }
 
 /* ==========================================================================
-   PAGE ELEMENT
+   HEADING ELEMENTS
    ========================================================================== */
 /**
- * Anything else than defining a font-size would be too much opinion for a
- * boilerplate.
+ * Simple default styles for headings 1 through 6.
+ *
+ * We have all of our heading font sizes defined here. Passing these pixel
+ * values into our `font-size()` mixin will generate a rem-based `font-size`
+ * with a pixel fallback, as well as generating a `line-height` that will
+ * sit on our baseline grid.
  */
 h1 {
   font-size: 32px;
-  font-size: 2rem; }
+  font-size: 2rem;
+  line-height: 1.3125; }
 
 h2 {
   font-size: 28px;
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  line-height: 1.28571; }
 
 h3 {
   font-size: 24px;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  line-height: 1.25; }
 
 h4 {
   font-size: 20px;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  line-height: 1.5; }
 
 h5 {
   font-size: 18px;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  line-height: 1.33333; }
 
 h6 {
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1.5; }
 
 /* ==========================================================================
    OBJECTS
@@ -1132,6 +1157,21 @@ h6 {
 
 .u-flex-justify-evenly {
   justify-content: space-evenly !important; }
+
+/* ==========================================================================
+   HEIGHT UTILITY
+   ========================================================================== */
+/**
+ * Basic common height utilities.
+ */
+.u-height-none {
+  height: 0 !important; }
+
+.u-height-full {
+  height: 100% !important; }
+
+.u-height-screen {
+  height: 100vh !important; }
 
 /* ==========================================================================
    HIDE UTILITY
@@ -1638,7 +1678,7 @@ h6 {
 /* ==========================================================================
    WIDTH UTILITY
    ========================================================================== */
-/*
+/**
  * This will generate a series of utility classes that give a fluid width to
  * whichever element they’re applied, e.g.:
  *
@@ -1653,68 +1693,74 @@ h6 {
  *  .u-2/3
  *  .u-5/6
  */
-/*
- * Loop through values and generate the classes.
- */
-.u-1\/1 {
+.u-width-1\/1 {
   width: 100% !important; }
 
-.u-1\/2 {
+.u-width-1\/2 {
   width: 50% !important; }
 
-.u-2\/2 {
+.u-width-2\/2 {
   width: 100% !important; }
 
-.u-1\/3 {
+.u-width-1\/3 {
   width: 33.33333% !important; }
 
-.u-2\/3 {
+.u-width-2\/3 {
   width: 66.66667% !important; }
 
-.u-3\/3 {
+.u-width-3\/3 {
   width: 100% !important; }
 
-.u-1\/4 {
+.u-width-1\/4 {
   width: 25% !important; }
 
-.u-2\/4 {
+.u-width-2\/4 {
   width: 50% !important; }
 
-.u-3\/4 {
+.u-width-3\/4 {
   width: 75% !important; }
 
-.u-4\/4 {
+.u-width-4\/4 {
   width: 100% !important; }
 
-.u-1\/5 {
+.u-width-1\/5 {
   width: 20% !important; }
 
-.u-2\/5 {
+.u-width-2\/5 {
   width: 40% !important; }
 
-.u-3\/5 {
+.u-width-3\/5 {
   width: 60% !important; }
 
-.u-4\/5 {
+.u-width-4\/5 {
   width: 80% !important; }
 
-.u-5\/5 {
+.u-width-5\/5 {
   width: 100% !important; }
 
-.u-1\/6 {
+.u-width-1\/6 {
   width: 16.66667% !important; }
 
-.u-2\/6 {
+.u-width-2\/6 {
   width: 33.33333% !important; }
 
-.u-3\/6 {
+.u-width-3\/6 {
   width: 50% !important; }
 
-.u-4\/6 {
+.u-width-4\/6 {
   width: 66.66667% !important; }
 
-.u-5\/6 {
+.u-width-5\/6 {
   width: 83.33333% !important; }
 
-.u-6\/6 {
+.u-width-6\/6 {
   width: 100% !important; }
+
+.u-width-none {
+  width: 0 !important; }
+
+.u-width-full {
+  width: 100% !important; }
+
+.u-width-screen {
+  width: 100vh !important; }

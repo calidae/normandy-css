@@ -30,32 +30,15 @@ $alignments: (
 
 
 
+
 /* Sizing.
    ========================================================================== */
 
 
-.u-text-h1 {
-  @include font-size($font-size-h1, true);
-}
-
-.u-text-h2 {
-  @include font-size($font-size-h2, true);
-}
-
-.u-text-h3 {
-  @include font-size($font-size-h3, true);
-}
-
-.u-text-h4 {
-  @include font-size($font-size-h4, true);
-}
-
-.u-text-h5 {
-  @include font-size($font-size-h5, true);
-}
-
-.u-text-h6 {
-  @include font-size($font-size-h6, true);
+@each $name, $value in $global-font-sizes {
+  .u-text-#{$name} {
+    @include font-size($value, $line-height: none, $important: true);
+  }
 }
 
 

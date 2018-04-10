@@ -6,9 +6,9 @@
   "main": "scss/main.scss",
   "scripts": {
     "prepare": "npm run sass && npm run test",
-    "sass": "sass scss/main.scss output.css --sourcemap=none",
-    "lint": "stylelint scss/**/*.scss --syntax scss",
-    "mocha": "mocha --reporter min",
+    "sass": "node_modules/sass/sass.js scss/main.scss output.css",
+    "lint": "node_modules/stylelint/bin/stylelint.js scss/**/*.scss --syntax scss",
+    "mocha": "node_modules/mocha/bin/mocha --reporter min",
     "test": "npm run lint && npm run mocha"
   },
   "author": "Adrià Fontcuberta <adria@calidae.com> (http://fontcuberta.cat)",
@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "mocha": "^3.5.3",
+    "sass": "^1.1.1",
     "sass-true": "^3.1.0",
     "stylelint": "^9.2.0",
     "stylelint-config-sass-guidelines": "^5.0.0",

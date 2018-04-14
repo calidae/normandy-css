@@ -89,6 +89,15 @@
     margin-left: 0;
   }
 
+  &.o-media--reverse {
+
+    > .o-media__img {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+  }
+
 }
 
 

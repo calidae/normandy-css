@@ -2,7 +2,7 @@
   "name": "normandy-css",
   "description": "Normandy CSS boilerplate and guidelines",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "scss/main.scss",
   "scripts": {
     "prepare": "npm run sass && npm run test",

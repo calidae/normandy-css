@@ -4,10 +4,10 @@
 
 @each $name, $value in $global-colors {
   .u-text-#{$name} {
-    color: $value;
+    color: $value !important;
   }
 
   .u-background-#{$name} {
-    background-color: $value;
+    background-color: $value !important;
   }
 }

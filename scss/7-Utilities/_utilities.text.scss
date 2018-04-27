@@ -49,7 +49,7 @@ $alignments: (
    ========================================================================== */
 
 
-$weights: (
+$text-weights: (
   "hairline": 100,
   "thin": 200,
   "light": 300,
@@ -61,7 +61,7 @@ $weights: (
   "black": 900
 );
 
-@each $name, $value in $weights {
+@each $name, $value in $text-weights {
   .u-text-#{$name} {
     font-weight: $value !important;
   }
@@ -87,13 +87,13 @@ $weights: (
    ========================================================================== */
 
 
-$weights: (
+$text-transforms: (
   uppercase: uppercase,
   lowercase: lowercase,
   capitalize: capitalize
 );
 
-@each $name, $value in $weights {
+@each $name, $value in $text-transforms {
   .u-text-#{$name} {
     text-transform: $value !important;
   }
@@ -107,13 +107,13 @@ $weights: (
    ========================================================================== */
 
 
-$weights: (
+$text-decorations: (
   underline: underline,
   line-through: line-through,
   no-underline: none
 );
 
-@each $name, $value in $weights {
+@each $name, $value in $text-decorations {
   .u-text-#{$name} {
     text-decoration: $value !important;
   }

@@ -9,5 +9,6 @@
  */
 
 @function map-add($map, $key, $value) {
-  @return map-merge($map, ($key: $value));
+  $new: ($key: $value);
+  @return map-merge($map, $new);
 }

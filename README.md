@@ -21,13 +21,14 @@ npm install --save-dev normandy-css
 ```
 
 L'únic pas necessari per afegir Normandy CSS al teu projecte és importar el
-`main.scss` de cada capa i intercalar-hi els que hagis creat tu:
+`main.scss` de cada capa i intercalar-hi els que hagis creat tu amb l'excepció 
+de les capes setting i tools que es criden primer les de normandy:
 
 ```scss
 @import "/node_modules/normandy-css/scss/1-Settings/main";
-@import "/custom/path/to/my/scss/1-Settings/main";
-
 @import "/node_modules/normandy-css/scss/2-Tools/main";
+
+@import "/custom/path/to/my/scss/1-Settings/main";
 @import "/custom/path/to/my/scss/2-Tools/main";
 
 @import "/node_modules/normandy-css/scss/3-Generic/main";

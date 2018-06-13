@@ -1,7 +1,5 @@
 # Summary
 
-* [Introduction](README.md)
-* [Col·laborar](contributing.md)
 * [Les 7 capes de CSS](les-7-capes-de-css.md)
 * [Sobre els Objects](sobre-els-objects.md)
 * [Namespaces](namespaces.md)

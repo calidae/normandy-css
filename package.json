@@ -5,11 +5,13 @@
   "version": "1.0.2",
   "main": "scss/main.scss",
   "scripts": {
-    "prepare": "npm run sass && npm run test",
-    "sass": "node_modules/sass/sass.js scss/main.scss output.css --no-source-map",
-    "lint": "stylelint scss/**/*.scss --syntax scss",
+    "start": "npm run dev",
+    "dev": "gulp watch",
+    "sass": "gulp sass",
+    "lint": "gulp stylelint",
+    "test": "npm run lint && npm run mocha",
     "mocha": "mocha --reporter min",
-    "test": "npm run lint && npm run mocha"
+    "prepare": "npm test && gulp"
   },
   "author": "Adrià Fontcuberta <adria@calidae.com> (http://fontcuberta.cat)",
   "contributors": [
@@ -31,10 +33,14 @@
     "url": "git://github.com/calidae/normandy-css.git"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-stylelint": "^7.0.0",
     "mocha": "^3.5.3",
     "sass": "^1.3.0",
     "sass-true": "^3.1.0",
-    "stylelint": "^9.2.0",
+    "stylelint": "^9.2.1",
     "stylelint-config-sass-guidelines": "^5.0.0",
     "stylelint-scss": "^3.0.0"
   }

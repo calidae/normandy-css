@@ -9,11 +9,16 @@
  *
  *
  *
- * To add or modify the $global-colors map you can use our custom map-add tool
+ * To add or modify the $global-colors map you can use native map-merge method
  * in your custom _settings.colors.scss file:
  *
- * $global-colors: map-add($global-colors, "branding-primary", #c0ffee);
+ * $custom-colors: (
+ *  "branding-primary": #c0ffee
+ * );
+ * $global-colors: map-merge($global-colors, $custom-colors);
  *
+ * or, in a one-liner:
+ * $global-colors: map-merge($global-colors, ("branding-primary": #coffee));
  *
  *
  * Since we don't have color variables but color maps, you need to use the
@@ -22,6 +27,9 @@
  * .c-some-component {
  *   border-color: map-get($global-colors, "branding-primary");
  * }
+ *
+ * Please notices that _utilities.colors.scss generates some handy helper
+ * classes to manage text and background colors.
  */
 
 $global-colors: (

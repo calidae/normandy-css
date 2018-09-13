@@ -1137,6 +1137,9 @@ h6 {
 .u-flex-self-stretch {
   align-self: stretch !important; }
 
+.u-flex-self-baseline {
+  align-self: baseline !important; }
+
 /* Positioning flex items along a container's cross axis.
    ========================================================================== */
 .u-flex-items-stretch {
@@ -1770,4 +1773,4 @@ h6 {
   width: 100% !important; }
 
 .u-width-screen {
-  width: 100vh !important; }
+  width: 100vw !important; }

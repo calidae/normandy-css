@@ -1,94 +1,86 @@
 # Normandy CSS
 
-Normandy CSS és la metodologia per organitzar i estructurar el CSS
-dels projectes de Calidae.
+Normandy is a CSS boilerplate that gives you an initial structure for your CSS.
 
-També inclou un boilerplate en Sass (`.scss`) de la implementació d'aquests acords.
+It is not a UI library, a framework, or a complete CSS solution that you can plug in and call it a day.
 
-Està construït sobre els principis d'ITCSS, BEM i OOCSS.
+It's build upon [ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528), [BEM](http://getbem.com/naming/) and [OOCSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/). Normandy is a customized version of [inuitcss](https://github.com/inuitcss/inuitcss).
 
-Consulta la metodologia i documentació a
-[Gitbook](https://afontcu.gitbooks.io/normandy).
+Want to read more about Normandy? Check out the underlying principles on [Gitbook](https://afontcu.gitbooks.io/normandy).
 
 
 
-## Instal·lació i configuració
+## Installation
 
-Per instal·lar-lo via npm:
+You can install Normandy via npm:
 
 ```shell
 npm install --save-dev normandy-css
 ```
 
-L'únic pas necessari per afegir Normandy CSS al teu projecte és importar el
-`main.scss` de cada capa i intercalar-hi els que hagis creat tu:
+Since Normandy is using Sass, you will need to add its core files to your own `main.scss`.
+
+We recommend a structure as follows, where you zip Normandy layers with your own:
 
 ```scss
 @import "/node_modules/normandy-css/scss/1-Settings/main";
-@import "/custom/path/to/my/scss/1-Settings/main";
+@import "/my/path/to/scss/1-Settings/main";
 
 @import "/node_modules/normandy-css/scss/2-Tools/main";
-@import "/custom/path/to/my/scss/2-Tools/main";
+@import "/my/path/to/scss/2-Tools/main";
 
 @import "/node_modules/normandy-css/scss/3-Generic/main";
-@import "/custom/path/to/my/scss/3-Generic/main";
+@import "/my/path/to/scss/3-Generic/main";
 
 @import "/node_modules/normandy-css/scss/4-Base/main";
-@import "/custom/path/to/my/scss/4-Base/main";
+@import "/my/path/to/scss/4-Base/main";
 
 @import "/node_modules/normandy-css/scss/5-Objects/main";
-@import "/custom/path/to/my/scss/5-Objects/main";
+@import "/my/path/to/scss/5-Objects/main";
 
 @import "/node_modules/normandy-css/scss/6-Components/main";
-@import "/custom/path/to/my/scss/6-Components/main";
+@import "/my/path/to/scss/6-Components/main";
 
 @import "/node_modules/normandy-css/scss/7-Utilities/main";
-@import "/custom/path/to/my/scss/7-Utilities/main";
+@import "/my/path/to/scss/7-Utilities/main";
 ```
 
-D'aquesta manera, les variables i classes pròpies sempre tindran preferència per
-sobre les de Normandy CSS. 
+This way, you maintain the desired layer structure while allowing your values to override Normandy's.
 
 
 
-## Ús
+## Initial configuration
 
-Normandy CSS treballa sobre unes variables bàsiques que permeten la configuració
-de tot el boilerplate.
+Normandy is built upon some [design system principles](https://medium.muz.li/what-is-a-design-system-1e43d19e7696) that allow the user to customize the whole CSS output.
 
-A continuació es mostren les variables bàsiques i els seus valors per defecte,
-que es troben a `1-Settings/_settings.core.scss`:
+The idea is that Normandy provides you with customizable constraints (specific values for spacing, colors, text sizes...) and a toolset of objects and utilities to build your interfaces.
+
+The core variables of the boilerplate are placed in, well, the core file, `1-Settings/_settings.core.scss`:
 
 ```scss
 $global-baseline: 6px;
 
-$global-spacing-unit-tiny:   6px;
-$global-spacing-unit-small: 12px;
-$global-spacing-unit:       24px;
-$global-spacing-unit-large: 48px;
-$global-spacing-unit-huge:  96px;
+$unit-factor-tiny:   1 !default;
+$unit-factor-small:  2 !default;
+$unit-factor:        4 !default;
+$unit-factor-large:  8 !default;
+$unit-factor-huge:  16 !default;
 
 $global-font-size:   16px;
 $global-line-height: 24px;
 ```
 
-### Configuració inicial
-
-És important que la configuració d'aquestes variables es faci a l'inici del
-projecte, ja que posteriors modificacions tindran efectes imprevisibles en 
-cascada. Cal tenir en compte que modificar els valors per defecte implicarà,
-per exemple, canvis en els atributs de les utilitats d'espaiat així com les
-de font-size.
+Our recommendation is to **customize core variables at the beginning of the project**. The value of these variables have implications in almost every layer, thus changing them in an ongoing project could carry undesired side effects.
 
 
-### Ús en el dia a dia
 
-Totes les variables són públiques, però les variables `$global-spacing-unit...`
-són les que ens resulten útils en el dia a dia.
+## Daily usage
 
-Imaginem la situació on hem de definir un gap de CSS Grid proporcional a les
-variables d'espaiat amb l'objectiu d'aconseguir un
-[vertical rythm](https://zellwk.com/blog/why-vertical-rhythms/) consistent:
+The idea behind Normandy is to use a [utility-first](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) approach, where you use the Utilities layer to create your UI, and the abstract out your components when you see repeating patterns.
+
+This utility-first approach, with the constraints of a design system, allows you to create consistent layouts.
+
+Picture this: you need to define a proportional CSS Grid gap in order to achieve a sensible [vertical rythm](https://zellwk.com/blog/why-vertical-rhythms/). You would do something like this:
 
 ```scss
 .c-component__grid {
@@ -97,7 +89,14 @@ variables d'espaiat amb l'objectiu d'aconseguir un
 }
 ```
 
-La convenció és la següent: totes les variables que comencin per `$global-`
-estan pensades per ser utilitzades en qualsevol capa de Normandy CSS. Així, les
-variables que definim a la resta de fitxers de 1-Settings haurien de seguir
-aquesta mateixa convenció, amb l'excepció dels colors (on és redundant).
+
+## FAQs
+
+### "I want to play with Normandy!"
+
+Great! There's an `output.css` file in the root directory of the project with the compiled version of the default values. Feel free to grab this file and add it to any Codepen, Fiddle or Codesandbox. Bear in mind that you won't be able to benefit from Sass variables (obvs) and other goodies.
+
+
+### "I want to contribute"
+
+Lovely ❤️. We are open to any kind of input. Feel free to submit issues or PRs to the repository!

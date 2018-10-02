@@ -2,7 +2,7 @@
 
 Normandy is a CSS boilerplate that gives you an initial structure for your CSS.
 
-Normandy is not a UI library, a framework, or a complete CSS solution that you can plug in and call it a day.
+It is not a UI library, a framework, or a complete CSS solution that you can plug in and call it a day.
 
 It's build upon [ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528), [BEM](http://getbem.com/naming/) and [OOCSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/). Normandy is a customized version of [inuitcss](https://github.com/inuitcss/inuitcss).
 
@@ -24,33 +24,36 @@ We recommend a structure as follows, where you zip Normandy layers with your own
 
 ```scss
 @import "/node_modules/normandy-css/scss/1-Settings/main";
-@import "/custom/path/to/my/scss/1-Settings/main";
+@import "/my/path/to/scss/1-Settings/main";
 
 @import "/node_modules/normandy-css/scss/2-Tools/main";
-@import "/custom/path/to/my/scss/2-Tools/main";
+@import "/my/path/to/scss/2-Tools/main";
 
 @import "/node_modules/normandy-css/scss/3-Generic/main";
-@import "/custom/path/to/my/scss/3-Generic/main";
+@import "/my/path/to/scss/3-Generic/main";
 
 @import "/node_modules/normandy-css/scss/4-Base/main";
-@import "/custom/path/to/my/scss/4-Base/main";
+@import "/my/path/to/scss/4-Base/main";
 
 @import "/node_modules/normandy-css/scss/5-Objects/main";
-@import "/custom/path/to/my/scss/5-Objects/main";
+@import "/my/path/to/scss/5-Objects/main";
 
 @import "/node_modules/normandy-css/scss/6-Components/main";
-@import "/custom/path/to/my/scss/6-Components/main";
+@import "/my/path/to/scss/6-Components/main";
 
 @import "/node_modules/normandy-css/scss/7-Utilities/main";
-@import "/custom/path/to/my/scss/7-Utilities/main";
+@import "/my/path/to/scss/7-Utilities/main";
 ```
 
-This way, we maintain the desired layer structure and you can also override Normandy values with your own.
+This way, you maintain the desired layer structure while allowing your values to override Normandy's.
+
 
 
 ## Initial configuration
 
 Normandy is built upon some [design system principles](https://medium.muz.li/what-is-a-design-system-1e43d19e7696) that allow the user to customize the whole CSS output.
+
+The idea is that Normandy provides you with customizable constraints (specific values for spacing, colors, text sizes...) and a toolset of objects and utilities to build your interfaces.
 
 The core variables of the boilerplate are placed in, well, the core file, `1-Settings/_settings.core.scss`:
 
@@ -67,14 +70,15 @@ $global-font-size:   16px;
 $global-line-height: 24px;
 ```
 
-Our recommendation is to customize such variables at the beginning of the project. The value of these variables have implications in almost every layer, thus changing them in an ongoing project could carry undesired side effects.
+Our recommendation is to **customize core variables at the beginning of the project**. The value of these variables have implications in almost every layer, thus changing them in an ongoing project could carry undesired side effects.
+
 
 
 ## Daily usage
 
-The idea is that Normandy provides you with customizable constraints (specific values for spacing, colors, text sizes...) and a toolset of objects and utilities to build your interfaces.
+The idea behind Normandy is to use a [utility-first](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) approach, where you use the Utilities layer to create your UI, and the abstract out your components when you see repeating patterns.
 
-Variables such as `$global-spacing-unit...` are the ones that you'll end up using the most.
+This utility-first approach, with the constraints of a design system, allows you to create consistent layouts.
 
 Picture this: you need to define a proportional CSS Grid gap in order to achieve a sensible [vertical rythm](https://zellwk.com/blog/why-vertical-rhythms/). You would do something like this:
 
@@ -84,8 +88,6 @@ Picture this: you need to define a proportional CSS Grid gap in order to achieve
   grid-gap: $global-spacing-unit-small;
 }
 ```
-
-We use the `$global-` prefix to specify variables that could (should?) be used across all Normandy layers. The only exception to that rule are colors.
 
 
 ## FAQs

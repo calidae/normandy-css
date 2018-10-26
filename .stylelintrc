@@ -12,6 +12,7 @@
     "indentation": 2,
     "rule-empty-line-before": null,
     "selector-class-pattern": null,
+    "pregona": error
     "max-line-length": 80,
     "no-missing-end-of-source-newline": null,
     "order/properties-alphabetical-order": null

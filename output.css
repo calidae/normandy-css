@@ -98,6 +98,36 @@
  * The global settings file contains any project-wide variables; things that
  * need to be made available to the entire codebase.
  */
+/* ========================================================================
+   RESPONSIVE SETTINGS
+   ======================================================================== */
+/* stylelint-disable max-line-length */
+/**
+ * Responsive settings file contains project-wide responsive variables.
+ * These values should be defined soon and be modified with caution.
+ *
+ * Normandy-css uses SassMQ as a media queries utility so we customize their
+ * own variables.
+ * https://github.com/sass-mq/sass-mq
+ *
+ *
+ * Some media query best practices:
+ *
+ *   1. Before using a media query, ask yourself the following question:
+ *      'Do I need a media query at all?'. Flexbox and Grid are responsive by
+ *      default, so media queries should be used sparingly.
+ *   2. Avoid targeting devices. Add breakpoints when design requires so.
+ *   3. Take into account different media queries. For instance, pointer type
+ *      based media queries.
+ *   4. Take a mobile-first approach. Set media "min-width" (or similar) media
+ *      queries, so they modify code's behavior on larger screens.
+ *
+ * Read more:
+ * http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * https://www.smashingmagazine.com/2018/02/media-queries-responsive-design-2018/
+ * https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+ */
+/* stylelint-enable max-line-length */
 /* ==========================================================================
    TOOLS
    ========================================================================== */
@@ -1266,7 +1296,7 @@ h6 {
    SPACING UTILITIES
    ========================================================================== */
 /**
- * Utility classes to put specific spacing values onto elements. The below loop
+ * Utility classes to put specific spacing values onto elements. The loop below
  * will generate us a suite of classes like:
  *
  *   .u-margin-top {}
@@ -1580,6 +1610,31 @@ h6 {
   margin-top: auto !important;
   margin-bottom: auto !important; }
 
+/* Responsive utilities.
+   ========================================================================== */
+/**
+ * You can create reponsive spacings by modifying the Sass maps below.
+ *
+ * This would generate classes such as:
+ *
+ *   .u-margin-small@mobile {}
+ *   .u-margin-small@tablet {}
+ *   .u-margin-small@desktop {}
+ *   .u-margin-small@wide {}
+ *   .u-margin-bottom-small@mobile {}
+ *   .u-margin-bottom-small@tablet {}
+ *   .u-margin-bottom-small@desktop {}
+ *   .u-margin-bottom-small@wide {}
+ *
+ * If you want every spacing defined above to have responsive variants, you
+ * can mirror the spacing maps:
+ *
+ *   $responsive-spacing-directions:  $spacing-directions !default;
+ *   $responsive-spacing-properties:  $spacing-properties !default;
+ *   $responsive-spacing-sizes:       $spacing-sizes !default;
+ *
+ * WARNING: This will generate a huge chunk of extra CSS. Be selective.
+ */
 /* stylelint-enable string-quotes */
 /* stylelint-enable max-nesting-depth */
 /* stylelint-enable max-line-length */

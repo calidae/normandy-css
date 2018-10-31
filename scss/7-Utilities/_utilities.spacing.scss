@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /**
- * Utility classes to put specific spacing values onto elements. The below loop
+ * Utility classes to put specific spacing values onto elements. The loop below
  * will generate us a suite of classes like:
  *
  *   .u-margin-top {}
@@ -67,7 +67,80 @@ $spacing-sizes: (
   }
 
 }
+
+
+
+
+
+/* Responsive utilities.
+   ========================================================================== */
+
+/**
+ * You can create reponsive spacings by modifying the Sass maps below.
+ *
+ * This would generate classes such as:
+ *
+ *   .u-margin-small@mobile {}
+ *   .u-margin-small@tablet {}
+ *   .u-margin-small@desktop {}
+ *   .u-margin-small@wide {}
+ *   .u-margin-bottom-small@mobile {}
+ *   .u-margin-bottom-small@tablet {}
+ *   .u-margin-bottom-small@desktop {}
+ *   .u-margin-bottom-small@wide {}
+ *
+ * If you want every spacing defined above to have responsive variants, you
+ * can mirror the spacing maps:
+ *
+ *   $responsive-spacing-directions:  $spacing-directions !default;
+ *   $responsive-spacing-properties:  $spacing-properties !default;
+ *   $responsive-spacing-sizes:       $spacing-sizes !default;
+ *
+ * WARNING: This will generate a huge chunk of extra CSS. Be selective.
+ */
+
+
+$responsive-spacing-directions: null !default;
+
+$responsive-spacing-properties: null !default;
+
+$responsive-spacing-sizes: null !default;
+
+
+
+// Don't output anything if no responsive spacings are defined.
+@if ($responsive-spacing-properties != null) {
+
+  @each $property-namespace, $property in $responsive-spacing-properties {
+
+    @each $direction-namespace, $direction-rules in $responsive-spacing-directions {
+
+      @each $size-namespace, $size in $responsive-spacing-sizes {
+
+        @each $bp-name, $bp-value in $global-mq-breakpoints {
+
+          @include mq($from: $bp-name) {
+
+            .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace}\@#{$bp-name} {
+
+              @each $direction in $direction-rules {
+                #{$property}#{$direction}: $size !important;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
 /* stylelint-enable string-quotes */
 /* stylelint-enable max-nesting-depth */
 /* stylelint-enable max-line-length */
-

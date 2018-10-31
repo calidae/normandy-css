@@ -1,0 +1,39 @@
+/* ========================================================================
+   RESPONSIVE SETTINGS
+   ======================================================================== */
+
+/* stylelint-disable max-line-length */
+/**
+ * Responsive settings file contains project-wide responsive variables.
+ * These values should be defined soon and be modified with caution.
+ *
+ * Normandy-css uses SassMQ as a media queries utility so we customize their
+ * own variables.
+ * https://github.com/sass-mq/sass-mq
+ *
+ *
+ * Some media query best practices:
+ *
+ *   1. Before using a media query, ask yourself the following question:
+ *      'Do I need a media query at all?'. Flexbox and Grid are responsive by
+ *      default, so media queries should be used sparingly.
+ *   2. Avoid targeting devices. Add breakpoints when design requires so.
+ *   3. Take into account different media queries. For instance, pointer type
+ *      based media queries.
+ *   4. Take a mobile-first approach. Set media "min-width" (or similar) media
+ *      queries, so they modify code's behavior on larger screens.
+ *
+ * Read more:
+ * http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * https://www.smashingmagazine.com/2018/02/media-queries-responsive-design-2018/
+ * https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+ */
+/* stylelint-enable max-line-length */
+
+
+$global-mq-breakpoints: (
+  mobile:   599px,
+  tablet:   800px,
+  desktop:  1000px,
+  wide:     1200px
+) !default;

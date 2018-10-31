@@ -3,34 +3,8 @@
    ========================================================================== */
 
 /**
- * This will generate a series of utility classes that give a fluid width to
- * whichever element they’re applied, e.g.:
- *
- *   <div class="u-width-1/2"></div>
+ * Basic common width utilities.
  */
-
-/*
- * Which fractions would you like in your utilities?
- *
- *  .u-width-1/2
- *  .u-width-2/5
- *  .u-width-3/4
- *  .u-width-2/3
- *  .u-width-5/6
- */
-
-$width-fractions: 1 2 3 4 5 6 !default;
-
-
-@each $denominator in $width-fractions {
-  @for $numerator from 1 through $denominator {
-
-    .u-width-#{$numerator}\/#{$denominator} {
-      width: ($numerator / $denominator) * 100% !important;
-    }
-
-  }
-}
 
 .u-width-none {
   width: 0 !important;

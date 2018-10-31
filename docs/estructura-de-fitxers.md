@@ -9,7 +9,7 @@ scss/
         _settings.colors.scss /* variables de colors */
         ...
     2-Tools/
-        _tools.clearfix.scss /* mixins per clearfix */
+        _tools.font-size.scss /* mixins per font-size */
         ...
     3-Generic/
         _generic.normalize.scss /* NormalizeCSS */

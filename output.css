@@ -138,17 +138,6 @@
  * CSS code.
  */
 /* ==========================================================================
-   CLEARFIX TOOLS
-   ========================================================================== */
-/**
- * Mixin to add clearfix into a selector. Further reading:
- * http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
- *
- * .foo {
- *   @include clearfix();
- * }
- */
-/* ==========================================================================
    FONT-SIZE TOOLS
    ========================================================================== */
 /**
@@ -883,10 +872,6 @@ h6 {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px; }
-  .o-wrapper::after {
-    content: "" !important;
-    display: block !important;
-    clear: both !important; }
 
 /* Size variants.
    ========================================================================== */
@@ -1019,17 +1004,6 @@ h6 {
  * If you are using a lot of utility classes you might be able to abstract them
  * out into a reusable Component or Object.
  */
-/* ==========================================================================
-   CLEARFIX UTILITY
-   ========================================================================== */
-/**
- * Attach our clearfix mixin to a utility class.
- */
-.u-clearfix::after {
-  content: "" !important;
-  display: block !important;
-  clear: both !important; }
-
 /* ==========================================================================
    #COLOR UTILITY
    ========================================================================== */

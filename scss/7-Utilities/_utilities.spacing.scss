@@ -6,14 +6,14 @@
  * Utility classes to put specific spacing values onto elements. The loop below
  * will generate us a suite of classes like:
  *
- *   .u-margin-top {}
- *   .u-padding-left-large {}
- *   .u-margin-right-small {}
- *   .u-padding {}
- *   .u-padding-right-none {}
- *   .u-padding-horizontal {}
- *   .u-padding-vertical-small {}
- *   .u-margin-auto {}
+ *   .u-mt {}
+ *   .u-pl-large {}
+ *   .u-mr-small {}
+ *   .u-p {}
+ *   .u-pr-none {}
+ *   .u-ph {}
+ *   .u-pv-small {}
+ *   .u-m-auto {}
  */
 
 /* stylelint-disable string-quotes */
@@ -21,17 +21,17 @@
 /* stylelint-disable max-line-length */
 $spacing-directions: (
   null: null,
-  '-top': '-top',
-  '-right': '-right',
-  '-bottom': '-bottom',
-  '-left': '-left',
-  '-horizontal': '-left' '-right',
-  '-vertical': '-top' '-bottom',
+  't': '-top',
+  'r': '-right',
+  'b': '-bottom',
+  'l': '-left',
+  'h': '-left' '-right',
+  'v': '-top' '-bottom',
 ) !default;
 
 $spacing-properties: (
-  'padding': 'padding',
-  'margin': 'margin',
+  'p': 'padding',
+  'm': 'margin',
 ) !default;
 
 $spacing-sizes: (
@@ -80,14 +80,14 @@ $spacing-sizes: (
  *
  * This would generate classes such as:
  *
- *   .u-margin-small@mobile {}
- *   .u-margin-small@tablet {}
- *   .u-margin-small@desktop {}
- *   .u-margin-small@wide {}
- *   .u-margin-bottom-small@mobile {}
- *   .u-margin-bottom-small@tablet {}
- *   .u-margin-bottom-small@desktop {}
- *   .u-margin-bottom-small@wide {}
+ *   .u-m-small@mobile {}
+ *   .u-m-small@tablet {}
+ *   .u-m-small@desktop {}
+ *   .u-m-small@wide {}
+ *   .u-mb-small@mobile {}
+ *   .u-mb-small@tablet {}
+ *   .u-mb-small@desktop {}
+ *   .u-mb-small@wide {}
  *
  * If you want every spacing defined above to have responsive variants, you
  * can mirror the spacing maps:

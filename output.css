@@ -1273,314 +1273,337 @@ h6 {
  * Utility classes to put specific spacing values onto elements. The loop below
  * will generate us a suite of classes like:
  *
- *   .u-margin-top {}
- *   .u-padding-left-large {}
- *   .u-margin-right-small {}
- *   .u-padding {}
- *   .u-padding-right-none {}
- *   .u-padding-horizontal {}
- *   .u-padding-vertical-small {}
- *   .u-margin-auto {}
+ *   .u-mt {}
+ *   .u-pl-large {}
+ *   .u-mr-small {}
+ *   .u-p {}
+ *   .u-pr-none {}
+ *   .u-ph {}
+ *   .u-pv-small {}
+ *   .u-m-auto {}
  */
 /* stylelint-disable string-quotes */
 /* stylelint-disable max-nesting-depth */
 /* stylelint-disable max-line-length */
-.u-padding {
+.u-p {
   padding: 24px !important; }
 
-.u-padding-tiny {
+.u-p-tiny {
   padding: 6px !important; }
 
-.u-padding-small {
+.u-p-small {
   padding: 12px !important; }
 
-.u-padding-large {
+.u-p-large {
   padding: 48px !important; }
 
-.u-padding-huge {
+.u-p-huge {
   padding: 96px !important; }
 
-.u-padding-none {
+.u-p-none {
   padding: 0 !important; }
 
-.u-padding-top {
+.u-p-auto {
+  padding: auto !important; }
+
+.u-pt {
   padding-top: 24px !important; }
 
-.u-padding-top-tiny {
+.u-pt-tiny {
   padding-top: 6px !important; }
 
-.u-padding-top-small {
+.u-pt-small {
   padding-top: 12px !important; }
 
-.u-padding-top-large {
+.u-pt-large {
   padding-top: 48px !important; }
 
-.u-padding-top-huge {
+.u-pt-huge {
   padding-top: 96px !important; }
 
-.u-padding-top-none {
+.u-pt-none {
   padding-top: 0 !important; }
 
-.u-padding-right {
+.u-pt-auto {
+  padding-top: auto !important; }
+
+.u-pr {
   padding-right: 24px !important; }
 
-.u-padding-right-tiny {
+.u-pr-tiny {
   padding-right: 6px !important; }
 
-.u-padding-right-small {
+.u-pr-small {
   padding-right: 12px !important; }
 
-.u-padding-right-large {
+.u-pr-large {
   padding-right: 48px !important; }
 
-.u-padding-right-huge {
+.u-pr-huge {
   padding-right: 96px !important; }
 
-.u-padding-right-none {
+.u-pr-none {
   padding-right: 0 !important; }
 
-.u-padding-bottom {
+.u-pr-auto {
+  padding-right: auto !important; }
+
+.u-pb {
   padding-bottom: 24px !important; }
 
-.u-padding-bottom-tiny {
+.u-pb-tiny {
   padding-bottom: 6px !important; }
 
-.u-padding-bottom-small {
+.u-pb-small {
   padding-bottom: 12px !important; }
 
-.u-padding-bottom-large {
+.u-pb-large {
   padding-bottom: 48px !important; }
 
-.u-padding-bottom-huge {
+.u-pb-huge {
   padding-bottom: 96px !important; }
 
-.u-padding-bottom-none {
+.u-pb-none {
   padding-bottom: 0 !important; }
 
-.u-padding-left {
+.u-pb-auto {
+  padding-bottom: auto !important; }
+
+.u-pl {
   padding-left: 24px !important; }
 
-.u-padding-left-tiny {
+.u-pl-tiny {
   padding-left: 6px !important; }
 
-.u-padding-left-small {
+.u-pl-small {
   padding-left: 12px !important; }
 
-.u-padding-left-large {
+.u-pl-large {
   padding-left: 48px !important; }
 
-.u-padding-left-huge {
+.u-pl-huge {
   padding-left: 96px !important; }
 
-.u-padding-left-none {
+.u-pl-none {
   padding-left: 0 !important; }
 
-.u-padding-horizontal {
+.u-pl-auto {
+  padding-left: auto !important; }
+
+.u-ph {
   padding-left: 24px !important;
   padding-right: 24px !important; }
 
-.u-padding-horizontal-tiny {
+.u-ph-tiny {
   padding-left: 6px !important;
   padding-right: 6px !important; }
 
-.u-padding-horizontal-small {
+.u-ph-small {
   padding-left: 12px !important;
   padding-right: 12px !important; }
 
-.u-padding-horizontal-large {
+.u-ph-large {
   padding-left: 48px !important;
   padding-right: 48px !important; }
 
-.u-padding-horizontal-huge {
+.u-ph-huge {
   padding-left: 96px !important;
   padding-right: 96px !important; }
 
-.u-padding-horizontal-none {
+.u-ph-none {
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
-.u-padding-vertical {
+.u-ph-auto {
+  padding-left: auto !important;
+  padding-right: auto !important; }
+
+.u-pv {
   padding-top: 24px !important;
   padding-bottom: 24px !important; }
 
-.u-padding-vertical-tiny {
+.u-pv-tiny {
   padding-top: 6px !important;
   padding-bottom: 6px !important; }
 
-.u-padding-vertical-small {
+.u-pv-small {
   padding-top: 12px !important;
   padding-bottom: 12px !important; }
 
-.u-padding-vertical-large {
+.u-pv-large {
   padding-top: 48px !important;
   padding-bottom: 48px !important; }
 
-.u-padding-vertical-huge {
+.u-pv-huge {
   padding-top: 96px !important;
   padding-bottom: 96px !important; }
 
-.u-padding-vertical-none {
+.u-pv-none {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
 
-.u-margin {
+.u-pv-auto {
+  padding-top: auto !important;
+  padding-bottom: auto !important; }
+
+.u-m {
   margin: 24px !important; }
 
-.u-margin-tiny {
+.u-m-tiny {
   margin: 6px !important; }
 
-.u-margin-small {
+.u-m-small {
   margin: 12px !important; }
 
-.u-margin-large {
+.u-m-large {
   margin: 48px !important; }
 
-.u-margin-huge {
+.u-m-huge {
   margin: 96px !important; }
 
-.u-margin-none {
+.u-m-none {
   margin: 0 !important; }
 
-.u-margin-auto {
+.u-m-auto {
   margin: auto !important; }
 
-.u-margin-top {
+.u-mt {
   margin-top: 24px !important; }
 
-.u-margin-top-tiny {
+.u-mt-tiny {
   margin-top: 6px !important; }
 
-.u-margin-top-small {
+.u-mt-small {
   margin-top: 12px !important; }
 
-.u-margin-top-large {
+.u-mt-large {
   margin-top: 48px !important; }
 
-.u-margin-top-huge {
+.u-mt-huge {
   margin-top: 96px !important; }
 
-.u-margin-top-none {
+.u-mt-none {
   margin-top: 0 !important; }
 
-.u-margin-top-auto {
+.u-mt-auto {
   margin-top: auto !important; }
 
-.u-margin-right {
+.u-mr {
   margin-right: 24px !important; }
 
-.u-margin-right-tiny {
+.u-mr-tiny {
   margin-right: 6px !important; }
 
-.u-margin-right-small {
+.u-mr-small {
   margin-right: 12px !important; }
 
-.u-margin-right-large {
+.u-mr-large {
   margin-right: 48px !important; }
 
-.u-margin-right-huge {
+.u-mr-huge {
   margin-right: 96px !important; }
 
-.u-margin-right-none {
+.u-mr-none {
   margin-right: 0 !important; }
 
-.u-margin-right-auto {
+.u-mr-auto {
   margin-right: auto !important; }
 
-.u-margin-bottom {
+.u-mb {
   margin-bottom: 24px !important; }
 
-.u-margin-bottom-tiny {
+.u-mb-tiny {
   margin-bottom: 6px !important; }
 
-.u-margin-bottom-small {
+.u-mb-small {
   margin-bottom: 12px !important; }
 
-.u-margin-bottom-large {
+.u-mb-large {
   margin-bottom: 48px !important; }
 
-.u-margin-bottom-huge {
+.u-mb-huge {
   margin-bottom: 96px !important; }
 
-.u-margin-bottom-none {
+.u-mb-none {
   margin-bottom: 0 !important; }
 
-.u-margin-bottom-auto {
+.u-mb-auto {
   margin-bottom: auto !important; }
 
-.u-margin-left {
+.u-ml {
   margin-left: 24px !important; }
 
-.u-margin-left-tiny {
+.u-ml-tiny {
   margin-left: 6px !important; }
 
-.u-margin-left-small {
+.u-ml-small {
   margin-left: 12px !important; }
 
-.u-margin-left-large {
+.u-ml-large {
   margin-left: 48px !important; }
 
-.u-margin-left-huge {
+.u-ml-huge {
   margin-left: 96px !important; }
 
-.u-margin-left-none {
+.u-ml-none {
   margin-left: 0 !important; }
 
-.u-margin-left-auto {
+.u-ml-auto {
   margin-left: auto !important; }
 
-.u-margin-horizontal {
+.u-mh {
   margin-left: 24px !important;
   margin-right: 24px !important; }
 
-.u-margin-horizontal-tiny {
+.u-mh-tiny {
   margin-left: 6px !important;
   margin-right: 6px !important; }
 
-.u-margin-horizontal-small {
+.u-mh-small {
   margin-left: 12px !important;
   margin-right: 12px !important; }
 
-.u-margin-horizontal-large {
+.u-mh-large {
   margin-left: 48px !important;
   margin-right: 48px !important; }
 
-.u-margin-horizontal-huge {
+.u-mh-huge {
   margin-left: 96px !important;
   margin-right: 96px !important; }
 
-.u-margin-horizontal-none {
+.u-mh-none {
   margin-left: 0 !important;
   margin-right: 0 !important; }
 
-.u-margin-horizontal-auto {
+.u-mh-auto {
   margin-left: auto !important;
   margin-right: auto !important; }
 
-.u-margin-vertical {
+.u-mv {
   margin-top: 24px !important;
   margin-bottom: 24px !important; }
 
-.u-margin-vertical-tiny {
+.u-mv-tiny {
   margin-top: 6px !important;
   margin-bottom: 6px !important; }
 
-.u-margin-vertical-small {
+.u-mv-small {
   margin-top: 12px !important;
   margin-bottom: 12px !important; }
 
-.u-margin-vertical-large {
+.u-mv-large {
   margin-top: 48px !important;
   margin-bottom: 48px !important; }
 
-.u-margin-vertical-huge {
+.u-mv-huge {
   margin-top: 96px !important;
   margin-bottom: 96px !important; }
 
-.u-margin-vertical-none {
+.u-mv-none {
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
-.u-margin-vertical-auto {
+.u-mv-auto {
   margin-top: auto !important;
   margin-bottom: auto !important; }
 
@@ -1591,14 +1614,14 @@ h6 {
  *
  * This would generate classes such as:
  *
- *   .u-margin-small@mobile {}
- *   .u-margin-small@tablet {}
- *   .u-margin-small@desktop {}
- *   .u-margin-small@wide {}
- *   .u-margin-bottom-small@mobile {}
- *   .u-margin-bottom-small@tablet {}
- *   .u-margin-bottom-small@desktop {}
- *   .u-margin-bottom-small@wide {}
+ *   .u-m-small@mobile {}
+ *   .u-m-small@tablet {}
+ *   .u-m-small@desktop {}
+ *   .u-m-small@wide {}
+ *   .u-mb-small@mobile {}
+ *   .u-mb-small@tablet {}
+ *   .u-mb-small@desktop {}
+ *   .u-mb-small@wide {}
  *
  * If you want every spacing defined above to have responsive variants, you
  * can mirror the spacing maps:

@@ -101,7 +101,6 @@ Great! There's an `output.css` file in the root directory of the project with th
 
 Lovely ❤️. We are open to any kind of input. Feel free to submit issues or PRs to the repository!
 
-
 To start developing you should:
 
 Install dependencies

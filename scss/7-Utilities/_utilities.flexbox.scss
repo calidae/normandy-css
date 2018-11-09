@@ -33,6 +33,7 @@
 }
 
 /**
+ * Beware, this is not the default value.
  * The item is given the specified proportion (1) of the free space in the
  * container. If all items in the flex container use this pattern, their sizes
  * will be proportional to the specified flex factor.
@@ -40,7 +41,7 @@
  * This is equivalent to setting "flex: 1 1 0px".
  */
 
-.u-flex-1 {
+.u-flex-default {
   flex: 1 !important;
 }
 

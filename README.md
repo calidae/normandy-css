@@ -112,4 +112,11 @@ Start a watcher
 npm start
 ````
 This way, output.css will be updated automatically on every change you make.
+
+Remember, also, to run
+```
+npm test
+````
+before doing a PR in order to pass the tests!
+
 Enjoy!

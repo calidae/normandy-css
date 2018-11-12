@@ -100,3 +100,23 @@ Great! There's an `output.css` file in the root directory of the project with th
 ### "I want to contribute"
 
 Lovely ❤️. We are open to any kind of input. Feel free to submit issues or PRs to the repository!
+
+To start developing you should:
+
+Install dependencies
+```
+npm install
+```
+Start a watcher
+```
+npm start
+````
+This way, output.css will be updated automatically on every change you make.
+
+Remember, also, to run
+```
+npm test
+````
+before doing a PR in order to pass the tests!
+
+Enjoy!

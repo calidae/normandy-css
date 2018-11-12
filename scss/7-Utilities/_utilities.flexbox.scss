@@ -19,6 +19,18 @@
   display: inline-flex !important;
 }
 
+/**
+ * This is the DEFAULT value.
+ * It sizes the item based on its width/height properties (or its content if not set).
+ * It makes the flex item inflexible when there is some free space left, 
+ * but allows it to shrink to its minimum when there is not enough space.
+ *
+ * This is equivalent to setting "flex: 0 1 auto".
+ */
+
+.u-flex-initial {
+  flex: initial !important;
+}
 
 /**
  * The item is given the specified proportion (1) of the free space in the
@@ -28,7 +40,7 @@
  * This is equivalent to setting "flex: 1 1 0px".
  */
 
-.u-flex-default {
+.u-flex-1 {
   flex: 1 !important;
 }
 

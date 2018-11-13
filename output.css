@@ -1055,20 +1055,30 @@ h6 {
   display: inline-flex !important; }
 
 /**
+ * This is the DEFAULT value. It sizes the item based on its width/height
+ * properties (or its content if not set). It makes the flex item inflexible
+ * when there is some free space left, but allows it to shrink to its minimum
+ * when there is not enough space.
+ *
+ * This is equivalent to setting "flex: 0 1 auto".
+ */
+.u-flex-initial {
+  flex: initial !important; }
+
+/**
  * The item is given the specified proportion (1) of the free space in the
  * container. If all items in the flex container use this pattern, their sizes
  * will be proportional to the specified flex factor.
  *
  * This is equivalent to setting "flex: 1 1 0px".
  */
-.u-flex-default {
+.u-flex-1 {
   flex: 1 !important; }
 
 /**
- * Beware, this is not the default value.
- * The item is sized according to its width and height properties, but grows to
- * absorb any extra free space in the flex container, and shrinks to its
- * minimum size to fit the container.
+ * Beware, this is not the default value. The item is sized according to its
+ * width and height properties, but grows to absorb any extra free space in the
+ * flex container, and shrinks to its minimum size to fit the container.
  *
  * This is equivalent to setting "flex: 1 1 auto".
  *
@@ -1077,9 +1087,9 @@ h6 {
   flex: auto !important; }
 
 /**
- * The item is sized according to its width and height properties. It is
- * fully inflexible: it neither shrinks nor grows in relation to the flex
- * container. This is equivalent to setting "flex: 0 0 auto".
+ * The item is sized according to its width and height properties. It is fully
+ * inflexible: it neither shrinks nor grows in relation to the flex container.
+ * This is equivalent to setting "flex: 0 0 auto".
  */
 .u-flex-none {
   flex: none !important; }

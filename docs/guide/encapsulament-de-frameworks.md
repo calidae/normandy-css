@@ -1,6 +1,7 @@
 # Encapsulament de frameworks
 
-Separarem mitjançant brackets \(`[ ]`\) les classes pròpies, definides per nosaltres, de les classes que proporcionin frameworks i eines de tercers.
+Separarem mitjançant brackets \(`[ ]`\) les classes pròpies, definides per
+nosaltres, de les classes que proporcionin frameworks i eines de tercers.
 
 Definim primer les classes pròpies i posteriorment les classes de tercers.
 

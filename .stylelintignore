@@ -1,0 +1,5 @@
+# Normalize is not ours
+scss/3-Generic/_generic.normalize.scss
+
+# Docs will contain weird examples of CSS, so it makes no sense to lint them
+/docs

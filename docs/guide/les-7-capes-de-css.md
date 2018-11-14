@@ -9,7 +9,7 @@ comencen a definir patrons i podem marcar unes bones pràctiques a seguir.
 
 El CSS s'organitza en 7 capes en forma de triangle invertit:
 
-![7 capes de CSS](../../images/itcss.png)
+![7 capes de CSS](../images/itcss.png)
 
 Les capes són les següents:
 
@@ -51,7 +51,7 @@ La forma de triangle mostra com els estils generats s'ordenen: d'estils
 genèrics a explícits, de poc específics a més específics, i des de globals a
 atòmics.
 
-![Reach, Specificity, Explicitness](../../images/itcss-2.png)
+![Reach, Specificity, Explicitness](../images/itcss-2.png)
 
 Tot el CSS queda ordenat, doncs, segons aquestes tres mètriques:
 

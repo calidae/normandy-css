@@ -7,8 +7,8 @@ any direction, and can “flex” their sizes, either growing to fill unused spa
 or shrinking to avoid overflowing the parent. Both horizontal and vertical
 alignment of the children can be easily manipulated.
 
-
 ## Flex Display
+
 <br> Utilities for creating flex containers.
 
 | Class         | Property               |
@@ -17,6 +17,7 @@ alignment of the children can be easily manipulated.
 | u-flex-inline | `display: inline-flex` |
 
 ### Flex
+
 <br> Use `u-flex` to create a block-level flex container:
 
 ```html
@@ -38,6 +39,7 @@ alignment of the children can be easily manipulated.
 ---
 
 ### Inline Flex
+
 <br> Use `u-flex-inline` to create an inline flex container:
 
 ```html
@@ -57,6 +59,7 @@ alignment of the children can be easily manipulated.
 </pre>
 
 ## Flex Direction
+
 <br> Utilities for controlling the direction of flex items.
 
 | Class                 | Property                         |
@@ -67,6 +70,7 @@ alignment of the children can be easily manipulated.
 | u-flex-column-reverse | `flex-direction: column-reverse` |
 
 ### Row `default`
+
 <br> Use `u-flex-row` to position flex items horizontally in the same direction
 as text:
 
@@ -87,6 +91,7 @@ as text:
 </pre>
 
 ### Row Reverse
+
 <br> Use `u-flex-row-reverse` to position flex items horizontally in the
 opposite direction:
 
@@ -107,8 +112,10 @@ opposite direction:
 </pre>
 
 ### Column
+
 <br> Use `u-flex-column` to position flex items vertically:
 
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-column">
   <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">1</div>
@@ -116,6 +123,7 @@ opposite direction:
   <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">3</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-column">
@@ -126,16 +134,19 @@ opposite direction:
 </pre>
 
 ### Column Reverse
+
 <br> Use `u-flex-column-reverse` to position flex items vertically in the
 opposite direction:
 
+<!-- prettier-ignore-start -->
 ```html
-  <div class="u-flex u-flex-column-reverse">
-    <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">1</div>
-    <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">3</div>
-  </div>
+<div class="u-flex u-flex-column-reverse">
+  <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">1</div>
+  <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">2</div>
+  <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">3</div>
+</div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-column-reverse">
@@ -146,6 +157,7 @@ opposite direction:
 </pre>
 
 ## Flex Wrap
+
 <br> Utilities for controlling how flex items wrap.
 
 | Class               | Property                      |
@@ -155,6 +167,7 @@ opposite direction:
 | u-flex-wrap-reverse | `flex-wrap: wrap-reverse`     |
 
 ### No Wrap `default`
+
 <br> Use `u-flex-no-wrap` to prevent flex items from wrapping, causing
 inflexible items to overflow the container if necessary:
 
@@ -177,8 +190,10 @@ inflexible items to overflow the container if necessary:
 </pre>
 
 ### Wrap
+
 <br> Use `u-flex-wrap` to allow flex items to wrap:
 
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-wrap">
   <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">1</div>
@@ -186,6 +201,7 @@ inflexible items to overflow the container if necessary:
   <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">3</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-wrap">
@@ -196,8 +212,10 @@ inflexible items to overflow the container if necessary:
 </pre>
 
 ### Wrap Reverse
+
 <br> Use `u-flex-wrap-reverse` to wrap flex items in the reverse direction:
 
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-wrap-reverse">
   <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">1</div>
@@ -205,6 +223,7 @@ inflexible items to overflow the container if necessary:
   <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">3</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-wrap-reverse">
@@ -215,6 +234,7 @@ inflexible items to overflow the container if necessary:
 </pre>
 
 ## Align Items
+
 <br> Positioning flex items along a container's cross axis.
 
 | Class                 | Property                         |
@@ -226,6 +246,7 @@ inflexible items to overflow the container if necessary:
 | u-flex-items-baseline | `align-items: baseline`          |
 
 ### Stretch `default`
+
 <br> Use `u-flex-items-stretch` to stretch items to fill the flex container's
 cross axis:
 
@@ -246,6 +267,7 @@ cross axis:
 </pre>
 
 ### Start
+
 <br> Use `u-flex-items-start` to align items to the start of the flex
 container's cross axis:
 
@@ -266,6 +288,7 @@ container's cross axis:
 </pre>
 
 ### Center
+
 <br> Use `u-flex-items-center` to align items along the center of the flex
 container's cross axis:
 
@@ -286,6 +309,7 @@ container's cross axis:
 </pre>
 
 ### End
+
 <br> Use `u-flex-items-end` to align items to the end of the flex container's
 cross axis:
 
@@ -306,9 +330,11 @@ cross axis:
 </pre>
 
 ### Baseline
+
 <br> Use `u-flex-items-baseline` to align items along the flex container's
 cross axis such that all of their baselines align:
 
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-baseline">
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
@@ -316,6 +342,7 @@ cross axis such that all of their baselines align:
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-baseline demo--fixed-height">
@@ -326,17 +353,17 @@ cross axis such that all of their baselines align:
 </pre>
 
 ## Align Self
+
 <br> Positioning a single element along a container's cross axis.
 
-| Class                 | Property                         |
-| --------------------- | -------------------------------- |
-| u-flex-self-auto      | `align-self: auto` `default`     |
-| u-flex-self-start     | `align-self: flex-start`         |
-| u-flex-self-center    | `align-self: center`             |
-| u-flex-self-end       | `align-self: flex-end`           |
-| u-flex-self-stretch   | `align-self: stretch`            |
-| u-flex-self-baseline  | `align-self: baseline`           |
-
+| Class                | Property                     |
+| -------------------- | ---------------------------- |
+| u-flex-self-auto     | `align-self: auto` `default` |
+| u-flex-self-start    | `align-self: flex-start`     |
+| u-flex-self-center   | `align-self: center`         |
+| u-flex-self-end      | `align-self: flex-end`       |
+| u-flex-self-stretch  | `align-self: stretch`        |
+| u-flex-self-baseline | `align-self: baseline`       |
 
 ### Auto `default`
 
@@ -345,7 +372,7 @@ cross axis such that all of their baselines align:
 Use `u-flex-self-auto` to align an item based on the value of the flex
 container's `align-items` property:
 
-
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-stretch">
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
@@ -353,6 +380,7 @@ container's `align-items` property:
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
@@ -369,7 +397,7 @@ container's `align-items` property:
 Use `u-flex-self-start` to align an item to the start of the flex container's
 cross axis, despite the container's `align-items` value:
 
-
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-stretch">
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
@@ -377,6 +405,7 @@ cross axis, despite the container's `align-items` value:
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
@@ -393,7 +422,7 @@ cross axis, despite the container's `align-items` value:
 Use `u-flex-self-center` to align an item to the center of the flex container's
 cross axis, despite the container's `align-items` value:
 
-
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-stretch">
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
@@ -401,6 +430,7 @@ cross axis, despite the container's `align-items` value:
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
@@ -417,7 +447,7 @@ cross axis, despite the container's `align-items` value:
 Use `u-flex-self-end` to align an item to the end of the flex container's cross
 axis, despite the container's `align-items` value:
 
-
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-stretch">
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
@@ -425,6 +455,7 @@ axis, despite the container's `align-items` value:
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
@@ -441,7 +472,7 @@ axis, despite the container's `align-items` value:
 Use `u-flex-self-stretch` to align an item to the end of the flex container's
 cross axis, despite the container's `align-items` value:
 
-
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-start">
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
@@ -449,6 +480,7 @@ cross axis, despite the container's `align-items` value:
   <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-start demo--fixed-height">
@@ -459,16 +491,17 @@ cross axis, despite the container's `align-items` value:
 </pre>
 
 ## Justify Content
+
 <br> Positioning flex items along a container's main axis.
 
-| Class                 | Property                                |
-| --------------------- | --------------------------------        |
-| u-flex-justify-start  | `justify-content: flex-start` `default` |
-| u-flex-justify-center | `justify-content: center`               |
-| u-flex-justify-end    | `justify-content: flex-end`             |
-| u-flex-justify-between| `justify-content: space-between`        |
-| u-flex-justify-around | `justify-content: space-around`         |
-| u-flex-justify-evenly | `justify-content: space-evenly`         |
+| Class                  | Property                                |
+| ---------------------- | --------------------------------------- |
+| u-flex-justify-start   | `justify-content: flex-start` `default` |
+| u-flex-justify-center  | `justify-content: center`               |
+| u-flex-justify-end     | `justify-content: flex-end`             |
+| u-flex-justify-between | `justify-content: space-between`        |
+| u-flex-justify-around  | `justify-content: space-around`         |
+| u-flex-justify-evenly  | `justify-content: space-evenly`         |
 
 ### Start `default`
 
@@ -569,7 +602,6 @@ axis such that there is an equal amount of space between each item:
 Use `u-flex-justify-around` to justify items along the flex container's main
 axis such that there is an equal amount of space around each item:
 
-
 ```html
 <div class="u-flex u-flex-justify-around">
   <div class="u-background-branding-primary u-p u-m-tiny">1</div>
@@ -610,15 +642,15 @@ any two items (and the space to the edges) is equal:
 </pre>
 
 ## Flex, Grow and Shrink
+
 <br> Utilities for controlling how flex items grow and shrink.
 
-| Class                 | Property                    |
-| --------------------- | ----------------------------|
-| u-flex-initial        | `flex: initial` `default`   | 
-| u-flex-1              | `flex: 1`                   | 
-| u-flex-auto           | `flex: auto`                |
-| u-flex-none           | `flex: none`                |
-
+| Class          | Property                  |
+| -------------- | ------------------------- |
+| u-flex-initial | `flex: initial` `default` |
+| u-flex-1       | `flex: 1`                 |
+| u-flex-auto    | `flex: auto`              |
+| u-flex-none    | `flex: none`              |
 
 ### Flex Initial `default`
 
@@ -627,12 +659,17 @@ any two items (and the space to the edges) is equal:
 Use `u-flex-initial` to allow a flex item to shrink but not grow,
 taking into account its initial size:
 
-
 ```html
 <div class="u-flex">
-  <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">Lorem</div>
-  <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum</div>
-  <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
+  <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">
+    Lorem
+  </div>
+  <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">
+    Lorem Ipsum
+  </div>
+  <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">
+    Lorem Ipsum is simply dummy text
+  </div>
 </div>
 ```
 
@@ -648,15 +685,20 @@ taking into account its initial size:
 
 <br>
 
-Use `u-flex-1`  to allow a flex item to grow and shrink as needed,
+Use `u-flex-1` to allow a flex item to grow and shrink as needed,
 ignoring its initial size:
-
 
 ```html
 <div class="u-flex">
-  <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">Lorem</div>
-  <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum</div>
-  <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
+  <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">
+    Lorem
+  </div>
+  <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">
+    Lorem Ipsum
+  </div>
+  <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">
+    Lorem Ipsum is simply dummy text
+  </div>
 </div>
 ```
 
@@ -675,12 +717,17 @@ ignoring its initial size:
 Use `u-flex-auto` to allow a flex item to grow and shrink, taking into account
 its initial size:
 
-
 ```html
 <div class="u-flex">
-  <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">Lorem</div>
-  <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum</div>
-  <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
+  <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">
+    Lorem
+  </div>
+  <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">
+    Lorem Ipsum
+  </div>
+  <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">
+    Lorem Ipsum is simply dummy text
+  </div>
 </div>
 ```
 
@@ -698,12 +745,17 @@ its initial size:
 
 Use `u-flex-none` to prevent a flex item from growing or shrinking:
 
-
 ```html
 <div class="u-flex">
-  <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">Lorem</div>
-  <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum</div>
-  <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
+  <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">
+    Lorem
+  </div>
+  <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">
+    Lorem Ipsum
+  </div>
+  <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">
+    Lorem Ipsum is simply dummy text
+  </div>
 </div>
 ```
 
@@ -714,7 +766,6 @@ Use `u-flex-none` to prevent a flex item from growing or shrinking:
     <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
   </div>
 </pre>
-
 
 <style lang="scss">
 @import '../../.vuepress/scss/main.scss';

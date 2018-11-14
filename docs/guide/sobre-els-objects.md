@@ -31,14 +31,14 @@ Dels 5 [principis
 SOLID](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design),
 els Objects en segueixen bàsicament dos:
 
-* **Single-responsibility Principle**. Un Object té una responsabilitat i cap
+- **Single-responsibility Principle**. Un Object té una responsabilitat i cap
   altra, amb els beneficis que això comporta de facilitat de manteniment i
   extensibilitat.
 
   Font: [The single responsibility principle applied to
   CSS](https://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/).
 
-* **Open-Closed Principle**. Un Object està obert a extensions i tancat a
+- **Open-Closed Principle**. Un Object està obert a extensions i tancat a
   modificacions. _Mai_ s'ha de modificar un Object: si un Object no encaixa a
   la implementació d'un element de la UI, probablement és perquè no s'ha de fer
   servir. Sí que està permès, en canvi, afegir modificacions a un object
@@ -50,4 +50,3 @@ els Objects en segueixen bàsicament dos:
 
 A diferència dels Objects, els Components no són abstraccions de patrons de
 disseny sinó implementacions concretes de la UI.
-

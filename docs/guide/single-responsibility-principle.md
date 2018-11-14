@@ -9,9 +9,11 @@ al combinar-lo amb altres blocs de codi semblants. A més són molt més senzill
 d'entendre.
 
 ```html
-<nav class="global-nav">...</nav> <!-- Bad -->
+<!-- Bad -->
+<nav class="global-nav">...</nav>
 
-<nav class="wrapper menu fixed branded">...</nav> <!-- Good -->
+<!-- Good -->
+<nav class="wrapper menu fixed branded">...</nav>
 ```
 
 Noti's que en aquest exemple no s'utilitzen ni Namespaces ni cap tipus de
@@ -20,4 +22,3 @@ responsabilitat única**.
 
 Font: [The single responsibility principle applied to
 CSS](https://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/).
-

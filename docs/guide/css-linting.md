@@ -26,4 +26,3 @@ En aquest mateix repositori existeix un arxiu `.stylelintrc` base.
 
 Per la resta de regles, davant de qualsevol dubte la referència a seguir és la
 de Sass Guidelines.
-

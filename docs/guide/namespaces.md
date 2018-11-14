@@ -3,20 +3,20 @@
 Les classes de CSS definides utilitzen un prefix que indiquen en quin nivell de
 la piràmide es troben. Aquests són els prefixos que utilitzem:
 
-* `o-`. Indica que es tracta d'un Object, és a dir, d'un element que pot
+- `o-`. Indica que es tracta d'un Object, és a dir, d'un element que pot
   estar-se utilitzant en altres contextos. Anar molt en compte al fer-hi
   modificacions i fer-ho si realment és l'única solució vàlida.
 
-* `c-`. Indica que es tracta d'un Component. És una implementació concreta de
+- `c-`. Indica que es tracta d'un Component. És una implementació concreta de
   la UI. Qualsevol canvi que es faci a l'estil d'aquesta classe hauria de ser
   detectable en el context actual. Modificar aquesta classe ha de ser segur i
   no ha de tenir efectes secundaris.
 
-* `u-`. Indica que es tracta d'una Utility. Té un rol molt específic
+- `u-`. Indica que es tracta d'una Utility. Té un rol molt específic
   \(habitualment un sol atribut CSS\) i no hauria de modificar-se mai. Es pot
   reutilitzar i no està lligada a cap implementació de la UI.
 
-* `js-`. Indica que es tracta d'una classe per Javascript. Aquesta classe
+- `js-`. Indica que es tracta d'una classe per Javascript. Aquesta classe
   serveix per bindejar l'element a la lògica que afegeixi el Javascript a la
   UI. Una classe amb aquest prefix no hauria ni d'aparèixer als fitxers `.scss`
   del projecte, ja que no ha de tenir atributs associats. Val la pena notar
@@ -34,19 +34,20 @@ tres últims nivells de la piràmide de CSS.
 
 ```css
 /* Object class */
-.o-media { }
+.o-media {
+}
 
 /* Component class */
-.c-form { }
+.c-form {
+}
 
 /* Utility class */
-.u-hidden { }
+.u-hidden {
+}
 
 /* Javascript class */
-.js-result-list { }
+.js-result-list {
+}
 ```
 
 ---
-
-
-

@@ -2,15 +2,15 @@
 
 Utilities for controlling an element's padding and margin.
 
-| Property | Direction   | Size     |
-| -------- | ----------- | -------- |
-| p        | -t          | _(none)_ |
-| m        | -r          | -tiny    |
-|          | -b          | -small   |
-|          | -l          | -large   |
-|          | -h          | -huge    |
-|          | -v          | -none    |
-|          |             | -auto    |
+| Property | Direction | Size     |
+| -------- | --------- | -------- |
+| p        | -t        | _(none)_ |
+| m        | -r        | -tiny    |
+|          | -b        | -small   |
+|          | -l        | -large   |
+|          | -h        | -huge    |
+|          | -v        | -none    |
+|          |           | -auto    |
 
 Each size maps to the global sizing variables of Normandy CSS.
 

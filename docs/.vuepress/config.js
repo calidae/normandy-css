@@ -14,7 +14,7 @@ module.exports = {
           title: 'Guide',
           collapsable: false,
           children: [
-            '/guide/getting-started', 
+            '/guide/getting-started',
             '/guide/why-normandy',
             '/guide/les-7-capes-de-css',
             '/guide/sobre-els-objects',
@@ -29,7 +29,10 @@ module.exports = {
         {
           title: 'Reference',
           collapsable: false,
-          children: ['/reference/utilities/flexbox', '/reference/utilities/spacing'],
+          children: [
+            '/reference/utilities/flexbox',
+            '/reference/utilities/spacing',
+          ],
         },
       ],
     },

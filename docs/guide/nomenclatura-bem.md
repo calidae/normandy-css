@@ -22,9 +22,11 @@ no hauria de dependre d'un altre per aparèixer a la UI\).
 ```
 
 ```css
-.c-form {} /* Good */
+.c-form {
+} /* Good */
 
-form.c-form {} /* Bad */
+form.c-form {
+} /* Bad */
 ```
 
 Un Block pot anidar-se dins d'altres Blocks a nivell semàntic \(HTML\), però no
@@ -42,21 +44,24 @@ l'estructura del DOM a l'hora de definir estils\).
 
 ```html
 <div class="c-form">
-    <div class="c-form__input">
-        <div class="c-form__icon">
-        </div>
-    </div>
+  <div class="c-form__input"><div class="c-form__icon"></div></div>
 </div>
 ```
 
 ```css
-.c-form__input {} /* Good */
-.c-form__icon {} /* Good */
+.c-form__input {
+} /* Good */
+.c-form__icon {
+} /* Good */
 
-div.c-form__input {} /* Bad */
-.c-form .c-form__input .c-form__icon {} /* Bad */
-.c-form__input .c-form__icon {} /* Bad */
-.c-form__input > .c-form__icon {} /* Bad */
+div.c-form__input {
+} /* Bad */
+.c-form .c-form__input .c-form__icon {
+} /* Bad */
+.c-form__input .c-form__icon {
+} /* Bad */
+.c-form__input > .c-form__icon {
+} /* Bad */
 ```
 
 ## Modifier
@@ -68,16 +73,19 @@ Un Modifier és una classe addicional.
 
 ```html
 <div class="c-form c-form--hidden">
-    <div class="c-form__input c-form__input--border-primary"></div>
-    ...
+  <div class="c-form__input c-form__input--border-primary"></div>
+  ...
 </div>
 ```
 
 ```css
-.c-form--hidden {} /* Good */
-.c-form__input--border-primary {} /* Good */
+.c-form--hidden {
+} /* Good */
+.c-form__input--border-primary {
+} /* Good */
 
-.c-form__input.c-form__input--border-primary {} /* Bad */
+.c-form__input.c-form__input--border-primary {
+} /* Bad */
 ```
 
 La majoria de dubtes sobre BEM queden resolts a les [FAQs de la seva
@@ -92,7 +100,7 @@ vista:
 > simplifications of style lookup. _\(Font: _[_Google Web
 > Developers_](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)\)
 
-## 
+##
 
 ## Single responsibility
 
@@ -117,27 +125,23 @@ en reaprofitables i en repartir responsabilitats:
 ```css
 /* Bad */
 .c-button--login {
-    font-size: 2em;
-    background-color: #f1f1f2;
-    color: #000;
-    padding: 20px;
-} 
-
+  font-size: 2em;
+  background-color: #f1f1f2;
+  color: #000;
+  padding: 20px;
+}
 
 /* Good */
 .c-button--large {
-    font-size: 2em;
-    padding: 20px;
+  font-size: 2em;
+  padding: 20px;
 }
 
 .c-button--secondary {
-    background-color: #f1f1f2;
-    color: #fff;
+  background-color: #f1f1f2;
+  color: #fff;
 }
 ```
 
 Font: [The single responsibility principle applied to
 CSS](https://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/).
-
-
-

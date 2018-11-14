@@ -13,21 +13,21 @@ El CSS s'organitza en 7 capes en forma de triangle invertit:
 
 Les capes són les següents:
 
-* **1-Settings**: variables globals de configuració, definició de colors, etc.
+- **1-Settings**: variables globals de configuració, definició de colors, etc.
 
-* **2-Tools**: mixins i funcions globals. És important que no existeixi cap
+- **2-Tools**: mixins i funcions globals. És important que no existeixi cap
   output de CSS en aquestes dues primeres capes \(_i.e._ un projecte amb només
   Settings i Tools hauria de generar un arxiu CSS buit\).
 
-* **3-Generic**: reset/normalització d'estils, box-sizing, etc. És la primera
+- **3-Generic**: reset/normalització d'estils, box-sizing, etc. És la primera
   capa que genera CSS compilat.
 
-* **4-Base**: estils base, o sigui, els estils per elements HTML purs \(H1, A,
+- **4-Base**: estils base, o sigui, els estils per elements HTML purs \(H1, A,
   TABLE, etc\). Aquests elements tenen estils per defecte del navegador, així
   que es poden redefinir aquí. Habitualment serà la primera capa que genera CSS
   que personalitzarem en un projecte.
 
-* **5-Objects**: Selectors basats en classes que defineixen patrons de disseny
+- **5-Objects**: Selectors basats en classes que defineixen patrons de disseny
   sense estil, abstractes, com per exemple el [Media
   Object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/)
   o el [Nav](https://csswizardry.com/2011/09/the-nav-abstraction/). Aquests
@@ -37,12 +37,12 @@ Les capes són les següents:
   probablement tingui conseqüències més enllà de la modificació d'una instància
   concreta.
 
-* **6-Components**: components específics de la UI. Aquí és on es desenvolupa
+- **6-Components**: components específics de la UI. Aquí és on es desenvolupa
   la gran majoria de la feina en cada projecte. Els components d'una interfície
   acostumen a estar compostos d'Objectes i Components. Modificar un component
   no té conseqüències fora del context que estiguem desenvolupant.
 
-* **7-Utilities**: classes d'utilitat i helpers amb la capacitat de
+- **7-Utilities**: classes d'utilitat i helpers amb la capacitat de
   sobreescriure qualsevol regla definida prèviament en el triangle, e.g.
   classes per amagar contingut. Probablement utilitzin `!important` en les
   seves definicions.
@@ -74,6 +74,3 @@ ITCSS](http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-10
 
 Font: [ITCSS: Scalable and Mantainable CSS
 Architecture](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
-
-
-

@@ -1,3 +1,3 @@
-# Normandy docs
+# NormandyCSS documentation
 
 Welcome

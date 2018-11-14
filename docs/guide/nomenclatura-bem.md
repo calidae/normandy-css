@@ -100,8 +100,6 @@ vista:
 > simplifications of style lookup. _\(Font: _[_Google Web
 > Developers_](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)\)
 
-##
-
 ## Single responsibility
 
 El principi de responsabilitat única, un dels cinc principis SOLID de

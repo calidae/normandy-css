@@ -4,34 +4,34 @@ L'estructura de fitxers Sass del projecte seguiran una estructura que repliqui
 les 7 capes. Els arxius concatenaran el nom de la capa i el nom del propi
 arxiu, per facilitar-ne la localització:
 
-```
+```bash
 scss/
     main.scss
     1-Settings/
-        _settings.colors.scss /* variables de colors */
+        _settings.colors.scss # variables de colors
         ...
     2-Tools/
-        _tools.font-size.scss /* mixins per font-size */
+        _tools.font-size.scss # mixins per font-size
         ...
     3-Generic/
-        _generic.normalize.scss /* NormalizeCSS */
+        _generic.normalize.scss # NormalizeCSS
         ...
     4-Base/
-        _base.headings.scss /* h1{}, h2{}, h3{}... */
-        _base.images.scss /* img{} */
-        _base.page.scss /* html{} */
+        _base.headings.scss # h1{}, h2{}, h3{}...
+        _base.images.scss # img{}
+        _base.page.scss # html{}
         ...
     5-Objects/
-        _objects.media.scss /* .o-media{}... */
-        _objects.layout.scss /* .o-layout{}... */
-        _objects.pack.scss /* .o-pack{}... */
+        _objects.media.scss # .o-media{}...
+        _objects.layout.scss # .o-layout{}...
+        _objects.pack.scss # .o-pack{}...
         ...
     6-Components/
-        _components.button.scss /* .c-button{}... */
+        _components.button.scss # .c-button{}...
         ...
     7-Utilities/
-        _utilities.print.scss /* @media print {}... */
-        _utilities.hide.scss /* .u-hidden{}... */
+        _utilities.print.scss # @media print {}...
+        _utilities.hide.scss # .u-hidden{}...
         ...
 ```
 

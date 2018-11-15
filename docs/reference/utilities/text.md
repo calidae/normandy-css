@@ -69,7 +69,7 @@ Usual text utility classes to overcome the common text management needs.
 
 ---
 
-## Sizing
+## Font Size
 
 <br> Utilities for controlling the font size of an element.
 
@@ -105,7 +105,7 @@ Usual text utility classes to overcome the common text management needs.
 </pre> 
 
 
-## Weights
+## Font Weight
 
 <br> Utilities for controlling the font weight of an element.
 

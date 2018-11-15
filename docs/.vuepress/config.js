@@ -34,6 +34,8 @@ module.exports = {
             '/reference/utilities/spacing',
             '/reference/utilities/text',
             '/reference/utilities/widths',
+            '/reference/utilities/height',
+            '/reference/utilities/colors',
           ],
         },
       ],

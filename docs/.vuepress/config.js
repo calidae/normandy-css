@@ -6,7 +6,6 @@ module.exports = {
     editLinkText: 'Help us improve this page!',
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
-      { text: 'Reference', link: '/reference/utilities/flexbox' },
     ],
     sidebar: {
       '/': [
@@ -27,15 +26,22 @@ module.exports = {
           ],
         },
         {
-          title: 'Reference',
-          collapsable: false,
+          title: 'Reference (Utilities)',
+          collapsable: true,
           children: [
             '/reference/utilities/flexbox',
             '/reference/utilities/spacing',
             '/reference/utilities/text',
             '/reference/utilities/widths',
             '/reference/utilities/height',
-            '/reference/utilities/colors',
+            '/reference/utilities/colors'
+          ],
+        },
+        {
+          title: 'Reference (Objects)',
+          collapsable: true,
+          children: [
+            '/reference/objects/block',
           ],
         },
       ],

@@ -81,10 +81,8 @@ occurring design pattern.
 
 <br>Use `o-block--{size}`
 
-### Flush
-
 ```html
-<div class="o-block o-block--flush">
+<div class="o-block o-block--{size}">
     <div class="o-block__img">
         <img src="http://unsplash.it/100" alt="Placeholder image" />
     </div>
@@ -98,6 +96,7 @@ occurring design pattern.
 ---
 
 <code>
+<p class="u-m">flush</p>
     <div class="o-block o-block--flush">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -106,25 +105,7 @@ occurring design pattern.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-</code>
-
-### Tiny
-
-```html
-<div class="o-block o-block--tiny">
-    <div class="o-block__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-block__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores,
-        perspiciatis quasi praesentium ab vel at repellat amet atque?
-    </div>
-</div>
-```
----
-
-<code>
+<p class="u-m">tiny</p>
     <div class="o-block o-block--tiny">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -133,25 +114,7 @@ occurring design pattern.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-</code>
-
-### Small
-
-```html
-<div class="o-block o-block--small">
-    <div class="o-block__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-block__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores,
-        perspiciatis quasi praesentium ab vel at repellat amet atque?
-    </div>
-</div>
-```
----
-
-<code>
+<p class="u-m">small</p>
     <div class="o-block o-block--small">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -160,27 +123,17 @@ occurring design pattern.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-</code>
-
-### Large
-
-```html
-<div class="o-block o-block--large">
-    <div class="o-block__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-block__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores,
-        perspiciatis quasi praesentium ab vel at repellat amet atque?
-    </div>
-</div>
-```
----
-
-
-<code>
+<p class="u-m">large</p>
     <div class="o-block o-block--large">
+        <div class="o-block__img">
+            <img src="http://unsplash.it/100" alt="Placeholder image" />
+        </div>
+        <div class="o-block__body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
+        </div>
+    </div>
+<p class="u-m">huge</p>
+    <div class="o-block o-block--huge">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
         </div>
@@ -190,10 +143,12 @@ occurring design pattern.
     </div>
 </code>
 
-### Huge
+## Alignment modifiers
+
+<br>Use `o-block--{alignment}`
 
 ```html
-<div class="o-block o-block--huge">
+<div class="o-block o-block--{alignment}">
     <div class="o-block__img">
         <img src="http://unsplash.it/100" alt="Placeholder image" />
     </div>
@@ -207,7 +162,17 @@ occurring design pattern.
 ---
 
 <code>
-    <div class="o-block o-block--huge">
+<p class="u-m">left</p>
+    <div class="o-block o-block--left">
+        <div class="o-block__img">
+            <img src="http://unsplash.it/100" alt="Placeholder image" />
+        </div>
+        <div class="o-block__body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
+        </div>
+    </div>
+<p class="u-m">right</p>
+    <div class="o-block o-block--right">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
         </div>
@@ -220,4 +185,14 @@ occurring design pattern.
 <style lang="scss">
 @import '../../.vuepress/scss/main.scss';
 @import './outline.css';
+
+code {
+    div {
+        color:black;
+    }
+    p {
+        color:black;
+    }
+}
+
 </style>

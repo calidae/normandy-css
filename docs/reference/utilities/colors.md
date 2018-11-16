@@ -16,26 +16,26 @@ Use $global-colors.
 
 
 ```html
-    <p class="u-text-branding-primary">My name is Normandy!</p>
+<p class="u-text-branding-primary">Lorem ipsum dolor sit amet</p>
 ```
 
 <pre>
-   <p class="u-text-branding-primary">My name is Normandy!</p>
+   <p class="u-text-branding-primary">Lorem ipsum dolor sit amet</p>
 </pre>
 
 ### Background color
 
 <br>
 
- `u-background-{color}` can be specified the color text
+ `u-background-{color}` can be specified the color background
 
 
 ```html
-    <p class="u-background-branding-primary">My name is Normandy!</p>
+<p class="u-background-branding-primary">Lorem ipsum dolor sit amet</p>
 ```
 
 <pre>
-   <p class="u-p-tiny u-background-branding-primary">My name is Normandy!</p>
+   <p class="u-p-tiny u-background-branding-primary">Lorem ipsum dolor sit amet</p>
 </pre>
 
 <style lang="scss">

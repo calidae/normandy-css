@@ -26,7 +26,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Reference (Utilities)',
+          title: 'Utilities',
           collapsable: true,
           children: [
             '/reference/utilities/flexbox',
@@ -35,13 +35,6 @@ module.exports = {
             '/reference/utilities/widths',
             '/reference/utilities/height',
             '/reference/utilities/colors'
-          ],
-        },
-        {
-          title: 'Reference (Objects)',
-          collapsable: true,
-          children: [
-            '/reference/objects/block',
           ],
         },
       ],

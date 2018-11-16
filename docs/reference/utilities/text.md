@@ -13,27 +13,15 @@ Usual text utility classes to overcome the common text management needs.
 | u-text-right  | `text-align: right`  |
 | u-text-justify| `text-align: justify`|
 
-
-<pre>
-<div class="u-text-notify-success">
-Left
-    <div class="u-text-branding-primary u-text-left">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p><p>Aenean commodo ligula eget dolor.</p><p>Aenean massa. Cum sociis natoque penatibus et magnis dis</p><p>parturient montes,nascetur ridiculus mus. Donec quam felis,</p><p>ultricies nec, pellentesque eu, pretium quis, sem.</p>
-        </p>
-    </div>
-Center
-    <div class="u-text-branding-primary u-text-center">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p><p>Aenean commodo ligula eget dolor.</p><p>Aenean massa. Cum sociis natoque penatibus et magnis dis</p><p>parturient montes,nascetur ridiculus mus. Donec quam felis,</p><p>ultricies nec, pellentesque eu, pretium quis, sem.</p>
-    </div>
-Right
-    <div class="u-text-branding-primary u-text-right">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p><p>Aenean commodo ligula eget dolor.</p><p>Aenean massa. Cum sociis natoque penatibus et magnis dis</p><p>parturient montes,nascetur ridiculus mus. Donec quam felis,</p><p>ultricies nec, pellentesque eu, pretium quis, sem.</p>
-    </div>
-Justify
-    <div class="u-text-branding-primary u-text-justify">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p><p>Aenean commodo ligula eget dolor.</p><p>Aenean massa. Cum sociis natoque penatibus et magnis dis</p><p>parturient montes,nascetur ridiculus mus. Donec quam felis,</p><p>ultricies nec, pellentesque eu, pretium quis, sem.</p>
-    </div>
-</div>
+<pre> 
+<span class="pre__title">Left</span>
+    <p class="u-text-left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis disparturient montes,nascetur ridiculus mus. Donec quam felis,ultricies nec, pellentesque eu, pretium quis, sem.</p>
+<span class="pre__title">Center</span>
+    <p class="u-text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis disparturient montes,nascetur ridiculus mus. Donec quam felis,ultricies nec, pellentesque eu, pretium quis, sem.</p>
+<span class="pre__title">Right</span>
+    <p class="u-text-right">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis disparturient montes,nascetur ridiculus mus. Donec quam felis,ultricies nec, pellentesque eu, pretium quis, sem.</p>
+<span class="pre__title">Justify</span>
+    <p class="u-text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis disparturient montes,nascetur ridiculus mus. Donec quam felis,ultricies nec, pellentesque eu, pretium quis, sem.</p>
 </pre>
 
 ---
@@ -65,20 +53,18 @@ $global-font-sizes: (
 <br> Control the font size of an element using the `.u-text-{size}` utilities.
 
 <pre>
-<div class="u-text-notify-success">
-    <br>.u-text-h6
-    <span class="u-text-branding-primary u-text-h6">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-h5
-    <span class="u-text-branding-primary u-text-h5">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-h4
-    <span class="u-text-branding-primary u-text-h4">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-h3
-    <span class="u-text-branding-primary u-text-h3">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-h2
-    <span class="u-text-branding-primary u-text-h2">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-h1
-    <span class="u-text-branding-primary u-text-h1">Lorem ipsum dolor sit amet</span>
-</div>
+<span class="pre__title">.u-text-h6</span>
+    <p class="u-text-h6">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-h5</span>
+    <p class="u-text-h5">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-h4</span>
+    <p class="u-text-h4">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-h3</span>
+    <p class="u-text-h3">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-h2</span>
+    <p class="u-text-h2">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-h1</span>
+    <p class="u-text-h1">Lorem ipsum dolor sit amet</p>
 </pre> 
 
 
@@ -104,26 +90,24 @@ $global-font-sizes: (
 utilities.
 
 <pre>
-<div class="u-text-notify-success">
-    <br>.u-text-hairline
-    <span class="u-text-branding-primary u-text-hairline">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-thin
-    <span class="u-text-branding-primary u-text-thin">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-light
-    <span class="u-text-branding-primary u-text-light">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-normal
-    <span class="u-text-branding-primary u-text-normal">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-medium
-    <span class="u-text-branding-primary u-text-medium">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-semibold
-    <span class="u-text-branding-primary u-text-semibold">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-bold
-    <span class="u-text-branding-primary u-text-bold">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-extrabold
-    <span class="u-text-branding-primary u-text-extrabold">Lorem ipsum dolor sit amet</span>
-    <br>.u-text-black
-    <span class="u-text-branding-primary u-text-black">Lorem ipsum dolor sit amet</span>
-</div>
+<span class="pre__title">.u-text-hairline</span>
+    <p class="u-text-hairline">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-thin</span>
+    <p class="u-text-thin">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-light</span>
+    <p class="u-text-light">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-normal</span>
+    <p class="u-text-normal">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-medium</span>
+    <p class="u-text-medium">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-semibold</span>
+    <p class="u-text-semibold">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-bold</span>
+    <p class="u-text-bold">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-extrabold</span>
+    <p class="u-text-extrabold">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-black</span>
+    <p class="u-text-black">Lorem ipsum dolor sit amet</p>
 </pre> 
 
 
@@ -143,25 +127,35 @@ utilities.
 
 
 <pre>
-<div class="u-text-notify-success">
-.u-text-italic
-    <span class="u-text-branding-primary u-text-italic">Lorem ipsum dolor sit amet</span>
-<br>.u-text-uppercase
-    <span class="u-text-branding-primary u-text-uppercase">Lorem ipsum dolor sit amet</span>
-<br>.u-text-lowercase
-    <span class="u-text-branding-primary u-text-lowercase">Lorem ipsum dolor sit amet</span>
-<br>.u-text-capitalize
-    <span class="u-text-branding-primary u-text-capitalize">Lorem ipsum dolor sit amet</span>
-<br>.u-text-underline
-    <span class="u-text-branding-primary u-text-underline">Lorem ipsum dolor sit amet</span>
-<br>.u-text-through
-    <span class="u-text-branding-primary u-text-line-through">Lorem ipsum dolor sit amet</span>
-<br>.u-text-no-underline
-    <span class="u-text-branding-primary u-text-no-underline">Lorem ipsum dolor sit amet</span>
-</div>
+<span class="pre__title">.u-text-italic</span>
+    <p class="u-text-italic">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-uppercase</span>
+    <p class="u-text-uppercase">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-lowercase</span>
+    <p class="u-text-lowercase">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-capitalize</span>
+    <p class="u-text-capitalize">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-underline</span>
+    <p class="u-text-underline">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-through</span>
+    <p class="u-text-line-through">Lorem ipsum dolor sit amet</p>
+<span class="pre__title">.u-text-no-underline</span>
+    <p class="u-text-no-underline">Lorem ipsum dolor sit amet</p>
 </pre> 
 
 
 <style lang="scss">
 @import '../../.vuepress/scss/main.scss';
+
+pre {
+    white-space: pre-wrap;
+        color:#EAECEF;
+
+    .pre__title {
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding-top: 2rem;
+        opacity:.5;
+    }
+}
 </style>

@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/normandy-css/',
   title: 'NormandyCSS',
   themeConfig: {
     repo: 'calidae/normandy-css',

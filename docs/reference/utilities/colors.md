@@ -16,11 +16,11 @@ Use $global-colors.
 
 
 ```html
-<p class="u-text-branding-primary">Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet</p>
 ```
 
 <pre>
-   <p class="u-text-branding-primary">Lorem ipsum dolor sit amet</p>
+   <p>Lorem ipsum dolor sit amet</p>
 </pre>
 
 ### Background color
@@ -31,13 +31,25 @@ Use $global-colors.
 
 
 ```html
-<p class="u-background-branding-primary">Lorem ipsum dolor sit amet</p>
+<p class="u-background-notify-warning">Lorem ipsum dolor sit amet</p>
 ```
 
 <pre>
-   <p class="u-p-tiny u-background-branding-primary">Lorem ipsum dolor sit amet</p>
+   <p class="u-p-tiny u-background-notify-warning">Lorem ipsum dolor sit amet</p>
 </pre>
 
 <style lang="scss">
 @import '../../.vuepress/scss/main.scss';
+
+pre {
+    white-space: pre-wrap;
+        color:#EAECEF;
+
+    .pre__title {
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding-top: 2rem;
+        opacity:.5;
+    }
+}
 </style>

@@ -8,14 +8,14 @@ The Cover object is located in `5-Objects/_objects.cover.scss`.
 
 ## Elements
 
-The Cover Object has 2 elements:
+The Cover Object has 1 element:
 
 - `o-cover__body`
 
 ### Usage
 
 ```html
-<div class="o-cover o-cover--demo">
+<div class="o-cover">
   <div class="o-cover__body">Lorem ipsum dolor sit amet</div>
 </div>
 ```

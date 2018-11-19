@@ -36,18 +36,7 @@ The List Object has 1 element that can be repeated as many times as needed:
 
 ## Display modifiers
 
-Use `o-list--block` to display each element on its own block.
-
-```html
-<div class="o-list o-list--block">
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-</div>
-```
+Use display modifiers to modify the display property of each element.
 
 ### Usage
 

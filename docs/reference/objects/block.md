@@ -16,7 +16,7 @@ The Block Object has 2 elements:
 
 ### Usage
 
-```html
+```html{1,2,5}
 <div class="o-block">
   <div class="o-block__img">
     <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -44,11 +44,11 @@ Use the size modifiers to adapt the gap between the elements.
 
 | Class          | Elements' gap                |
 | -------------- | ---------------------------- |
-| o-cover--flush | `0`                          |
-| o-cover--tiny  | `$global-spacing-unit-tiny`  |
-| o-cover--small | `$global-spacing-unit-small` |
-| o-cover--large | `$global-spacing-unit-large` |
-| o-cover--huge  | `$global-spacing-unit-huge`  |
+| o-block--flush | `0`                          |
+| o-block--tiny  | `$global-spacing-unit-tiny`  |
+| o-block--small | `$global-spacing-unit-small` |
+| o-block--large | `$global-spacing-unit-large` |
+| o-block--huge  | `$global-spacing-unit-huge`  |
 
 ### Usage
 
@@ -113,8 +113,8 @@ Use alignment modifiers to change the elements' alignment.
 
 | Class          | Alignment |
 | -------------- | --------- |
-| o-cover--left  | left      |
-| o-cover--right | right     |
+| o-block--left  | left      |
+| o-block--right | right     |
 
 ### Usage
 

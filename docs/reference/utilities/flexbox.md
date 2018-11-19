@@ -173,19 +173,23 @@ inflexible items to overflow the container if necessary:
 
 ```html
 <div class="u-flex u-flex-no-wrap">
-  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
-  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
-  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
-  <div class="u-background-notify-warning u-p u-m-tiny">4</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-no-wrap">
-    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
-    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
-    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
-    <div class="u-background-notify-warning u-p u-m-tiny">4</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
   </div>
 </pre>
 
@@ -196,18 +200,24 @@ inflexible items to overflow the container if necessary:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-wrap">
-  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">1</div>
-  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">2</div>
-  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-wrap">
-    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">1</div>
-    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">2</div>
-    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
   </div>
 </pre>
 
@@ -218,18 +228,24 @@ inflexible items to overflow the container if necessary:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-wrap-reverse">
-  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">1</div>
-  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">2</div>
-  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-wrap-reverse">
-    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">1</div>
-    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">2</div>
-    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv-small u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
   </div>
 </pre>
 
@@ -376,7 +392,7 @@ container's `align-items` property:
 ```html
 <div class="u-flex u-flex-items-stretch">
   <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-flex-self-auto u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-flex-self-auto u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
   <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
@@ -385,7 +401,7 @@ container's `align-items` property:
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
     <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-flex-self-auto u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-flex-self-auto u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
     <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>
@@ -401,7 +417,7 @@ cross axis, despite the container's `align-items` value:
 ```html
 <div class="u-flex u-flex-items-stretch">
   <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-flex-self-start u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-flex-self-start u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
   <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
@@ -410,7 +426,7 @@ cross axis, despite the container's `align-items` value:
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
     <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-flex-self-start u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-flex-self-start u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
     <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>
@@ -426,7 +442,7 @@ cross axis, despite the container's `align-items` value:
 ```html
 <div class="u-flex u-flex-items-stretch">
   <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-flex-self-center u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-flex-self-center u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
   <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
@@ -435,7 +451,7 @@ cross axis, despite the container's `align-items` value:
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
     <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-flex-self-center u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-flex-self-center u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
     <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>
@@ -451,7 +467,7 @@ axis, despite the container's `align-items` value:
 ```html
 <div class="u-flex u-flex-items-stretch">
   <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-flex-self-end u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-flex-self-end u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
   <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
@@ -460,7 +476,7 @@ axis, despite the container's `align-items` value:
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
     <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-flex-self-end u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-flex-self-end u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
     <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>
@@ -476,7 +492,7 @@ cross axis, despite the container's `align-items` value:
 ```html
 <div class="u-flex u-flex-items-start">
   <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-flex-self-stretch u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-flex-self-stretch u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
   <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
@@ -485,7 +501,7 @@ cross axis, despite the container's `align-items` value:
 <pre>
   <div class="demo u-flex u-flex-items-start demo--fixed-height">
     <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-flex-self-stretch u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-flex-self-stretch u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
     <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>

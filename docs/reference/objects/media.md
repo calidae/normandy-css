@@ -156,7 +156,7 @@ Use the alignment modifiers to change the vertical alignment of the body.
   </div>
 </div>
 
-## Reverse Modifier
+## Reverse modifiers
 
 Use the reverse modifier to swap positions between elements.
 

@@ -171,6 +171,7 @@ opposite direction:
 <br> Use `u-flex-no-wrap` to prevent flex items from wrapping, causing
 inflexible items to overflow the container if necessary:
 
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-no-wrap">
   <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
@@ -181,6 +182,7 @@ inflexible items to overflow the container if necessary:
   <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-no-wrap">

@@ -31,10 +31,10 @@ Used to give color to the text of a specific element.
 ### Usage
 
 ```html
-<p class="u-color-branding-primary">Lorem ipsum dolor sit amet</p>
+<p class="u-text-notify-warning">Lorem ipsum dolor sit amet</p>
 ```
 
-<pre class="u-color-branding-primary">
+<pre class="u-text-notify-warning">
 Lorem ipsum dolor sit amet
 </pre>
 
@@ -49,9 +49,11 @@ Used to give color to the background of a specific element.
 ### Usage
 
 ```html
-<p class="u-background-notify-warning u-p-tiny">Lorem ipsum dolor sit amet</p>
+<p class="u-background-notify-warning">Lorem ipsum dolor sit amet</p>
 ```
 
-<pre class="u-background-notify-warning u-p-tiny">
-Lorem ipsum dolor sit amet
-</pre>
+<!-- prettier-ignore-start -->
+<pre>
+<p class="u-background-notify-warning">Lorem ipsum dolor sit amet
+</p></pre>
+<!-- prettier-ignore-end -->

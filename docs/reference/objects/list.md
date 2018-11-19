@@ -16,7 +16,7 @@ It is located in `5-Objects/_objects.list.scss`
 
 ## List Object
 
-Use `o-list__item` to create a list-object
+Use `o-list` to create a list-object
 
 ```html
 <div class="o-list">
@@ -33,7 +33,7 @@ Use `o-list__item` to create a list-object
 
 ### Usage
 
-#### `.o-list__item`
+#### `.o-list`
 
 <code>
     <div class="o-list">
@@ -65,7 +65,7 @@ Use `o-list--block`
 
 ### Usage
 
-#### `.o-list-block`
+#### `.o-list--block`
 
 <code>
     <div class="o-list o-list--block">

@@ -4,30 +4,9 @@
 | --------------------- | -------------------------------------- |
 | o-media               | display: flex  align-items: flex-start |
 
-See more in /scss/5-Objects/_objects.media.scss
-
-```css
-
-.o-media__img {
-  margin-right: $global-spacing-unit;
-
-  > img {
-    display: block;
-  }
-
-}
-
-.o-media__body {
-  flex: 1;
-
-  &,
-  > :last-child {
-    margin-bottom: 0;
-  }
-
-}
-
-```
+::: tip Where can I see Size and Alignment Modifiers?
+ It is located in `5-Objects/_objects.cover.scss`
+:::
 
 ---
 

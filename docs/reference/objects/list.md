@@ -1,7 +1,4 @@
-# Cover
-
-Stacked image-with-text object. A simple abstraction to cover a very commonly
-occurring design pattern.
+# List
 
 | Class         | Property                           |
 | --------------| ---------------------------------- |
@@ -9,6 +6,9 @@ occurring design pattern.
 | o-list__item  | display:inline-block               |
 | o-list--block | display:block                      |
 
+::: tip Where can I see more about List Object?
+ It is located in `5-Objects/_objects.list.scss`
+:::
 
 ---
 

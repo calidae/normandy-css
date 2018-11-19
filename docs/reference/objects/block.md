@@ -1,8 +1,5 @@
 # Block
 
-Stacked image-with-text object. A simple abstraction to cover a very commonly
-occurring design pattern.
-
 | Class         | Property                            |
 | --------------| ----------------------------------- |
 | o-block       | display: block , text-align: center |
@@ -10,39 +7,10 @@ occurring design pattern.
 | o-block--right| text-align:right                    |
 | o-block--left | text-align:left                     |
 
-```css
 
-.o-block__img {
-    margin-bottom: $global-spacing-unit;
-
-
-/* Size variants.
-===================================================================== */
-
-    .o-block--flush > & {
-        margin-bottom: 0;
-    }
-
-    .o-block--tiny > & {
-        margin-bottom: $global-spacing-unit-tiny;
-    }
-
-    .o-block--small > & {
-        margin-bottom: $global-spacing-unit-small;
-    }
-
-    .o-block--large > & {
-        margin-bottom: $global-spacing-unit-large;
-    }
-
-    .o-block--huge > & {
-        margin-bottom: $global-spacing-unit-huge;
-    }
-
-}
-
-```
-
+::: tip Where can I see Size Modifiers?
+ It is located in `5-Objects/_objects.block.scss`
+:::
 ---
 
 ## Block Object

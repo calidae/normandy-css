@@ -1,5 +1,8 @@
 # Media
 
+The Flexbox version of the Media Objects allows it to behave as a flag,
+placing the image both at the bottom or the center of the whole element.
+
 | Class                 | Property                               |
 | --------------------- | -------------------------------------- |
 | o-media               | display: flex  align-items: flex-start |
@@ -213,35 +216,6 @@ Use `o-media--reverse`
     </div>
 </div>
 </code>
-
-### Usage
-
-#### `.o-media--reverse` and `.o-media--{size}`
-
-```html
-<div class="o-media o-media--reverse o-media--huge">
-    <div class="o-media__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-media__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores,
-        perspiciatis quasi praesentium ab vel at repellat amet atque?
-    </div>
-</div>
-```
-
-<code>
-<div class="o-media o-media--reverse o-media--huge">
-    <div class="o-media__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-media__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
-    </div>
-</div>
-</code>
-
 
 <style lang="scss">
 @import '../../.vuepress/scss/main.scss';

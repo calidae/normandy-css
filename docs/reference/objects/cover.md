@@ -1,5 +1,7 @@
 # Cover
 
+Place any text as a cover from an image.
+
 | Class         | Property                                                            |
 | --------------| ------------------------------------------------------------------- |
 | o-cover       | display: flex, background-position: center; background-size: cover; |

@@ -1,5 +1,9 @@
 # Block
 
+Stacked image-with-text object. A simple abstraction to cover a very commonly
+occurring design pattern.
+
+
 ::: tip Where can I see Block object?
  It is located in `5-Objects/_objects.block.scss`
 :::

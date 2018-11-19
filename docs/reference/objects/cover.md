@@ -28,11 +28,7 @@ The Cover Object has 2 elements:
 
 ## Size modifiers
 
-Use the size modifiers to give a size to the body of the object
-
-::: tip Where can I see more about the $global-spacing-unit?
-It is located in `1-Settings/_settings.core.scss`
-:::
+Use the size modifiers to adapt the gap between the elements.
 
 | Class          | Elements' gap               |
 | -------------- | --------------------------- |
@@ -42,6 +38,9 @@ It is located in `1-Settings/_settings.core.scss`
 | o-cover--large | `$global-spacing-unit-large`|
 | o-cover--huge  | `$global-spacing-unit-huge` |
 
+::: tip
+$global-spacing-unit map is located in `1-Settings/_settings.core.scss`
+:::
 
 ### Usage
 

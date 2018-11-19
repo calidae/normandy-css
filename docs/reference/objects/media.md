@@ -1,7 +1,6 @@
 # Media
 
-The Flexbox version of the Media Objects allows it to behave as a flag,
-placing the image both at the bottom or the center of the whole element.
+The media object is an image to the left, with descriptive content to the right
 
 | Class                 | Property                               |
 | --------------------- | -------------------------------------- |

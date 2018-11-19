@@ -4,15 +4,15 @@
 
 [class^='o-'],
 [class*=' o-'] {
-  outline: 2px dashed #aaa;
-  background-color: #f1f1f2;
+  outline: 2px dashed rgba(255, 152, 0);
+  background-color: rgba(27, 31, 35, 0.05);
 }
 
 /**
  * Outline all BEM Elements.
  */
 
- [class*='o-'][class*='__'] {
-  outline: 2px solid #f00;
-  background-color: rgba(255, 0, 0, 0.1);
+[class*='o-'][class*='__'] {
+  outline: 2px solid rgba(255, 152, 0);
+  background-color: rgba(255, 152, 0, 0.1);
 }

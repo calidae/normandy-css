@@ -14,7 +14,7 @@
 
 ## List Object
 
-#### Use `o-list` to create a list-object
+Use `o-list__item` to create a list-object
 
 ```html
     <div class="o-list">
@@ -27,6 +27,10 @@
     </div>
 ```
 ---
+
+### Usage
+
+#### `.o-list__item`
 
 <code>
     <div class="o-list">
@@ -41,7 +45,7 @@
 
 ## Display Modifiers
 
-#### Use `o-list--block`
+Use `o-list--block`
 
 ```html
     <div class="o-list o-list--block">
@@ -54,6 +58,10 @@
     </div>
 ```
 ---
+
+### Usage
+
+#### `.o-list-block`
 
 <code>
     <div class="o-list o-list--block">

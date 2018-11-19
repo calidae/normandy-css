@@ -1,21 +1,13 @@
 # Block
 
-| Class         | Property                            |
-| --------------| ----------------------------------- |
-| o-block       | display: block text-align: center |
-| o-block__body | display: block                      |
-| o-block--right| text-align:right                    |
-| o-block--left | text-align:left                     |
-
-
-::: tip Where can I see Size Modifiers?
+::: tip Where can I see Block object?
  It is located in `5-Objects/_objects.block.scss`
 :::
 ---
 
 ## Block Object
 
-<br>Use `o-block` to create a block-object
+Use `o-block` to create a block-object
 
 ```html
 <div class="o-block">
@@ -47,7 +39,7 @@
 
 ## Size modifiers
 
-<br>Use `o-block--{size}`
+Use `o-block--{size}`
 
 ```html
 <div class="o-block o-block--{size}">
@@ -63,8 +55,10 @@
 ```
 ---
 
+### Usage
+
+#### `.o-block--flush`
 <code>
-<p class="u-m u-text-h4">flush</p>
     <div class="o-block o-block--flush">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -73,7 +67,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">tiny</p>
+</code>
+
+#### `.o-block--tiny`
+<code>
     <div class="o-block o-block--tiny">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -82,7 +79,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">small</p>
+</code>
+
+#### `.o-block--small`
+<code>
     <div class="o-block o-block--small">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -91,7 +91,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">large</p>
+</code>
+
+#### `.o-block--large`
+<code>
     <div class="o-block o-block--large">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -100,7 +103,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">huge</p>
+</code>
+
+#### `.o-block--huge`
+<code>
     <div class="o-block o-block--huge">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -113,7 +119,7 @@
 
 ## Alignment modifiers
 
-<br>Use `o-block--{alignment}`
+Use `o-block--{alignment}`
 
 ```html
 <div class="o-block o-block--{alignment}">
@@ -129,8 +135,10 @@
 ```
 ---
 
+### Usage
+
+#### `.o-block--left`
 <code>
-<p class="u-m u-text-h4">left</p>
     <div class="o-block o-block--left">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -139,7 +147,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">right</p>
+</code>
+
+#### `.o-block--right`
+<code>
     <div class="o-block o-block--right">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />

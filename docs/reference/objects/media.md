@@ -12,7 +12,7 @@
 
 ## Media Object
 
-<br>Use `o-media` to create a media-object
+Use `o-media` to create a media-object
 
 ```html
 <div class="o-media">
@@ -45,7 +45,7 @@
 
 ## Size modifiers
 
-<br>Use `o-media--{size}`
+Use `o-media--{size}`
 
 ```html
 <div class="o-media o-media--{size}">
@@ -61,8 +61,11 @@
 ```
 ---
 
+### Usage
+
+#### `.o-media--flush`
+
 <code>
-<p class="u-m u-text-h4">flush</p>
     <div class="o-media o-media--flush">
         <div class="o-media__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -71,7 +74,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">tiny</p>
+</code>
+
+#### `.o-media--tiny`
+<code>
     <div class="o-media o-media--tiny">
         <div class="o-media__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -80,7 +86,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">small</p>
+</code>
+
+#### `.o-media--small`
+<code>
     <div class="o-media o-media--small">
         <div class="o-media__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -89,7 +98,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">large</p>
+</code>
+
+#### `.o-media--large`
+<code>
     <div class="o-media o-media--large">
         <div class="o-media__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -98,7 +110,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">huge</p>
+</code>
+
+#### `.o-media--huge`
+<code>
     <div class="o-media o-media--huge">
         <div class="o-media__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -111,7 +126,7 @@
 
 ## Alignment modifiers
 
-<br>Use `o-media--{alignment}`
+Use `o-media--{alignment}`
 
 ```html
 <div class="o-media o-media--{alignment}">
@@ -127,8 +142,11 @@
 ```
 ---
 
+### Usage
+
+#### `.o-media--middle`
+
 <code>
-<p class="u-m u-text-h4">middle</p>
     <div class="o-media o-media--middle">
         <div class="o-media__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -137,7 +155,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">bottom</p>
+</code>
+
+#### `.o-media--bottom`
+<code>
     <div class="o-media o-media--bottom">
         <div class="o-media__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -146,7 +167,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m u-text-h4">stretch</p>
+</code>
+
+#### `.o-media--stretch`
+<code>
 <div class="o-media o-media--stretch">
     <div class="o-media__img">
         <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -159,7 +183,27 @@
 
 ## Reverse Modifier
 
-<p class="u-m u-text-h4">reverse</p>
+Use `o-media--reverse`
+
+```html
+<div class="o-media o-media--reverse">
+    <div class="o-media__img">
+        <img src="http://unsplash.it/100" alt="Placeholder image" />
+    </div>
+    <div class="o-media__body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores,
+        perspiciatis quasi praesentium ab vel at repellat amet atque?
+    </div>
+</div>
+```
+---
+
+### Usage
+
+#### `.o-media--reverse`
+
+<code>
 <div class="o-media o-media--reverse">
     <div class="o-media__img">
         <img src="http://unsplash.it/100" alt="Placeholder image" />

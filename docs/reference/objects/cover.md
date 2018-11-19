@@ -12,7 +12,7 @@
 
 ## Cover Object
 
-#### Use `o-cover` to create a cover-object
+Use `o-cover` to create a cover-object
 
 ```html
 <div class="o-cover o-cover--demo">
@@ -33,7 +33,7 @@
 
 ## Size modifiers
 
-#### Use `o-cover--{size}`
+Use `o-cover--{size}`
 
 ```html
 <div class="o-cover o-cover--demo">
@@ -44,32 +44,46 @@
 ```
 ---
 
+### Usage
+
+#### `.o-cover--flush`
 <code>
-    <p class="u-m u-text-h4">flush</p>
     <div class="o-cover o-cover--flush o-cover--demo">
         <div class="o-cover__body">
             Lorem ipsum dolor sit amet
         </div>
-    </div>  
-    <p class="u-m u-text-h4">tiny</p>
+    </div> 
+</code>
+
+#### `.o-cover--tiny`
+<code> 
     <div class="o-cover o-cover--tiny o-cover--demo">
         <div class="o-cover__body">
             Lorem ipsum dolor sit amet
         </div>
     </div>
-    <p class="u-m u-text-h4">small</p>
+</code>
+
+#### `.o-cover--small`
+<code>
     <div class="o-cover o-cover--small o-cover--demo">
         <div class="o-cover__body">
             Lorem ipsum dolor sit amet
         </div>
     </div>
-    <p class="u-m u-text-h4">large</p>
+</code>
+
+#### `.o-cover--large`
+<code>
     <div class="o-cover o-cover--large o-cover--demo">
         <div class="o-cover__body">
             Lorem ipsum dolor sit amet
         </div>
     </div>
-    <p class="u-m u-text-h4">huge</p>
+</code>
+
+#### `.o-cover--huge`
+<code>
     <div class="o-cover o-cover--huge o-cover--demo">
         <div class="o-cover__body">
             Lorem ipsum dolor sit amet
@@ -79,16 +93,22 @@
 
 ## Alignment modifiers
 
-<br>Use `o-cover--{alignment}`
+Use `o-cover--{alignment}`
 
+
+### Usage
+
+#### `.o-cover--left`
 <code>
-<p class="u-m u-text-h4">left</p>
     <div class="o-cover o-cover--left o-cover--demo">
         <div class="o-cover__body">
             Lorem ipsum dolor sit amet
         </div>
       </div>
-<p class="u-m u-text-h4">right</p>
+</code>
+
+#### `.o-cover--right`
+<code>
       <div class="o-cover o-cover--right o-cover--demo">
           <div class="o-cover__body">
               Lorem ipsum dolor sit amet

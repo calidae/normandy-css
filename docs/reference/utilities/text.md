@@ -172,7 +172,7 @@ Utilities for controlling the generic style of text.
 
 <pre class="u-text-underline">Lorem ipsum dolor sit amet</pre>
 
-#### `.u-text-through`
+#### `.u-text-line-through`
 
 <pre class="u-text-line-through">Lorem ipsum dolor sit amet</pre>
 

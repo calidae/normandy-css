@@ -4,7 +4,7 @@
 
 [class^='o-'],
 [class*=' o-'] {
-  outline: 2px dashed rgba(255, 152, 0);
+  outline: 1px dashed rgba(255, 152, 0);
   background-color: rgba(27, 31, 35, 0.05);
 }
 
@@ -13,6 +13,6 @@
  */
 
 [class*='o-'][class*='__'] {
-  outline: 2px solid rgba(255, 152, 0);
+  outline: 1px solid rgba(255, 152, 0);
   background-color: rgba(255, 152, 0, 0.1);
 }

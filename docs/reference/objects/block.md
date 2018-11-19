@@ -3,147 +3,21 @@
 Stacked image-with-text object. A simple abstraction to cover a very commonly
 occurring design pattern.
 
-::: tip Where can I see Block object?
-It is located in `5-Objects/_objects.block.scss`
+::: tip Where is it?
+The Block object is located in `5-Objects/_objects.block.scss`.
 :::
 
----
+## Elements
 
-## Block Object
+The Block Object has 2 elements:
 
-Use `o-block` to create a block-object
-
-```html
-<div class="o-block">
-    <div class="o-block__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-block__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-        reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-        quasi praesentium ab vel at repellat amet atque?
-    </div>
-</div>
-```
-
----
-
-<code>
-    <div class="o-block">
-        <div class="o-block__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Numquam, reiciendis fugiat ut voluptate fugit quisquam modi
-            maiores, perspiciatis quasi praesentium 
-            ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
-
-## Size modifiers
-
-Use `o-block--{size}`
-
-```html
-<div class="o-block o-block--{size}">
-    <div class="o-block__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-block__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-        reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-        quasi praesentium ab vel at repellat amet atque?
-    </div>
-</div>
-```
-
----
+- `o-block__img`
+- `o-block__body`
 
 ### Usage
 
-#### `.o-block--flush`
-
-<code>
-    <div class="o-block o-block--flush">
-        <div class="o-block__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
-
-#### `.o-block--tiny`
-
-<code>
-    <div class="o-block o-block--tiny">
-        <div class="o-block__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
-
-#### `.o-block--small`
-
-<code>
-    <div class="o-block o-block--small">
-        <div class="o-block__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
-
-#### `.o-block--large`
-
-<code>
-    <div class="o-block o-block--large">
-        <div class="o-block__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
-
-#### `.o-block--huge`
-
-<code>
-    <div class="o-block o-block--huge">
-        <div class="o-block__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-block__body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-    quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
-
-## Alignment modifiers
-
-Use `o-block--{alignment}`
-
 ```html
-<div class="o-block o-block--{alignment}">
+<div class="o-block">
   <div class="o-block__img">
     <img src="http://unsplash.it/100" alt="Placeholder image" />
   </div>
@@ -155,43 +29,129 @@ Use `o-block--{alignment}`
 </div>
 ```
 
----
+<div class="o-block u-mt-small">
+  <div class="o-block__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-block__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
+
+## Size modifiers
+
+Use the size modifiers to adapt the gap between the elements.
+
+| Class          | Elements' gap                |
+| -------------- | ---------------------------- |
+| o-cover--flush | `0`                          |
+| o-cover--tiny  | `$global-spacing-unit-tiny`  |
+| o-cover--small | `$global-spacing-unit-small` |
+| o-cover--large | `$global-spacing-unit-large` |
+| o-cover--huge  | `$global-spacing-unit-huge`  |
+
+### Usage
+
+#### `.o-block--flush`
+
+<div class="o-block o-block--flush u-mt-small">
+  <div class="o-block__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-block__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
+
+#### `.o-block--tiny`
+
+<div class="o-block o-block--tiny u-mt-small">
+  <div class="o-block__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-block__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
+
+#### `.o-block--small`
+
+<div class="o-block o-block--small u-mt-small">
+  <div class="o-block__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-block__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
+
+#### `.o-block--large`
+
+<div class="o-block o-block--large u-mt-small">
+  <div class="o-block__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-block__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
+
+#### `.o-block--huge`
+
+<div class="o-block o-block--huge u-mt-small">
+  <div class="o-block__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-block__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
+
+## Alignment modifiers
+
+Use alignment modifiers to change the elements' alignment.
+
+| Class          | Alignment |
+| -------------- | --------- |
+| o-cover--left  | left      |
+| o-cover--right | right     |
 
 ### Usage
 
 #### `.o-block--left`
 
-<code>
-    <div class="o-block o-block--left">
-        <div class="o-block__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-block__body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-    quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-block o-block--left u-mt-small">
+  <div class="o-block__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-block__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
 
 #### `.o-block--right`
 
-<code>
-    <div class="o-block o-block--right">
-        <div class="o-block__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-block__body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-    quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-block o-block--right u-mt-small">
+  <div class="o-block__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-block__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
 
 <style lang="scss">
 @import '../../.vuepress/scss/main.scss';
 @import './outline.css';
+
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+h2 {
+  padding-bottom: 0.3rem;
+}
 
 code {
     div {

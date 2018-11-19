@@ -17,7 +17,7 @@ Use `o-cover` to create a cover-object
 
 ```html
 <div class="o-cover o-cover--demo">
-  <div class="o-cover__body">Lorem ipsum dolor sit amet</div>
+    <div class="o-cover__body">Lorem ipsum dolor sit amet</div>
 </div>
 ```
 
@@ -37,7 +37,7 @@ Use `o-cover--{size}`
 
 ```html
 <div class="o-cover o-cover--demo">
-  <div class="o-cover__body">Lorem ipsum dolor sit amet</div>
+    <div class="o-cover__body">Lorem ipsum dolor sit amet</div>
 </div>
 ```
 
@@ -114,11 +114,11 @@ Use `o-cover--{alignment}`
 #### `.o-cover--right`
 
 <code>
-      <div class="o-cover o-cover--right o-cover--demo">
-          <div class="o-cover__body">
-              Lorem ipsum dolor sit amet
-          </div>
-      </div>
+    <div class="o-cover o-cover--right o-cover--demo">
+        <div class="o-cover__body">
+            Lorem ipsum dolor sit amet
+        </div>
+    </div>
 </code>
 
 <style lang="scss">

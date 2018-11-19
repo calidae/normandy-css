@@ -20,12 +20,12 @@ Use `o-list__item` to create a list-object
 
 ```html
 <div class="o-list">
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
 </div>
 ```
 
@@ -52,12 +52,12 @@ Use `o-list--block`
 
 ```html
 <div class="o-list o-list--block">
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
-  <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
+    <div class="o-list__item">Item</div>
 </div>
 ```
 

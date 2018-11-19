@@ -15,14 +15,14 @@ Use `o-block` to create a block-object
 
 ```html
 <div class="o-block">
-  <div class="o-block__img">
-    <img src="http://unsplash.it/100" alt="Placeholder image" />
-  </div>
-  <div class="o-block__body">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-    quasi praesentium ab vel at repellat amet atque?
-  </div>
+    <div class="o-block__img">
+        <img src="http://unsplash.it/100" alt="Placeholder image" />
+    </div>
+    <div class="o-block__body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+        reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+        quasi praesentium ab vel at repellat amet atque?
+    </div>
 </div>
 ```
 
@@ -48,14 +48,14 @@ Use `o-block--{size}`
 
 ```html
 <div class="o-block o-block--{size}">
-  <div class="o-block__img">
-    <img src="http://unsplash.it/100" alt="Placeholder image" />
-  </div>
-  <div class="o-block__body">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-    quasi praesentium ab vel at repellat amet atque?
-  </div>
+    <div class="o-block__img">
+        <img src="http://unsplash.it/100" alt="Placeholder image" />
+    </div>
+    <div class="o-block__body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+        reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+        quasi praesentium ab vel at repellat amet atque?
+    </div>
 </div>
 ```
 
@@ -71,7 +71,9 @@ Use `o-block--{size}`
             <img src="http://unsplash.it/100" alt="Placeholder image" />
         </div>
         <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+            quasi praesentium ab vel at repellat amet atque?
         </div>
     </div>
 </code>
@@ -84,7 +86,9 @@ Use `o-block--{size}`
             <img src="http://unsplash.it/100" alt="Placeholder image" />
         </div>
         <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+            quasi praesentium ab vel at repellat amet atque?
         </div>
     </div>
 </code>
@@ -97,7 +101,9 @@ Use `o-block--{size}`
             <img src="http://unsplash.it/100" alt="Placeholder image" />
         </div>
         <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+            quasi praesentium ab vel at repellat amet atque?
         </div>
     </div>
 </code>
@@ -110,7 +116,9 @@ Use `o-block--{size}`
             <img src="http://unsplash.it/100" alt="Placeholder image" />
         </div>
         <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+            quasi praesentium ab vel at repellat amet atque?
         </div>
     </div>
 </code>
@@ -123,7 +131,9 @@ Use `o-block--{size}`
             <img src="http://unsplash.it/100" alt="Placeholder image" />
         </div>
         <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+    quasi praesentium ab vel at repellat amet atque?
         </div>
     </div>
 </code>
@@ -157,7 +167,9 @@ Use `o-block--{alignment}`
             <img src="http://unsplash.it/100" alt="Placeholder image" />
         </div>
         <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+    quasi praesentium ab vel at repellat amet atque?
         </div>
     </div>
 </code>
@@ -170,7 +182,9 @@ Use `o-block--{alignment}`
             <img src="http://unsplash.it/100" alt="Placeholder image" />
         </div>
         <div class="o-block__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+    quasi praesentium ab vel at repellat amet atque?
         </div>
     </div>
 </code>

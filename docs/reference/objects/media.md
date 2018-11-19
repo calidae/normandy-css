@@ -2,12 +2,12 @@
 
 The media object is an image to the left, with descriptive content to the right
 
-| Class                 | Property                               |
-| --------------------- | -------------------------------------- |
-| o-media               | display: flex  align-items: flex-start |
+| Class   | Property                              |
+| ------- | ------------------------------------- |
+| o-media | display: flex align-items: flex-start |
 
 ::: tip Where can I see Size and Alignment Modifiers?
- It is located in `5-Objects/_objects.media.scss`
+It is located in `5-Objects/_objects.media.scss`
 :::
 
 ---
@@ -18,16 +18,17 @@ Use `o-media` to create a media-object
 
 ```html
 <div class="o-media">
-    <div class="o-media__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-media__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores,
-        perspiciatis quasi praesentium ab vel at repellat amet atque?
-    </div>
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+    quasi praesentium ab vel at repellat amet atque?
+  </div>
 </div>
 ```
+
 ---
 
 <code>
@@ -44,23 +45,23 @@ Use `o-media` to create a media-object
     </div>
 </code>
 
-
 ## Size modifiers
 
 Use `o-media--{size}`
 
 ```html
 <div class="o-media o-media--{size}">
-    <div class="o-media__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-media__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores,
-        perspiciatis quasi praesentium ab vel at repellat amet atque?
-    </div>
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+    quasi praesentium ab vel at repellat amet atque?
+  </div>
 </div>
 ```
+
 ---
 
 ### Usage
@@ -79,6 +80,7 @@ Use `o-media--{size}`
 </code>
 
 #### `.o-media--tiny`
+
 <code>
     <div class="o-media o-media--tiny">
         <div class="o-media__img">
@@ -91,6 +93,7 @@ Use `o-media--{size}`
 </code>
 
 #### `.o-media--small`
+
 <code>
     <div class="o-media o-media--small">
         <div class="o-media__img">
@@ -103,6 +106,7 @@ Use `o-media--{size}`
 </code>
 
 #### `.o-media--large`
+
 <code>
     <div class="o-media o-media--large">
         <div class="o-media__img">
@@ -115,6 +119,7 @@ Use `o-media--{size}`
 </code>
 
 #### `.o-media--huge`
+
 <code>
     <div class="o-media o-media--huge">
         <div class="o-media__img">
@@ -132,16 +137,17 @@ Use `o-media--{alignment}`
 
 ```html
 <div class="o-media o-media--{alignment}">
-    <div class="o-media__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-media__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores,
-        perspiciatis quasi praesentium ab vel at repellat amet atque?
-    </div>
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+    quasi praesentium ab vel at repellat amet atque?
+  </div>
 </div>
 ```
+
 ---
 
 ### Usage
@@ -160,6 +166,7 @@ Use `o-media--{alignment}`
 </code>
 
 #### `.o-media--bottom`
+
 <code>
     <div class="o-media o-media--bottom">
         <div class="o-media__img">
@@ -172,6 +179,7 @@ Use `o-media--{alignment}`
 </code>
 
 #### `.o-media--stretch`
+
 <code>
 <div class="o-media o-media--stretch">
     <div class="o-media__img">
@@ -189,16 +197,17 @@ Use `o-media--reverse`
 
 ```html
 <div class="o-media o-media--reverse">
-    <div class="o-media__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-media__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores,
-        perspiciatis quasi praesentium ab vel at repellat amet atque?
-    </div>
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
+    quasi praesentium ab vel at repellat amet atque?
+  </div>
 </div>
 ```
+
 ---
 
 ### Usage

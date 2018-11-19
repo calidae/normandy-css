@@ -2,14 +2,14 @@
 
 Unstyled inline or blocked lists.
 
-| Class         | Property                           |
-| --------------| ---------------------------------- |
-| o-list        | margin:0 padding:0 list-style:none |
-| o-list__item  | display:inline-block               |
-| o-list--block | display:block                      |
+| Class          | Property                           |
+| -------------- | ---------------------------------- |
+| o-list         | margin:0 padding:0 list-style:none |
+| o-list\_\_item | display:inline-block               |
+| o-list--block  | display:block                      |
 
 ::: tip Where can I see more about List Object?
- It is located in `5-Objects/_objects.list.scss`
+It is located in `5-Objects/_objects.list.scss`
 :::
 
 ---
@@ -19,15 +19,16 @@ Unstyled inline or blocked lists.
 Use `o-list__item` to create a list-object
 
 ```html
-    <div class="o-list">
-        <div class="o-list__item">Item</div>
-        <div class="o-list__item">Item</div>
-        <div class="o-list__item">Item</div>
-        <div class="o-list__item">Item</div>
-        <div class="o-list__item">Item</div>
-        <div class="o-list__item">Item</div>
-    </div>
+<div class="o-list">
+  <div class="o-list__item">Item</div>
+  <div class="o-list__item">Item</div>
+  <div class="o-list__item">Item</div>
+  <div class="o-list__item">Item</div>
+  <div class="o-list__item">Item</div>
+  <div class="o-list__item">Item</div>
+</div>
 ```
+
 ---
 
 ### Usage
@@ -50,15 +51,16 @@ Use `o-list__item` to create a list-object
 Use `o-list--block`
 
 ```html
-    <div class="o-list o-list--block">
-        <div class="o-list__item">Item</div>
-        <div class="o-list__item">Item</div>
-        <div class="o-list__item">Item</div>
-        <div class="o-list__item">Item</div>
-        <div class="o-list__item">Item</div>
-        <div class="o-list__item">Item</div>
-    </div>
+<div class="o-list o-list--block">
+  <div class="o-list__item">Item</div>
+  <div class="o-list__item">Item</div>
+  <div class="o-list__item">Item</div>
+  <div class="o-list__item">Item</div>
+  <div class="o-list__item">Item</div>
+  <div class="o-list__item">Item</div>
+</div>
 ```
+
 ---
 
 ### Usage

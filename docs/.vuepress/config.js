@@ -44,6 +44,16 @@ module.exports = {
             '/reference/utilities/colors',
           ],
         },
+        {
+          title: 'Objects',
+          collapsable: true,
+          children: [
+            '/reference/objects/block',
+            '/reference/objects/cover',
+            '/reference/objects/list',
+            '/reference/objects/media',
+          ],
+        },
       ],
     },
   },

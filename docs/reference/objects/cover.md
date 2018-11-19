@@ -34,7 +34,7 @@ Use the size modifiers to give a size to the body of the object
 It is located in `1-Settings/_settings.core.scss`
 :::
 
-| Class          | Property                    |
+| Class          | Elements' gap               |
 | -------------- | --------------------------- |
 | o-cover--flush | `0` 											   |
 | o-cover--tiny  | `$global-spacing-unit-tiny` |
@@ -90,12 +90,12 @@ It is located in `1-Settings/_settings.core.scss`
 
 Use alignment modifiers to change the elements' alignment.
 
-| Class           | Property  |
-| --------------- | --------- |
-| o-cover--top    | `0` 		  |
-| o-cover--bottom | `0` 			|
-| o-cover--left   | `0` 		  |
-| o-cover--right  | `0` 			|
+| Class           | Alignment                         |
+| --------------- | --------------------------------- |
+| o-cover--top    | align the element to the top		  |
+| o-cover--bottom | align the element to the bottom		|
+| o-cover--left   | align the element to the left		  |
+| o-cover--right  | align the element to the right		|
 
 
 #### `.o-cover--top`

@@ -5,7 +5,7 @@
 | o-media               | display: flex  align-items: flex-start |
 
 ::: tip Where can I see Size and Alignment Modifiers?
- It is located in `5-Objects/_objects.cover.scss`
+ It is located in `5-Objects/_objects.media.scss`
 :::
 
 ---

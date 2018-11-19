@@ -5,8 +5,8 @@
 | o-cover       | display: flex, background-position: center; background-size: cover; |
 | o-cover__body | margin:auto padding: $global-spacing-unit                           |                         
 
-::: tip Where can I see more about Media Object?
- It is located in `5-Objects/_objects.media.scss`
+::: tip Where can I see more about Cover Object?
+ It is located in `5-Objects/_objects.cover.scss`
 :::
 
 

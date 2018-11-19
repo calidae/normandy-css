@@ -2,7 +2,7 @@
 
 | Class         | Property                            |
 | --------------| ----------------------------------- |
-| o-block       | display: block , text-align: center |
+| o-block       | display: block text-align: center |
 | o-block__body | display: block                      |
 | o-block--right| text-align:right                    |
 | o-block--left | text-align:left                     |

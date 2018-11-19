@@ -21,9 +21,9 @@ The Cover Object has 1 element:
 ```
 
 <div class="o-cover o-cover--demo">
-		<div class="o-cover__body">
-				Lorem ipsum dolor sit amet
-		</div>
+  <div class="o-cover__body">
+    Lorem ipsum dolor sit amet
+  </div>
 </div>
 
 ## Size modifiers

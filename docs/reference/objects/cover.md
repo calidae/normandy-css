@@ -2,124 +2,133 @@
 
 Place any text as a cover from an image.
 
-| Class           | Property                                                            |
-| --------------- | ------------------------------------------------------------------- |
-| o-cover         | display: flex, background-position: center; background-size: cover; |
-| o-cover\_\_body | margin:auto padding: \$global-spacing-unit                          |
-
-::: tip Where can I see more about Cover Object?
-It is located in `5-Objects/_objects.cover.scss`
+::: tip Where is it?
+The Cover object is located in `5-Objects/_objects.cover.scss`.
 :::
 
-## Cover Object
+## Elements
 
-Use `o-cover` to create a cover-object
+The Cover Object has 2 elements:
+
+- `o-cover__body`
+
+### Usage
 
 ```html
 <div class="o-cover o-cover--demo">
-    <div class="o-cover__body">Lorem ipsum dolor sit amet</div>
+  <div class="o-cover__body">Lorem ipsum dolor sit amet</div>
 </div>
 ```
 
----
-
-<code>
-    <div class="o-cover o-cover--demo">
-        <div class="o-cover__body">
-            Lorem ipsum dolor sit amet
-        </div>
-    </div>
-</code>
+<div class="o-cover o-cover--demo">
+		<div class="o-cover__body">
+				Lorem ipsum dolor sit amet
+		</div>
+</div>
 
 ## Size modifiers
 
-Use `o-cover--{size}`
+Use the size modifiers to give a size to the body of the object
 
-```html
-<div class="o-cover o-cover--demo">
-    <div class="o-cover__body">Lorem ipsum dolor sit amet</div>
-</div>
-```
+::: tip Where can I see more about the $global-spacing-unit?
+It is located in `1-Settings/_settings.core.scss`
+:::
 
----
+| Class          | Property                    |
+| -------------- | --------------------------- |
+| o-cover--flush | `0` 											   |
+| o-cover--tiny  | `$global-spacing-unit-tiny` |
+| o-cover--small | `$global-spacing-unit-small`|
+| o-cover--large | `$global-spacing-unit-large`|
+| o-cover--huge  | `$global-spacing-unit-huge` |
+
 
 ### Usage
 
 #### `.o-cover--flush`
 
-<code>
-    <div class="o-cover o-cover--flush o-cover--demo">
-        <div class="o-cover__body">
-            Lorem ipsum dolor sit amet
-        </div>
-    </div> 
-</code>
+
+<div class="o-cover o-cover--flush o-cover--demo u-mt-small">
+		<div class="o-cover__body">
+				Lorem ipsum dolor sit amet
+		</div>
+</div> 
 
 #### `.o-cover--tiny`
 
-<code> 
-    <div class="o-cover o-cover--tiny o-cover--demo">
-        <div class="o-cover__body">
-            Lorem ipsum dolor sit amet
-        </div>
-    </div>
-</code>
+<div class="o-cover o-cover--tiny o-cover--demo u-mt-small">
+		<div class="o-cover__body">
+				Lorem ipsum dolor sit amet
+		</div>
+</div>
 
 #### `.o-cover--small`
 
-<code>
-    <div class="o-cover o-cover--small o-cover--demo">
-        <div class="o-cover__body">
-            Lorem ipsum dolor sit amet
-        </div>
-    </div>
-</code>
+<div class="o-cover o-cover--small o-cover--demo u-mt-small">
+		<div class="o-cover__body">
+				Lorem ipsum dolor sit amet
+		</div>
+</div>
 
 #### `.o-cover--large`
 
-<code>
-    <div class="o-cover o-cover--large o-cover--demo">
-        <div class="o-cover__body">
-            Lorem ipsum dolor sit amet
-        </div>
-    </div>
-</code>
+<div class="o-cover o-cover--large o-cover--demo u-mt-small">
+		<div class="o-cover__body">
+				Lorem ipsum dolor sit amet
+		</div>
+</div>
 
 #### `.o-cover--huge`
 
-<code>
-    <div class="o-cover o-cover--huge o-cover--demo">
-        <div class="o-cover__body">
-            Lorem ipsum dolor sit amet
-        </div>
-    </div>
-</code>
+<div class="o-cover o-cover--huge o-cover--demo u-mt-small">
+		<div class="o-cover__body">
+				Lorem ipsum dolor sit amet
+		</div>
+</div>
 
 ## Alignment modifiers
 
-Use `o-cover--{alignment}`
+Use alignment modifiers to change the elements' alignment.
 
-### Usage
+| Class           | Property  |
+| --------------- | --------- |
+| o-cover--top    | `0` 		  |
+| o-cover--bottom | `0` 			|
+| o-cover--left   | `0` 		  |
+| o-cover--right  | `0` 			|
+
+
+#### `.o-cover--top`
+
+<div class="o-cover o-cover--top o-cover--demo u-mt-small">
+		<div class="o-cover__body">
+				Lorem ipsum dolor sit amet
+		</div>
+</div>
+
+#### `.o-cover--bottom`
+
+<div class="o-cover o-cover--bottom o-cover--demo u-mt-small">
+		<div class="o-cover__body">
+				Lorem ipsum dolor sit amet
+		</div>
+</div>
 
 #### `.o-cover--left`
 
-<code>
-    <div class="o-cover o-cover--left o-cover--demo">
-        <div class="o-cover__body">
-            Lorem ipsum dolor sit amet
-        </div>
-      </div>
-</code>
+<div class="o-cover o-cover--left o-cover--demo u-mt-small">
+		<div class="o-cover__body">
+				Lorem ipsum dolor sit amet
+		</div>
+</div>
 
 #### `.o-cover--right`
 
-<code>
-    <div class="o-cover o-cover--right o-cover--demo">
-        <div class="o-cover__body">
-            Lorem ipsum dolor sit amet
-        </div>
-    </div>
-</code>
+<div class="o-cover o-cover--right o-cover--demo u-mt-small">
+		<div class="o-cover__body">
+				Lorem ipsum dolor sit amet
+		</div>
+</div>
 
 <style lang="scss">
 @import '../../.vuepress/scss/main.scss';

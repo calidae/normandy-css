@@ -12,7 +12,7 @@
  * Outline all BEM Elements.
  */
 
-[class*='__'] {
+ [class*='o-'][class*='__'] {
   outline: 2px solid #f00;
   background-color: rgba(255, 0, 0, 0.1);
 }

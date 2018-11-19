@@ -1,247 +1,177 @@
 # Media
 
-The media object is an image to the left, with descriptive content to the right
+An image to the left, with descriptive content to the right.
 
-| Class   | Property                              |
-| ------- | ------------------------------------- |
-| o-media | display: flex align-items: flex-start |
-
-::: tip Where can I see Size and Alignment Modifiers?
-It is located in `5-Objects/_objects.media.scss`
+::: tip Where is it?
+The Media object is located in `5-Objects/_objects.media.scss`.
 :::
 
----
+## Elements
 
-## Media Object
+The Media Object has 2 elements:
 
-Use `o-media` to create a media-object
+- `o-media__img`
+- `o-media__body`
 
-```html
+### Usage
+
+```html{1,2,5}
 <div class="o-media">
-    <div class="o-media__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-media__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-        reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-        quasi praesentium ab vel at repellat amet atque?
-    </div>
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+    reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis
+    quasi praesentium ab vel at repellat amet atque?
+  </div>
 </div>
 ```
 
 ---
 
-<code>
-    <div class="o-media">
-        <div class="o-media__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-media__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Numquam, reiciendis fugiat ut voluptate fugit quisquam modi
-            maiores, perspiciatis quasi praesentium 
-            ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-media">
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium  ab vel at repellat amet atque?
+  </div>
+</div>
 
 ## Size modifiers
 
-Use `o-media--{size}`
+Use the size modifiers to adapt the gap between the elements.
 
-```html
-<div class="o-media o-media--{size}">
-    <div class="o-media__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-media__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-        reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-        quasi praesentium ab vel at repellat amet atque?
-    </div>
-</div>
-```
+| Class          | Elements' gap                |
+| -------------- | ---------------------------- |
+| o-media--flush | `0`                          |
+| o-media--tiny  | `$global-spacing-unit-tiny`  |
+| o-media--small | `$global-spacing-unit-small` |
+| o-media--large | `$global-spacing-unit-large` |
+| o-media--huge  | `$global-spacing-unit-huge`  |
 
----
+::: tip
+\$global-spacing-unit map is located in `1-Settings/_settings.core.scss`
+:::
 
 ### Usage
 
 #### `.o-media--flush`
 
-<code>
-    <div class="o-media o-media--flush">
-        <div class="o-media__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-media__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-media o-media--flush u-mt-small">
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
 
 #### `.o-media--tiny`
 
-<code>
-    <div class="o-media o-media--tiny">
-        <div class="o-media__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-media__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?        
-        </div>
-    </div>
-</code>
+<div class="o-media o-media--tiny u-mt-small">
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?         </div>
+</div>
 
 #### `.o-media--small`
 
-<code>
-    <div class="o-media o-media--small">
-        <div class="o-media__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-media__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-media o-media--small u-mt-small">
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
 
 #### `.o-media--large`
 
-<code>
-    <div class="o-media o-media--large">
-        <div class="o-media__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-media__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-media o-media--large u-mt-small">
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
 
 #### `.o-media--huge`
 
-<code>
-    <div class="o-media o-media--huge">
-        <div class="o-media__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-media__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-media o-media--huge u-mt-small">
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
 
 ## Alignment modifiers
 
-Use `o-media--{alignment}`
+Use the alignment modifiers to change the vertical alignment of the body.
 
-```html
-<div class="o-media o-media--{alignment}">
-    <div class="o-media__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-media__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-        reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-        quasi praesentium ab vel at repellat amet atque?
-    </div>
-</div>
-```
-
----
+| Class            | Body's alignment                  |
+| ---------------- | --------------------------------- |
+| o-media--center  | Center                            |
+| o-media--bottom  | Bottom                            |
+| o-media--stretch | Fill the same height as the image |
 
 ### Usage
 
-#### `.o-media--middle`
+#### `.o-media--center`
 
-<code>
-    <div class="o-media o-media--middle">
-        <div class="o-media__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-media__body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-    reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-    quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-media o-media--center u-mt-small">
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
 
 #### `.o-media--bottom`
 
-<code>
-    <div class="o-media o-media--bottom">
-        <div class="o-media__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-media__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-media o-media--bottom u-mt-small">
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
 
 #### `.o-media--stretch`
 
-<code>
-    <div class="o-media o-media--stretch">
-        <div class="o-media__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-media__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-media o-media--stretch u-mt-small">
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
 
 ## Reverse Modifier
 
-Use `o-media--reverse`
-
-```html
-<div class="o-media o-media--reverse">
-    <div class="o-media__img">
-        <img src="http://unsplash.it/100" alt="Placeholder image" />
-    </div>
-    <div class="o-media__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-        reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-        quasi praesentium ab vel at repellat amet atque?
-    </div>
-</div>
-```
-
----
+Use the reverse modifier to swap positions between elements.
 
 ### Usage
 
 #### `.o-media--reverse`
 
-<code>
-    <div class="o-media o-media--reverse">
-        <div class="o-media__img">
-            <img src="http://unsplash.it/100" alt="Placeholder image" />
-        </div>
-        <div class="o-media__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-            reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis
-            quasi praesentium ab vel at repellat amet atque?
-        </div>
-    </div>
-</code>
+<div class="o-media o-media--reverse u-mt-small">
+  <div class="o-media__img">
+    <img src="http://unsplash.it/100" alt="Placeholder image" />
+  </div>
+  <div class="o-media__body">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+  </div>
+</div>
 
 <style lang="scss">
 @import '../../.vuepress/scss/main.scss';
@@ -254,6 +184,16 @@ code {
     p {
         color:black;
     }
+}
+
+
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+h2 {
+  padding-bottom: 0.3rem;
 }
 
 </style>

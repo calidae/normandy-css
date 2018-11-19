@@ -1,55 +1,57 @@
 # Colors
 
-Use $global-colors. 
+Utilities for controlling the color and background color of an element.
+
+It uses `$global-colors` variables map to generate the color utilities.
+
+::: tip Where can I customize this variable?
+
+It is located in `1-Settings/_settings.colors.scss`
+
+```scss
+$global-colors: (
+  'branding-primary': #acc743,
+  'notify-success': #4caf50,
+  'notify-info': #29b6f6,
+  'notify-warning': #ff9800,
+  'notify-danger': #f44336,
+);
+```
+
+:::
+
+## Text color
+
+Used to give color to the text of a specific element.
+
+| Class          | Property         |
+| -------------- | ---------------- |
+| u-text-{color} | `color: {color}` |
+
+### Usage
+
+```html
+<p class="u-color-branding-primary">Lorem ipsum dolor sit amet</p>
+```
+
+<pre class="u-color-branding-primary">
+Lorem ipsum dolor sit amet
+</pre>
+
+## Background color
+
+Used to give color to the background of a specific element.
 
 | Class                | Property                    |
 | -------------------- | --------------------------- |
-| u-text-{color}       | `color: {color}`            |
 | u-background-{color} | `background-color: {color}` |
 
-
-### Text color
-
-<br>
-
- `u-text-{color}` can be specified the color text
-
+### Usage
 
 ```html
-<p>Lorem ipsum dolor sit amet</p>
+<p class="u-background-notify-warning u-p-tiny">Lorem ipsum dolor sit amet</p>
 ```
 
-<pre>
-   <p>Lorem ipsum dolor sit amet</p>
+<pre class="u-background-notify-warning u-p-tiny">
+Lorem ipsum dolor sit amet
 </pre>
-
-### Background color
-
-<br>
-
- `u-background-{color}` can be specified the color background
-
-
-```html
-<p class="u-background-notify-warning">Lorem ipsum dolor sit amet</p>
-```
-
-<pre>
-   <p class="u-p-tiny u-background-notify-warning">Lorem ipsum dolor sit amet</p>
-</pre>
-
-<style lang="scss">
-@import '../../.vuepress/scss/main.scss';
-
-pre {
-    white-space: pre-wrap;
-        color:#EAECEF;
-
-    .pre__title {
-        font-size: 0.9rem;
-        font-weight: bold;
-        padding-top: 2rem;
-        opacity:.5;
-    }
-}
-</style>

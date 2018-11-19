@@ -96,7 +96,7 @@ occurring design pattern.
 ---
 
 <code>
-<p class="u-m">flush</p>
+<p class="u-m u-text-h4">flush</p>
     <div class="o-block o-block--flush">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -105,7 +105,7 @@ occurring design pattern.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m">tiny</p>
+<p class="u-m u-text-h4">tiny</p>
     <div class="o-block o-block--tiny">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -114,7 +114,7 @@ occurring design pattern.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m">small</p>
+<p class="u-m u-text-h4">small</p>
     <div class="o-block o-block--small">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -123,7 +123,7 @@ occurring design pattern.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m">large</p>
+<p class="u-m u-text-h4">large</p>
     <div class="o-block o-block--large">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -132,7 +132,7 @@ occurring design pattern.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m">huge</p>
+<p class="u-m u-text-h4">huge</p>
     <div class="o-block o-block--huge">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -162,7 +162,7 @@ occurring design pattern.
 ---
 
 <code>
-<p class="u-m">left</p>
+<p class="u-m u-text-h4">left</p>
     <div class="o-block o-block--left">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />
@@ -171,7 +171,7 @@ occurring design pattern.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit quisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque? Veniam, officia, sint. Deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed, omnis ipsa exercitationem illo ut. Eos, porro voluptas unde velit totam aliquid iste molestias deleniti necessitatibus et quia, temporibus, ullam!
         </div>
     </div>
-<p class="u-m">right</p>
+<p class="u-m u-text-h4">right</p>
     <div class="o-block o-block--right">
         <div class="o-block__img">
             <img src="http://unsplash.it/100" alt="Placeholder image" />

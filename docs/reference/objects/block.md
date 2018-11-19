@@ -152,14 +152,4 @@ p {
 h2 {
   padding-bottom: 0.3rem;
 }
-
-code {
-    div {
-        color:black;
-    }
-    p {
-        color:black;
-    }
-}
-
 </style>

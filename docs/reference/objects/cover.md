@@ -88,12 +88,12 @@ Use the size modifiers to adapt the gap between the elements.
 
 Use alignment modifiers to change the elements' alignment.
 
-| Class           | Alignment                       |
-| --------------- | ------------------------------- |
-| o-cover--top    | align the element to the top    |
-| o-cover--bottom | align the element to the bottom |
-| o-cover--left   | align the element to the left   |
-| o-cover--right  | align the element to the right  |
+| Class           | Body's Alignment |
+| --------------- | ---------------- |
+| o-cover--top    | Top              |
+| o-cover--bottom | Bottom           |
+| o-cover--left   | Left             |
+| o-cover--right  | Right            |
 
 #### `.o-cover--top`
 
@@ -130,15 +130,6 @@ Use alignment modifiers to change the elements' alignment.
 <style lang="scss">
 @import '../../.vuepress/scss/main.scss';
 @import './outline.css';
-
-code {
-    div {
-        color:black;
-    }
-    p {
-        color:black;
-    }
-}
 
 p {
   margin-block-start: 1em;

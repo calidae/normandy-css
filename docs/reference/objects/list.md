@@ -55,15 +55,6 @@ Use display modifiers to modify the display property of each element.
 @import '../../.vuepress/scss/main.scss';
 @import './outline.css';
 
-code {
-    div {
-        color:black;
-    }
-    p {
-        color:black;
-    }
-}
-
 p {
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -72,5 +63,4 @@ p {
 h2 {
   padding-bottom: 0.3rem;
 }
-
 </style>

@@ -1,12 +1,19 @@
 module.exports = {
   title: 'NormandyCSS',
+  head: [
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://rawgit.com/calidae/normandy-css/master/output.css',
+      },
+    ],
+  ],
   themeConfig: {
     repo: 'calidae/normandy-css',
     editLinks: true,
     editLinkText: 'Help us improve this page!',
-    nav: [
-      { text: 'Guide', link: '/guide/getting-started' },
-    ],
+    nav: [{ text: 'Guide', link: '/guide/getting-started' }],
     sidebar: {
       '/': [
         {
@@ -34,7 +41,7 @@ module.exports = {
             '/reference/utilities/text',
             '/reference/utilities/widths',
             '/reference/utilities/height',
-            '/reference/utilities/colors'
+            '/reference/utilities/colors',
           ],
         },
       ],

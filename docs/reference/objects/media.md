@@ -21,7 +21,9 @@ The Media Object has 2 elements:
     <img src="http://unsplash.it/100" alt="Placeholder image" />
   </div>
   <div class="o-media__body">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+    reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis
+    quasi praesentium ab vel at repellat amet atque?
   </div>
 </div>
 ```

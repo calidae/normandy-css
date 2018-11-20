@@ -10,7 +10,9 @@ The Wrapper object is located in `5-Objects/_objects.wrapper.scss`.
 
 ```html
 <div class="o-wrapper">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium  ab vel at repellat amet atque?
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis
+  fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium
+  ab vel at repellat amet atque?
 </div>
 ```
 

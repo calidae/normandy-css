@@ -32,7 +32,7 @@ The maximum width provided by the Wrapper object is larger than the available in
 
 Use the size modifiers to change the gutter of the wrapped item.
 
-| Class            | Object's gutter             |
+| Class            | Object's gutter              |
 | ---------------- | ---------------------------- |
 | o-wrapper--flush | `0`                          |
 | o-wrapper--tiny  | `$global-spacing-unit-tiny`  |

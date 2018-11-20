@@ -6,6 +6,10 @@ Page-level constraining and wrapping elements.
 The Wrapper object is located in `5-Objects/_objects.wrapper.scss`.
 :::
 
+## Elements
+
+The Wrapper Object hasn't elements:
+
 ### Usage
 
 ```html
@@ -16,15 +20,13 @@ The Wrapper object is located in `5-Objects/_objects.wrapper.scss`.
 </div>
 ```
 
----
-
 <div class="o-wrapper">
  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium  ab vel at repellat amet atque?
 </div>
 
 ## Size modifiers
 
-Use the size modifiers to adapt the gap between the elements.
+Use the size modifiers to change the gutter of the wrapped item
 
 | Class            | Elements' gap                |
 | ---------------- | ---------------------------- |
@@ -39,6 +41,10 @@ Use the size modifiers to adapt the gap between the elements.
 :::
 
 ### Usage
+
+::: warning
+The maximum width provided by the Wrapper object is larger than the available in this document.
+:::
 
 #### `.o-wrapper--flush`
 

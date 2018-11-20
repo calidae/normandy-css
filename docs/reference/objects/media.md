@@ -28,8 +28,6 @@ The Media Object has 2 elements:
 </div>
 ```
 
----
-
 <div class="o-media">
   <div class="o-media__img">
     <img src="http://unsplash.it/100" alt="Placeholder image" />

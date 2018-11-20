@@ -22,17 +22,17 @@ alignment of the children can be easily manipulated.
 
 ```html
 <div class="u-flex">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -44,17 +44,17 @@ alignment of the children can be easily manipulated.
 
 ```html
 <div class="u-flex-inline">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex-inline">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -76,17 +76,17 @@ as text:
 
 ```html
 <div class="u-flex u-flex-row">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-row">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -97,17 +97,17 @@ opposite direction:
 
 ```html
 <div class="u-flex u-flex-row-reverse">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-row-reverse">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -118,18 +118,18 @@ opposite direction:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-column">
-  <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">1</div>
-  <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">3</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-column">
-    <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">1</div>
-    <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -141,18 +141,18 @@ opposite direction:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-column-reverse">
-  <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">1</div>
-  <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">3</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-column-reverse">
-    <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">1</div>
-    <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-p-small u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-p-small u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -171,21 +171,27 @@ opposite direction:
 <br> Use `u-flex-no-wrap` to prevent flex items from wrapping, causing
 inflexible items to overflow the container if necessary:
 
+<!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-no-wrap">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">4</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-no-wrap">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">4</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
   </div>
 </pre>
 
@@ -196,18 +202,24 @@ inflexible items to overflow the container if necessary:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-wrap">
-  <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">1</div>
-  <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-wrap">
-    <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">1</div>
-    <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
   </div>
 </pre>
 
@@ -218,18 +230,24 @@ inflexible items to overflow the container if necessary:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-wrap-reverse">
-  <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">1</div>
-  <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+  <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-wrap-reverse">
-    <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">1</div>
-    <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-ph-huge u-pv-small u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">4</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">5</div>
+    <div class="u-text-center u-background-notify-warning u-ph-huge u-pv u-m-tiny">6</div>
   </div>
 </pre>
 
@@ -252,17 +270,17 @@ cross axis:
 
 ```html
 <div class="u-flex u-flex-items-stretch">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -273,17 +291,17 @@ container's cross axis:
 
 ```html
 <div class="u-flex u-flex-items-start">
-  <div class="u-text-center u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-text-center u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-items-start demo--fixed-height">
-    <div class="u-text-center u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-text-center u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -294,17 +312,17 @@ container's cross axis:
 
 ```html
 <div class="u-flex u-flex-items-center">
-  <div class="u-text-center u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-text-center u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-items-center demo--fixed-height">
-    <div class="u-text-center u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-text-center u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -315,17 +333,17 @@ cross axis:
 
 ```html
 <div class="u-flex u-flex-items-end">
-  <div class="u-text-center u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-text-center u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-text-center u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-items-end demo--fixed-height">
-    <div class="u-text-center u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-text-center u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-text-center u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -337,18 +355,18 @@ cross axis such that all of their baselines align:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-baseline">
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-text-center u-text-h3 u-background-branding-primary u-ph-large u-pv u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+  <div class="u-text-center u-text-h3 u-background-notify-warning u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-baseline demo--fixed-height">
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-text-center u-text-h3 u-background-branding-primary u-ph-large u-pv u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+    <div class="u-text-center u-text-h3 u-background-notify-warning u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -375,18 +393,18 @@ container's `align-items` property:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-stretch">
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-flex-self-auto u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+  <div class="u-flex-self-auto u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-flex-self-auto u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+    <div class="u-flex-self-auto u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -400,18 +418,18 @@ cross axis, despite the container's `align-items` value:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-stretch">
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-flex-self-start u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+  <div class="u-flex-self-start u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-flex-self-start u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+    <div class="u-flex-self-start u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -425,18 +443,18 @@ cross axis, despite the container's `align-items` value:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-stretch">
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-flex-self-center u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+  <div class="u-flex-self-center u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-flex-self-center u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+    <div class="u-flex-self-center u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -450,18 +468,18 @@ axis, despite the container's `align-items` value:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-stretch">
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-flex-self-end u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+  <div class="u-flex-self-end u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-stretch demo--fixed-height">
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-flex-self-end u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+    <div class="u-flex-self-end u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -475,18 +493,18 @@ cross axis, despite the container's `align-items` value:
 <!-- prettier-ignore-start -->
 ```html
 <div class="u-flex u-flex-items-start">
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-  <div class="u-flex-self-stretch u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
-  <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+  <div class="u-flex-self-stretch u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
+  <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
 </div>
 ```
 <!-- prettier-ignore-end -->
 
 <pre>
   <div class="demo u-flex u-flex-items-start demo--fixed-height">
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">1</div>
-    <div class="u-flex-self-stretch u-text-center u-background-notify-success u-ph-large u-pv u-m-tiny">2</div>
-    <div class="u-text-center u-background-branding-primary u-ph-large u-pv u-m-tiny">3</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">1</div>
+    <div class="u-flex-self-stretch u-text-center u-background-notify-danger u-ph-large u-pv u-m-tiny">2</div>
+    <div class="u-text-center u-background-notify-warning u-ph-large u-pv u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -512,17 +530,17 @@ container's main axis:
 
 ```html
 <div class="u-flex u-flex-justify-start">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-justify-start">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -535,17 +553,17 @@ container's main axis:
 
 ```html
 <div class="u-flex u-flex-justify-center">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-justify-center">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -558,17 +576,17 @@ container's main axis:
 
 ```html
 <div class="u-flex u-flex-justify-end">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-justify-end">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -581,17 +599,17 @@ axis such that there is an equal amount of space between each item:
 
 ```html
 <div class="u-flex u-flex-justify-between">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-justify-between">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -604,17 +622,17 @@ axis such that there is an equal amount of space around each item:
 
 ```html
 <div class="u-flex u-flex-justify-around">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-justify-around">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -627,17 +645,17 @@ any two items (and the space to the edges) is equal:
 
 ```html
 <div class="u-flex u-flex-justify-evenly">
-  <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-  <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+  <div class="u-background-notify-warning u-p u-m-tiny">3</div>
 </div>
 ```
 
 <pre>
   <div class="demo u-flex u-flex-justify-evenly">
-    <div class="u-background-branding-primary u-p u-m-tiny">1</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">2</div>
-    <div class="u-background-branding-primary u-p u-m-tiny">3</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">1</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">2</div>
+    <div class="u-background-notify-warning u-p u-m-tiny">3</div>
   </div>
 </pre>
 
@@ -661,13 +679,13 @@ taking into account its initial size:
 
 ```html
 <div class="u-flex">
-  <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-initial u-background-notify-warning u-p-small u-m-tiny">
     Lorem
   </div>
-  <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-initial u-background-notify-warning u-p-small u-m-tiny">
     Lorem Ipsum
   </div>
-  <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-initial u-background-notify-warning u-p-small u-m-tiny">
     Lorem Ipsum is simply dummy text
   </div>
 </div>
@@ -675,9 +693,9 @@ taking into account its initial size:
 
 <pre>
   <div class="demo u-flex">
-    <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">Lorem</div>
-    <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum</div>
-    <div class="u-flex-initial u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
+    <div class="u-flex-initial u-background-notify-warning u-p-small u-m-tiny">Lorem</div>
+    <div class="u-flex-initial u-background-notify-warning u-p-small u-m-tiny">Lorem Ipsum</div>
+    <div class="u-flex-initial u-background-notify-warning u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
   </div>
 </pre>
 
@@ -690,13 +708,13 @@ ignoring its initial size:
 
 ```html
 <div class="u-flex">
-  <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-1 u-background-notify-warning u-p-small u-m-tiny">
     Lorem
   </div>
-  <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-1 u-background-notify-warning u-p-small u-m-tiny">
     Lorem Ipsum
   </div>
-  <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-1 u-background-notify-warning u-p-small u-m-tiny">
     Lorem Ipsum is simply dummy text
   </div>
 </div>
@@ -704,9 +722,9 @@ ignoring its initial size:
 
 <pre>
   <div class="demo u-flex">
-    <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">Lorem</div>
-    <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum</div>
-    <div class="u-flex-1 u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
+    <div class="u-flex-1 u-background-notify-warning u-p-small u-m-tiny">Lorem</div>
+    <div class="u-flex-1 u-background-notify-warning u-p-small u-m-tiny">Lorem Ipsum</div>
+    <div class="u-flex-1 u-background-notify-warning u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
   </div>
 </pre>
 
@@ -719,13 +737,13 @@ its initial size:
 
 ```html
 <div class="u-flex">
-  <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-auto u-background-notify-warning u-p-small u-m-tiny">
     Lorem
   </div>
-  <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-auto u-background-notify-warning u-p-small u-m-tiny">
     Lorem Ipsum
   </div>
-  <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-auto u-background-notify-warning u-p-small u-m-tiny">
     Lorem Ipsum is simply dummy text
   </div>
 </div>
@@ -733,9 +751,9 @@ its initial size:
 
 <pre>
   <div class="demo u-flex">
-    <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">Lorem</div>
-    <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum</div>
-    <div class="u-flex-auto u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
+    <div class="u-flex-auto u-background-notify-warning u-p-small u-m-tiny">Lorem</div>
+    <div class="u-flex-auto u-background-notify-warning u-p-small u-m-tiny">Lorem Ipsum</div>
+    <div class="u-flex-auto u-background-notify-warning u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
   </div>
 </pre>
 
@@ -747,13 +765,13 @@ Use `u-flex-none` to prevent a flex item from growing or shrinking:
 
 ```html
 <div class="u-flex">
-  <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-none u-background-notify-warning u-p-small u-m-tiny">
     Lorem
   </div>
-  <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-none u-background-notify-warning u-p-small u-m-tiny">
     Lorem Ipsum
   </div>
-  <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">
+  <div class="u-flex-none u-background-notify-warning u-p-small u-m-tiny">
     Lorem Ipsum is simply dummy text
   </div>
 </div>
@@ -761,20 +779,8 @@ Use `u-flex-none` to prevent a flex item from growing or shrinking:
 
 <pre>
   <div class="demo u-flex">
-    <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">Lorem</div>
-    <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum</div>
-    <div class="u-flex-none u-background-branding-primary u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
+    <div class="u-flex-none u-background-notify-warning u-p-small u-m-tiny">Lorem</div>
+    <div class="u-flex-none u-background-notify-warning u-p-small u-m-tiny">Lorem Ipsum</div>
+    <div class="u-flex-none u-background-notify-warning u-p-small u-m-tiny">Lorem Ipsum is simply dummy text</div>
   </div>
 </pre>
-
-<style lang="scss">
-@import '../../.vuepress/scss/main.scss';
-
-.demo {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-.demo--fixed-height {
-  height: 150px;
-}
-</style>

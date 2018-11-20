@@ -16,12 +16,12 @@ module.exports = {
     nav: [{ text: 'Guide', link: '/guide/getting-started' }],
     sidebar: {
       '/': [
+        '/getting-started/getting-started',
+        '/why-normandy/why-normandy',
         {
-          title: 'Guide',
-          collapsable: false,
+          title: 'User Guide',
+          collapsable: true,
           children: [
-            '/guide/getting-started',
-            '/guide/why-normandy',
             '/guide/les-7-capes-de-css',
             '/guide/sobre-els-objects',
             '/guide/namespaces',

@@ -8,9 +8,13 @@ The Wrapper object is located in `5-Objects/_objects.wrapper.scss`.
 
 ## Elements
 
-The Wrapper Object hasn't elements:
+The Wrapper Object hasn't elements.
 
 ### Usage
+
+::: warning
+The maximum width provided by the Wrapper object is larger than the available in this document.
+:::
 
 ```html
 <div class="o-wrapper">
@@ -26,9 +30,9 @@ The Wrapper Object hasn't elements:
 
 ## Size modifiers
 
-Use the size modifiers to change the gutter of the wrapped item
+Use the size modifiers to change the gutter of the wrapped item.
 
-| Class            | Elements' gap                |
+| Class            | Elements' gutter             |
 | ---------------- | ---------------------------- |
 | o-wrapper--flush | `0`                          |
 | o-wrapper--tiny  | `$global-spacing-unit-tiny`  |
@@ -41,10 +45,6 @@ Use the size modifiers to change the gutter of the wrapped item
 :::
 
 ### Usage
-
-::: warning
-The maximum width provided by the Wrapper object is larger than the available in this document.
-:::
 
 #### `.o-wrapper--flush`
 

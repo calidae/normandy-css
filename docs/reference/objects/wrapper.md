@@ -17,22 +17,22 @@ The maximum width provided by the Wrapper object is larger than the available in
 :::
 
 ```html
-<div class="o-wrapper">
+<p class="o-wrapper">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis
   fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium
   ab vel at repellat amet atque?
-</div>
+</p>
 ```
 
-<div class="o-wrapper">
+<p class="o-wrapper">
  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium  ab vel at repellat amet atque?
-</div>
+</p>
 
 ## Size modifiers
 
 Use the size modifiers to change the gutter of the wrapped item.
 
-| Class            | Elements' gutter             |
+| Class            | Object's gutter             |
 | ---------------- | ---------------------------- |
 | o-wrapper--flush | `0`                          |
 | o-wrapper--tiny  | `$global-spacing-unit-tiny`  |
@@ -48,33 +48,33 @@ Use the size modifiers to change the gutter of the wrapped item.
 
 #### `.o-wrapper--flush`
 
-<div class="o-wrapper o-wrapper--flush u-mt-small">
+<p class="o-wrapper o-wrapper--flush u-mt-small">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
-</div>
+</p>
 
 #### `.o-wrapper--tiny`
 
-<div class="o-wrapper o-wrapper--tiny u-mt-small">
+<p class="o-wrapper o-wrapper--tiny u-mt-small">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
-</div>
+</p>
 
 #### `.o-wrapper--small`
 
-<div class="o-wrapper o-wrapper--small u-mt-small">
+<p class="o-wrapper o-wrapper--small u-mt-small">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
-</div>
+</p>
 
 #### `.o-wrapper--large`
 
-<div class="o-wrapper o-wrapper--large u-mt-small">
+<p class="o-wrapper o-wrapper--large u-mt-small">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
-</div>
+</p>
 
 #### `.o-wrapper--huge`
 
-<div class="o-wrapper o-wrapper--huge u-mt-small">
+<p class="o-wrapper o-wrapper--huge u-mt-small">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, reiciendis fugiat ut voluptate fugit uisquam modi maiores, perspiciatis quasi praesentium ab vel at repellat amet atque?
-</div>
+</p>
 
 <style lang="scss">
 @import './outline.css';

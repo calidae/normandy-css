@@ -52,6 +52,7 @@ module.exports = {
             '/reference/objects/cover',
             '/reference/objects/list',
             '/reference/objects/media',
+            '/reference/objects/wrapper',
           ],
         },
       ],

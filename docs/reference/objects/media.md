@@ -172,16 +172,5 @@ Use the reverse modifier to swap positions between elements.
 </div>
 
 <style lang="scss">
-@import '../../.vuepress/scss/main.scss';
 @import './outline.css';
-
-p {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
-h2 {
-  padding-bottom: 0.3rem;
-}
-
 </style>

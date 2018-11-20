@@ -128,17 +128,7 @@ Use alignment modifiers to change the elements' alignment.
 </div>
 
 <style lang="scss">
-@import '../../.vuepress/scss/main.scss';
 @import './outline.css';
-
-p {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
-h2 {
-  padding-bottom: 0.3rem;
-}
 
 .o-cover--demo {
     background-image:url('http://unsplash.it/960/600');

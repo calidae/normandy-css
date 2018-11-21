@@ -20,7 +20,7 @@ module.exports = {
         '/why-normandy',
         {
           title: 'User Guide',
-          collapsable: true,
+          collapsable: false,
           children: [
             '/guide/les-7-capes-de-css',
             '/guide/sobre-els-objects',
@@ -34,7 +34,7 @@ module.exports = {
         },
         {
           title: 'Utilities',
-          collapsable: true,
+          collapsable: false,
           children: [
             '/reference/utilities/flexbox',
             '/reference/utilities/spacing',
@@ -46,7 +46,7 @@ module.exports = {
         },
         {
           title: 'Objects',
-          collapsable: true,
+          collapsable: false,
           children: [
             '/reference/objects/block',
             '/reference/objects/cover',

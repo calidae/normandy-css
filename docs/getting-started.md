@@ -12,17 +12,6 @@ It's build upon
 Normandy is a customized version of
 [inuitcss](https://github.com/inuitcss/inuitcss).
 
-# Summary
-
-- [Les 7 capes de CSS](les-7-capes-de-css.md)
-- [Sobre els Objects](sobre-els-objects.md)
-- [Namespaces](namespaces.md)
-- [Nomenclatura BEM](nomenclatura-bem.md)
-- [Estructura de fitxers](estructura-de-fitxers.md)
-- [Nesting](nesting.md)
-- [Encapsulament de frameworks](encapsulament-de-frameworks.md)
-- [No ID's](no-ids.md)
-
 ## Installation
 
 You can install Normandy via npm:
@@ -106,7 +95,7 @@ you to create consistent layouts.
 
 Picture this: you need to define a proportional CSS Grid gap in order to
 achieve a sensible [vertical
-rythm](https://zellwk.com/blog/why-vertical-rhythms/). You would do something
+rhythm](https://zellwk.com/blog/why-vertical-rhythms/). You would do something
 like this:
 
 ```scss
@@ -148,7 +137,7 @@ $ npm start
 
 This way, output.css will be updated automatically on every change you make.
 
-#### Remember, also, to run
+#### Run tests
 
 ```shell
 
@@ -156,6 +145,6 @@ $ npm test
 
 ```
 
-before doing a PULL REQUEST in order to pass the tests!
+Make sure all tests pass before submitting a PULL REQUEST.
 
 Enjoy!

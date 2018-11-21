@@ -14,15 +14,14 @@ module.exports = {
     repo: 'calidae/normandy-css',
     editLinks: true,
     editLinkText: 'Help us improve this page!',
-    nav: [{ text: 'Guide', link: '/guide/getting-started' }],
+    nav: [{ text: 'User Guide', link: '/getting-started' }],
     sidebar: {
       '/': [
+        '/getting-started',
         {
-          title: 'Guide',
+          title: 'User Guide',
           collapsable: false,
           children: [
-            '/guide/getting-started',
-            '/guide/why-normandy',
             '/guide/les-7-capes-de-css',
             '/guide/sobre-els-objects',
             '/guide/namespaces',
@@ -35,7 +34,7 @@ module.exports = {
         },
         {
           title: 'Utilities',
-          collapsable: true,
+          collapsable: false,
           children: [
             '/reference/utilities/flexbox',
             '/reference/utilities/spacing',
@@ -47,7 +46,7 @@ module.exports = {
         },
         {
           title: 'Objects',
-          collapsable: true,
+          collapsable: false,
           children: [
             '/reference/objects/block',
             '/reference/objects/cover',

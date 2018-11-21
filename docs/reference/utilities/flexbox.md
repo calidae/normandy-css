@@ -9,7 +9,7 @@ alignment of the children can be easily manipulated.
 
 ## Flex Display
 
-<br> Utilities for creating flex containers.
+Utilities for creating flex containers.
 
 | Class         | Property               |
 | ------------- | ---------------------- |
@@ -18,7 +18,7 @@ alignment of the children can be easily manipulated.
 
 ### Flex
 
-<br> Use `u-flex` to create a block-level flex container:
+Use `u-flex` to create a block-level flex container:
 
 ```html
 <div class="u-flex">
@@ -40,7 +40,7 @@ alignment of the children can be easily manipulated.
 
 ### Inline Flex
 
-<br> Use `u-flex-inline` to create an inline flex container:
+Use `u-flex-inline` to create an inline flex container:
 
 ```html
 <div class="u-flex-inline">
@@ -60,7 +60,7 @@ alignment of the children can be easily manipulated.
 
 ## Flex Direction
 
-<br> Utilities for controlling the direction of flex items.
+Utilities for controlling the direction of flex items.
 
 | Class                 | Property                         |
 | --------------------- | -------------------------------- |
@@ -71,7 +71,7 @@ alignment of the children can be easily manipulated.
 
 ### Row `default`
 
-<br> Use `u-flex-row` to position flex items horizontally in the same direction
+Use `u-flex-row` to position flex items horizontally in the same direction
 as text:
 
 ```html
@@ -92,7 +92,7 @@ as text:
 
 ### Row Reverse
 
-<br> Use `u-flex-row-reverse` to position flex items horizontally in the
+Use `u-flex-row-reverse` to position flex items horizontally in the
 opposite direction:
 
 ```html
@@ -113,7 +113,7 @@ opposite direction:
 
 ### Column
 
-<br> Use `u-flex-column` to position flex items vertically:
+Use `u-flex-column` to position flex items vertically:
 
 <!-- prettier-ignore-start -->
 ```html
@@ -135,7 +135,7 @@ opposite direction:
 
 ### Column Reverse
 
-<br> Use `u-flex-column-reverse` to position flex items vertically in the
+Use `u-flex-column-reverse` to position flex items vertically in the
 opposite direction:
 
 <!-- prettier-ignore-start -->
@@ -158,7 +158,7 @@ opposite direction:
 
 ## Flex Wrap
 
-<br> Utilities for controlling how flex items wrap.
+Utilities for controlling how flex items wrap.
 
 | Class               | Property                      |
 | ------------------- | ----------------------------- |
@@ -168,7 +168,7 @@ opposite direction:
 
 ### No Wrap `default`
 
-<br> Use `u-flex-no-wrap` to prevent flex items from wrapping, causing
+Use `u-flex-no-wrap` to prevent flex items from wrapping, causing
 inflexible items to overflow the container if necessary:
 
 <!-- prettier-ignore-start -->
@@ -197,7 +197,7 @@ inflexible items to overflow the container if necessary:
 
 ### Wrap
 
-<br> Use `u-flex-wrap` to allow flex items to wrap:
+Use `u-flex-wrap` to allow flex items to wrap:
 
 <!-- prettier-ignore-start -->
 ```html
@@ -225,7 +225,7 @@ inflexible items to overflow the container if necessary:
 
 ### Wrap Reverse
 
-<br> Use `u-flex-wrap-reverse` to wrap flex items in the reverse direction:
+Use `u-flex-wrap-reverse` to wrap flex items in the reverse direction:
 
 <!-- prettier-ignore-start -->
 ```html
@@ -253,7 +253,7 @@ inflexible items to overflow the container if necessary:
 
 ## Align Items
 
-<br> Positioning flex items along a container's cross axis.
+Positioning flex items along a container's cross axis.
 
 | Class                 | Property                         |
 | --------------------- | -------------------------------- |
@@ -265,7 +265,7 @@ inflexible items to overflow the container if necessary:
 
 ### Stretch `default`
 
-<br> Use `u-flex-items-stretch` to stretch items to fill the flex container's
+Use `u-flex-items-stretch` to stretch items to fill the flex container's
 cross axis:
 
 ```html
@@ -286,7 +286,7 @@ cross axis:
 
 ### Start
 
-<br> Use `u-flex-items-start` to align items to the start of the flex
+Use `u-flex-items-start` to align items to the start of the flex
 container's cross axis:
 
 ```html
@@ -307,7 +307,7 @@ container's cross axis:
 
 ### Center
 
-<br> Use `u-flex-items-center` to align items along the center of the flex
+Use `u-flex-items-center` to align items along the center of the flex
 container's cross axis:
 
 ```html
@@ -328,7 +328,7 @@ container's cross axis:
 
 ### End
 
-<br> Use `u-flex-items-end` to align items to the end of the flex container's
+Use `u-flex-items-end` to align items to the end of the flex container's
 cross axis:
 
 ```html
@@ -349,7 +349,7 @@ cross axis:
 
 ### Baseline
 
-<br> Use `u-flex-items-baseline` to align items along the flex container's
+Use `u-flex-items-baseline` to align items along the flex container's
 cross axis such that all of their baselines align:
 
 <!-- prettier-ignore-start -->
@@ -372,7 +372,7 @@ cross axis such that all of their baselines align:
 
 ## Align Self
 
-<br> Positioning a single element along a container's cross axis.
+Positioning a single element along a container's cross axis.
 
 | Class                | Property                     |
 | -------------------- | ---------------------------- |
@@ -384,8 +384,6 @@ cross axis such that all of their baselines align:
 | u-flex-self-baseline | `align-self: baseline`       |
 
 ### Auto `default`
-
-<br>
 
 Use `u-flex-self-auto` to align an item based on the value of the flex
 container's `align-items` property:
@@ -410,8 +408,6 @@ container's `align-items` property:
 
 ### Start
 
-<br>
-
 Use `u-flex-self-start` to align an item to the start of the flex container's
 cross axis, despite the container's `align-items` value:
 
@@ -434,8 +430,6 @@ cross axis, despite the container's `align-items` value:
 </pre>
 
 ### Center
-
-<br>
 
 Use `u-flex-self-center` to align an item to the center of the flex container's
 cross axis, despite the container's `align-items` value:
@@ -460,8 +454,6 @@ cross axis, despite the container's `align-items` value:
 
 ### End
 
-<br>
-
 Use `u-flex-self-end` to align an item to the end of the flex container's cross
 axis, despite the container's `align-items` value:
 
@@ -484,8 +476,6 @@ axis, despite the container's `align-items` value:
 </pre>
 
 ### Stretch
-
-<br>
 
 Use `u-flex-self-stretch` to align an item to the end of the flex container's
 cross axis, despite the container's `align-items` value:
@@ -510,7 +500,7 @@ cross axis, despite the container's `align-items` value:
 
 ## Justify Content
 
-<br> Positioning flex items along a container's main axis.
+Positioning flex items along a container's main axis.
 
 | Class                  | Property                                |
 | ---------------------- | --------------------------------------- |
@@ -522,8 +512,6 @@ cross axis, despite the container's `align-items` value:
 | u-flex-justify-evenly  | `justify-content: space-evenly`         |
 
 ### Start `default`
-
-<br>
 
 Use `u-flex-justify-start` to justify items against the start of the flex
 container's main axis:
@@ -546,8 +534,6 @@ container's main axis:
 
 ### Center
 
-<br>
-
 Use `u-flex-justify-center` to justify items against the center of the flex
 container's main axis:
 
@@ -568,8 +554,6 @@ container's main axis:
 </pre>
 
 ### End
-
-<br>
 
 Use `u-flex-justify-end` to justify items against the end of the flex
 container's main axis:
@@ -592,8 +576,6 @@ container's main axis:
 
 ### Space Between
 
-<br>
-
 Use `u-flex-justify-between` to justify items along the flex container's main
 axis such that there is an equal amount of space between each item:
 
@@ -614,8 +596,6 @@ axis such that there is an equal amount of space between each item:
 </pre>
 
 ### Space Around
-
-<br>
 
 Use `u-flex-justify-around` to justify items along the flex container's main
 axis such that there is an equal amount of space around each item:
@@ -638,8 +618,6 @@ axis such that there is an equal amount of space around each item:
 
 ### Space Evenly
 
-<br>
-
 Use `u-flex-justify-evenly` items are distributed so that the spacing between
 any two items (and the space to the edges) is equal:
 
@@ -661,7 +639,7 @@ any two items (and the space to the edges) is equal:
 
 ## Flex, Grow and Shrink
 
-<br> Utilities for controlling how flex items grow and shrink.
+Utilities for controlling how flex items grow and shrink.
 
 | Class          | Property                  |
 | -------------- | ------------------------- |
@@ -671,8 +649,6 @@ any two items (and the space to the edges) is equal:
 | u-flex-none    | `flex: none`              |
 
 ### Flex Initial `default`
-
-<br>
 
 Use `u-flex-initial` to allow a flex item to shrink but not grow,
 taking into account its initial size:
@@ -701,8 +677,6 @@ taking into account its initial size:
 
 ### Flex 1
 
-<br>
-
 Use `u-flex-1` to allow a flex item to grow and shrink as needed,
 ignoring its initial size:
 
@@ -730,8 +704,6 @@ ignoring its initial size:
 
 ### Flex auto
 
-<br>
-
 Use `u-flex-auto` to allow a flex item to grow and shrink, taking into account
 its initial size:
 
@@ -758,8 +730,6 @@ its initial size:
 </pre>
 
 ### Flex None
-
-<br>
 
 Use `u-flex-none` to prevent a flex item from growing or shrinking:
 

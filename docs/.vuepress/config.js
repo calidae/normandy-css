@@ -17,7 +17,6 @@ module.exports = {
     sidebar: {
       '/': [
         '/getting-started',
-        '/why-normandy',
         {
           title: 'User Guide',
           collapsable: false,

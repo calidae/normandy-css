@@ -13,7 +13,7 @@ module.exports = {
     repo: 'calidae/normandy-css',
     editLinks: true,
     editLinkText: 'Help us improve this page!',
-    nav: [{ text: 'Guide', link: '/guide/getting-started' }],
+    nav: [{ text: 'User Guide', link: '/getting-started' }],
     sidebar: {
       '/': [
         '/getting-started',

@@ -16,8 +16,8 @@ module.exports = {
     nav: [{ text: 'Guide', link: '/guide/getting-started' }],
     sidebar: {
       '/': [
-        '/getting-started/getting-started',
-        '/why-normandy/why-normandy',
+        '/getting-started',
+        '/why-normandy',
         {
           title: 'User Guide',
           collapsable: true,

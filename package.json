@@ -37,7 +37,20 @@
     "start": "npm run dev",
     "test": "npm run lint && npm run mocha"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss,vue,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "dependencies": {
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
     "sass-mq": "^5.0.0"
   },
   "devDependencies": {

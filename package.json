@@ -29,13 +29,24 @@
     "dev": "gulp watch",
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
-    "docs:lint": "prettier --write \"**/*.{js,json,css,scss,vue,md}\"",
+    "docs:lint": "prettier --write \"docs/**/*.{js,json,css,scss,vue,md}\"",
     "lint": "gulp stylelint",
     "mocha": "mocha --reporter min",
     "prepare": "npm test && gulp",
     "sass": "gulp sass",
     "start": "npm run dev",
     "test": "npm run lint && npm run mocha"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "docs/**/*.{js,json,css,scss,vue,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "sass-mq": "^5.0.0"
@@ -50,6 +61,8 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-stylelint": "^8.0.0",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
     "mocha": "^3.5.3",
     "node-sass": "^4.10.0",
     "prettier": "^1.15.2",

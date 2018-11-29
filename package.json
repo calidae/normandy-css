@@ -30,6 +30,7 @@
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
     "docs:lint": "prettier --write \"docs/**/*.{js,json,css,scss,vue,md}\"",
+    "generate-log":"sh changelog-builder.sh > CHANGELOG.md",
     "lint": "gulp stylelint",
     "mocha": "mocha --reporter min",
     "prepare": "npm test && gulp",

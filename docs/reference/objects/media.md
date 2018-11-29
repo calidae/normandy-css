@@ -1,6 +1,6 @@
 # Media
 
-An image to the left, with descriptive content to the right.
+ssssAn image to the left, with descriptive content to the right.
 
 ::: tip Where is it?
 The Media object is located in `5-Objects/_objects.media.scss`.

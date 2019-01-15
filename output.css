@@ -34,12 +34,13 @@
  * in your custom _settings.colors.scss file:
  *
  * $custom-colors: (
- *  "branding-primary": #c0ffee
+ *  "branding-primary": hsl(164, 100%, 88%)
  * );
  * $global-colors: map-merge($global-colors, $custom-colors);
  *
  * or, in a one-liner:
- * $global-colors: map-merge($global-colors, ("branding-primary": #coffee));
+ * $global-colors: map-merge($global-colors, 
+                            ("branding-primary": hsl(164, 100%, 88%)));
  *
  *
  * Since we don't have color variables but color maps, you need to use the
@@ -1014,28 +1015,28 @@ h6 {
   background-color: #acc743 !important; }
 
 .u-text-notify-success {
-  color: #4caf50 !important; }
+  color: #4cae4f !important; }
 
 .u-background-notify-success {
-  background-color: #4caf50 !important; }
+  background-color: #4cae4f !important; }
 
 .u-text-notify-info {
-  color: #29b6f6 !important; }
+  color: #28b5f6 !important; }
 
 .u-background-notify-info {
-  background-color: #29b6f6 !important; }
+  background-color: #28b5f6 !important; }
 
 .u-text-notify-warning {
-  color: #ff9800 !important; }
+  color: #ff9900 !important; }
 
 .u-background-notify-warning {
-  background-color: #ff9800 !important; }
+  background-color: #ff9900 !important; }
 
 .u-text-notify-danger {
-  color: #f44336 !important; }
+  color: #f44034 !important; }
 
 .u-background-notify-danger {
-  background-color: #f44336 !important; }
+  background-color: #f44034 !important; }
 
 /* ==========================================================================
    #FLEXBOX UTILITY
@@ -1081,7 +1082,6 @@ h6 {
  * flex container, and shrinks to its minimum size to fit the container.
  *
  * This is equivalent to setting "flex: 1 1 auto".
- *
  */
 .u-flex-auto {
   flex: auto !important; }
@@ -1089,6 +1089,7 @@ h6 {
 /**
  * The item is sized according to its width and height properties. It is fully
  * inflexible: it neither shrinks nor grows in relation to the flex container.
+ *
  * This is equivalent to setting "flex: 0 0 auto".
  */
 .u-flex-none {

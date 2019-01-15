@@ -10,11 +10,11 @@ It is located in `1-Settings/_settings.colors.scss`
 
 ```scss
 $global-colors: (
-  'branding-primary': #acc743,
-  'notify-success': #4caf50,
-  'notify-info': #29b6f6,
-  'notify-warning': #ff9800,
-  'notify-danger': #f44336,
+  'branding-primary': hsl(72, 54%, 52%),
+  'notify-success': hsl(122, 39%, 49%),
+  'notify-info': hsl(199, 92%, 56%),
+  'notify-warning': hsl(36, 100%, 50%),
+  'notify-danger': hsl(4, 90%, 58%),
 );
 ```
 

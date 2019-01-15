@@ -124,7 +124,7 @@ en reaprofitables i en repartir responsabilitats:
 /* Bad */
 .c-button--login {
   font-size: 2em;
-  background-color: #f1f1f2;
+  background-color: hsl(240, 4%, 95%);
   color: #000;
   padding: 20px;
 }
@@ -136,7 +136,7 @@ en reaprofitables i en repartir responsabilitats:
 }
 
 .c-button--secondary {
-  background-color: #f1f1f2;
+  background-color: hsl(240, 4%, 95%);
   color: #fff;
 }
 ```

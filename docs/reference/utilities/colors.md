@@ -24,17 +24,17 @@ $global-colors: (
 
 Used to give color to the text of a specific element.
 
-| Class          | Property         |
-| -------------- | ---------------- |
-| u-text-{color} | `color: {color}` |
+| Class           | Property         |
+| --------------- | ---------------- |
+| u-color-{color} | `color: {color}` |
 
 ### Usage
 
 ```html
-<p class="u-text-notify-warning">Lorem ipsum dolor sit amet</p>
+<p class="u-color-notify-warning">Lorem ipsum dolor sit amet</p>
 ```
 
-<pre class="u-text-notify-warning">
+<pre class="u-color-notify-warning">
 Lorem ipsum dolor sit amet
 </pre>
 

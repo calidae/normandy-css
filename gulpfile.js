@@ -15,14 +15,13 @@ gulp.task('sass', () =>
 )
 
 gulp.task('stylelint', () =>
-  gulp
-    .src(SRC_PATH)
-    .pipe(gulpStylelint({
-      reporters: [{ formatter: 'string', console: true }]
-    }))
+  gulp.src(SRC_PATH).pipe(
+    gulpStylelint({
+      reporters: [{ formatter: 'string', console: true }],
+    })
+  )
 )
 
 gulp.task('default', ['stylelint', 'sass'])
 
 gulp.task('watch', () => gulp.watch(SRC_PATH, ['default']))
-

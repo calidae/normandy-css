@@ -3,7 +3,7 @@
    ========================================================================== */
 
 @each $name, $value in $global-colors {
-  .u-text-#{$name} {
+  .u-color-#{$name} {
     color: $value !important;
   }
 

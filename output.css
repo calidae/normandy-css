@@ -1,11 +1,7 @@
 @charset "UTF-8";
 /*!
- * Calidae CSS Boilerplate v1.0.0
- * https://bitbucket.org/calidae/calidae-css
- */
-/**
- * Calidae CSS Boilerplate follows a ITCSS architecture and BEM class naming.
- * Read README.md for further details.
+ * Normandy-CSS
+ * https://github.com/calidae/normandy-css
  */
 /* ==========================================================================
    SETTINGS
@@ -1008,31 +1004,31 @@ h6 {
 /* ==========================================================================
    #COLOR UTILITY
    ========================================================================== */
-.u-text-branding-primary {
+.u-color-branding-primary {
   color: #acc743 !important; }
 
 .u-background-branding-primary {
   background-color: #acc743 !important; }
 
-.u-text-notify-success {
+.u-color-notify-success {
   color: #4cae4f !important; }
 
 .u-background-notify-success {
   background-color: #4cae4f !important; }
 
-.u-text-notify-info {
+.u-color-notify-info {
   color: #28b5f6 !important; }
 
 .u-background-notify-info {
   background-color: #28b5f6 !important; }
 
-.u-text-notify-warning {
+.u-color-notify-warning {
   color: #ff9900 !important; }
 
 .u-background-notify-warning {
   background-color: #ff9900 !important; }
 
-.u-text-notify-danger {
+.u-color-notify-danger {
   color: #f44034 !important; }
 
 .u-background-notify-danger {
